@@ -1,98 +1,289 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html><head><meta content="text/html; charset=ISO-8859-1" http-equiv="content-type"><title>contactus.dinoprehistoric.com</title><style type="text/css">
-h1 {
-  border-color: red;
-  text-decoration: none;
-  background-color: transparent;
-  font-family: Gigi;
-  color: black;
-  line-height: normal;
-  font-size: medium;
-}
-
-</style>
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - DinoPreHistoric</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome for icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-image: url('Images/Backgrounds/4.png');
+      background-repeat: repeat;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    
+    .navbar-brand img {
+      height: 50px;
+    }
+    
+    .banner-img {
+      max-height: 100px;
+    }
+    
+    .header-logo {
+      max-width: 80px;
+    }
+    
+    .contact-header {
+      background-color: rgba(0, 0, 153, 0.9);
+      color: white;
+      border-radius: 5px;
+    }
+    
+    .map-container {
+      border: 5px solid #046307;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    
+    .contact-info {
+      background-color: rgba(0, 0, 153, 0.9);
+      color: white;
+      border-radius: 5px;
+    }
+    
+    .nav-link {
+      font-weight: bold;
+      transition: all 0.3s ease;
+    }
+    
+    .nav-link:hover {
+      transform: scale(1.05);
+      text-decoration: underline;
+    }
+    
+    .active-nav {
+      background-color: #046307;
+      border-radius: 5px;
+    }
+    
+    footer {
+      background-color: #333;
+      color: white;
+    }
+    
+    .back-to-top {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: none;
+      background-color: #046307;
+      color: white;
+      border: none;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      text-align: center;
+      font-size: 20px;
+      z-index: 99;
+      transition: all 0.3s;
+    }
+    
+    .back-to-top:hover {
+      background-color: #035206;
+      transform: scale(1.1);
+    }
+  </style>
 </head>
-<body style="color: rgb(0, 0, 0); background-color: rgb(255, 255, 255); background-image: url(Images/Backgrounds/4.png);" alink="#000099" link="yellow" vlink="yellow">
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: #996600;">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="Images/Logo/download.png" alt="DinoPreHistoric Logo" class="header-logo me-2">
+        <img src="Images/Banners/Final.png" alt="DinoPreHistoric Banner" class="banner-img d-none d-md-block">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item mx-1">
+            <a class="nav-link" href="index.html">HOME</a>
+          </li>
+          <li class="nav-item mx-1">
+            <a class="nav-link" href="video.html">VIDEO GALLERY</a>
+          </li>
+          <li class="nav-item mx-1">
+            <a class="nav-link" href="photo.html">PHOTO GALLERY</a>
+          </li>
+          <li class="nav-item mx-1">
+            <a class="nav-link" href="about.html">ABOUT US</a>
+          </li>
+          <li class="nav-item mx-1">
+            <a class="nav-link active-nav" href="contact.html">CONTACT US</a>
+          </li>
+          <li class="nav-item mx-1">
+            <a class="nav-link" href="history.html">HISTORY</a>
+          </li>
+          <li class="nav-item mx-1">
+            <a class="nav-link" href="menu.html">
+              <img src="Images/NegKeys/M.png" alt="Menu" style="width: 25px; height: 25px;" class="me-1">
+              MENU
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <div class="container mt-4">
+    <div class="row">
+      <div class="col-12 text-center mb-4">
+        <img src="Images/Animated%20Text/Contact%20us.gif" alt="Contact Us" class="img-fluid">
+      </div>
+    </div>
+  </div>
+
+  <!-- Map Section -->
+  <div class="container mb-5">
+    <div class="row">
+      <div class="col-12">
+        <div class="map-container shadow">
+          <img src="Images/Maps/Dinosaur%20Land.png" alt="Dinosaur Land Map" class="img-fluid w-100">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact Information Section -->
+  <div class="container mb-5">
+    <div class="row">
+      <div class="col-12 mb-4">
+        <div class="contact-header p-3 shadow">
+          <h1 class="text-center mb-0">DinoPreHistoric Inc.</h1>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="col-md-8 mx-auto">
+        <div class="contact-info p-4 shadow">
+          <div class="row mb-3">
+            <div class="col-md-3">
+              <h4><i class="fas fa-map-marker-alt me-2"></i>Address</h4>
+            </div>
+            <div class="col-md-9">
+              <p class="fs-5 mb-0">3848 Stone Wall Jackson Highway, White Post, VA 22663</p>
+            </div>
+          </div>
+          
+          <div class="row mb-3">
+            <div class="col-md-3">
+              <h4><i class="fas fa-phone me-2"></i>Phone</h4>
+            </div>
+            <div class="col-md-9">
+              <p class="fs-5 mb-0">(540) 869-2222</p>
+            </div>
+          </div>
+          
+          <div class="row mb-3">
+            <div class="col-md-3">
+              <h4><i class="fas fa-fax me-2"></i>Fax</h4>
+            </div>
+            <div class="col-md-9">
+              <p class="fs-5 mb-0">(540) 869-0951</p>
+            </div>
+          </div>
+          
+          <div class="row mb-3">
+            <div class="col-md-3">
+              <h4><i class="fas fa-globe me-2"></i>Website</h4>
+            </div>
+            <div class="col-md-9">
+              <a href="index.html" class="text-white fs-5 text-decoration-none">https://www.home.dinoprehistoric.com</a>
+            </div>
+          </div>
+          
+          <div class="row">
+            <div class="col-md-3">
+              <h4><i class="fas fa-envelope me-2"></i>Email</h4>
+            </div>
+            <div class="col-md-9">
+              <a href="mailto:helpdinoprehistoric@yahoo.com" class="text-white fs-5 text-decoration-none">helpdinoprehistoric@yahoo.com</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact Form -->
+  <div class="container mb-5">
+    <div class="row">
+      <div class="col-md-8 mx-auto">
+        <div class="card shadow">
+          <div class="card-header bg-success text-white">
+            <h3 class="mb-0">Send Us a Message</h3>
+          </div>
+          <div class="card-body">
+            <form>
+              <div class="row mb-3">
+                <div class="col-md-6 mb-3 mb-md-0">
+                  <label for="name" class="form-label">Name</label>
+                  <input type="text" class="form-control" id="name" placeholder="Your Name">
+                </div>
+                <div class="col-md-6">
+                  <label for="email" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="email" placeholder="Your Email">
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="subject" class="form-label">Subject</label>
+                <input type="text" class="form-control" id="subject" placeholder="Subject">
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" rows="5" placeholder="Your Message"></textarea>
+              </div>
+              <button type="submit" class="btn btn-success">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="py-4 text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <p class="mb-0">&copy; 2023 DinoPreHistoric Inc. All Rights Reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" id="backToTop"><i class="fas fa-arrow-up"></i></button>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
   
-<div style="text-align: left;">
-<a name="TOP"></a><table style="text-align: left; width: 100%; height: 1%; margin-left: auto; margin-right: auto; background-color: rgb(153, 153, 0);" border="0" cellpadding="0" cellspacing="0">
-  <tbody>
-    <tr>
-      <td style="vertical-align: middle; text-align: center; width: 195px;"><a href="menu.html"><img style="border: 0px solid ; width: 50px; height: 50px;" src="Images/NegKeys/M.png" alt="M.png"><br>
-MENU</a><br>
-      </td>
-<td style="vertical-align: middle; text-align: right; width: 13px;"><img style="width: 100px; height: 100px;" src="Images/Logo/download.png" alt="download.png"></td>
-      <td style="vertical-align: middle; text-align: left; width: 451px;"><img style="width: 500px; height: 101px;" src="Images/Banners/Final.png" alt="Final.png"></td>
-    </tr>
-  </tbody>
-</table><table style="text-align: left; width: 100%; background-color: rgb(0, 102, 0); height: 1%; margin-left: auto; margin-right: auto;" border="0" cellpadding="2" cellspacing="2">
-  <tbody>
-    <tr>
-      <td style="vertical-align: middle; text-align: center; background-color: rgb(0, 102, 0);">
-      <h1><a href="index.html">HOME</a></h1>
-
-      </td>
-      <td style="vertical-align: middle; text-align: center; background-color: transparent;">
-      <h1><a href="video.html">VIDEO GALLERY</a></h1>
-
-      </td>
-      <td style="vertical-align: middle; text-align: center; background-color: transparent;">
-      <h1><a href="photo.html">PHOTO GALLERY</a></h1>
-
-      </td>
-      <td style="vertical-align: middle; text-align: center; background-color: transparent;">
-      <h1><a href="about.html">ABOUT US</a></h1>
-
-      </td>
-      <td style="vertical-align: middle; text-align: center; background-color: transparent;">
-      <h1><a href="contact.html">CONTACT US</a></h1>
-
-      </td>
-      <td style="vertical-align: middle; text-align: center; background-color: transparent;">
-      <h1><a href="history.html">HISTORY</a></h1>
-
-      </td>
-    </tr>
-  </tbody>
-</table><table style="text-align: left; width: 100%; height: 1%; margin-left: auto; margin-right: auto;" border="0" cellpadding="0" cellspacing="0">
-  <tbody>
-    <tr>
-      <td style="vertical-align: middle; text-align: center;"><img style="width: 100%; height: 100%;" src="Images/Animated%20Text/Contact%20us.gif" alt="Contact%20us.gif"></td>
-    </tr>
-  </tbody>
-</table>
-<table style="text-align: left; width: 100%; background-color: transparent; height: 1%; margin-left: auto; margin-right: auto;" border="0" cellpadding="2" cellspacing="2">
-  <tbody>
-    <tr>
-      <td style="vertical-align: middle; text-align: center; background-color: transparent;"><img style="width: 100%; height: 100%;" src="Images/Maps/Dinosaur%20Land.png" alt="Dinosaur%20Land.png"></td>
-    </tr>
-  </tbody>
-</table>
-<big>
-  </big><big>
-    </big><big>
-      </big><big>
-    </big><big>
-  </big><big>
-  </big><table style="width: 100%; height: 1%; text-align: left; margin-left: auto; margin-right: auto;" border="0" cellpadding="2" cellspacing="2"><tbody><tr><td style="text-align: center; background-color: rgb(0, 0, 153);"><big style="color: white;"><big><big><big>DinoPreHistoric Inc.</big></big></big></big></td></tr></tbody></table><table style="text-align: left; width: 100%; height: 1%; margin-left: auto; margin-right: auto; font-family: Times New Roman; color: black;" border="0" cellpadding="2" cellspacing="2"><tbody><tr><td style="vertical-align: middle; text-align: center; background-color: rgb(0, 0, 153);"><table style="width: 100%; height: 1%; text-align: left; margin-left: auto; margin-right: auto;" border="0" cellpadding="2" cellspacing="2"><tbody><tr><td style="text-align: justify; color: white; width: 203px;"><big><span style="font-size: 18pt; line-height: 115%; font-family: &quot;Times New Roman&quot;,&quot;serif&quot;;">Address</span></big></td><td style="width: 821px;"><span style="font-size: 18pt; line-height: 115%; font-family: &quot;Times New Roman&quot;,&quot;serif&quot;; color: white;">3848
-Stone Wall Jackson Highway, </span><span style="font-size: 18pt; line-height: 115%; font-family: &quot;Times New Roman&quot;,&quot;serif&quot;;"><span style="color: white;">White
-Post, VA 22663</span> </span></td></tr><tr><td style="color: white; width: 203px;"><span style="font-size: 18pt; line-height: 115%; font-family: &quot;Times New Roman&quot;,&quot;serif&quot;;">Phone Number</span></td><td style="width: 821px;"><span style="font-size: 18pt; line-height: 115%; font-family: &quot;Times New Roman&quot;,&quot;serif&quot;;"><span style="color: white;">(540)
-869-2222</span> </span></td></tr><tr><td style="color: white; width: 203px;"><span style="font-size: 18pt; line-height: 115%; font-family: &quot;Times New Roman&quot;,&quot;serif&quot;;">Fax</span></td><td style="width: 821px;"><span style="font-size: 18pt; line-height: 115%; font-family: &quot;Times New Roman&quot;,&quot;serif&quot;;"><span style="color: white;">(540)
-869-0951</span> </span></td></tr><tr><td style="color: white; width: 203px;"><span style="font-size: 18pt; line-height: 115%; font-family: &quot;Times New Roman&quot;,&quot;serif&quot;;">Website</span></td><td style="width: 821px;"><a href="index.html"><span style="font-size: 18pt; line-height: 115%; font-family: &quot;Times New Roman&quot;,&quot;serif&quot;;"><span style="color: white;">https://www.home.dinoprehistoric.com</span>
-</span></a></td></tr><tr><td style="color: white; width: 203px;"><span style="font-size: 18pt; line-height: 115%; font-family: &quot;Times New Roman&quot;,&quot;serif&quot;;">Email</span></td><td style="color: white; width: 821px;"><span style="font-size: 18pt; line-height: 115%; font-family: &quot;Times New Roman&quot;,&quot;serif&quot;;">helpdinoprehistoric@yahoo.com</span></td></tr></tbody></table></td></tr></tbody></table>
-<table style="text-align: left; width: 100%; height: 1%; margin-left: auto; margin-right: auto;" border="0" cellpadding="0" cellspacing="0">
-  <tbody>
-    <tr>
-      <td style="vertical-align: middle; text-align: center; background-color: black;">
-      <h1 style="background-color: black;"><a href="#TOP">Go to top of the Page</a></h1>
-      </td>
-    </tr>
-  </tbody>
-</table>
-
-
-
-
-</div>
-</body></html>
+  <!-- Custom JS -->
+  <script>
+    // Back to top button functionality
+    const backToTopButton = document.getElementById('backToTop');
+    
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 300) {
+        backToTopButton.style.display = 'block';
+      } else {
+        backToTopButton.style.display = 'none';
+      }
+    });
+    
+    backToTopButton.addEventListener('click', () => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+  </script>
+</body>
+</html>
