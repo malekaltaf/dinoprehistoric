@@ -1,200 +1,285 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html><head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - Prehistoric Dinosaurs</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    /* Custom fonts */
+    @import url('https://fonts.googleapis.com/css2?family=Jurassic+Park&family=Roboto:wght@400;700&display=swap');
+    
+    body {
+      background-color: #f8f9fa;
+      font-family: 'Roboto', sans-serif;
+      color: #343a40;
+      background-image: url('Images/Backgrounds/3.png');
+      background-size: cover;
+      background-attachment: fixed;
+    }
+    
+    .site-header {
+      background-color: #2c7744;
+      color: white;
+    }
+    
+    .logo-text {
+      font-family: 'Jurassic Park', cursive;
+      font-size: 2.5rem;
+      color: #e9ff00;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+    
+    .nav-link {
+      color: #ffffff !important;
+      font-weight: bold;
+      transition: all 0.3s;
+    }
+    
+    .nav-link:hover {
+      color: #e9ff00 !important;
+      transform: scale(1.05);
+    }
+    
+    .page-title {
+      font-family: 'Jurassic Park', cursive;
+      color: #4CAF50;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+    
+    .content-card {
+      background-color: rgba(255, 255, 255, 0.9);
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+    
+    .timeline-item {
+      position: relative;
+      padding-left: 30px;
+      margin-bottom: 20px;
+    }
+    
+    .timeline-item:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 5px;
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      background-color: #4CAF50;
+    }
+    
+    .timeline-item:after {
+      content: "";
+      position: absolute;
+      left: 7px;
+      top: 20px;
+      width: 2px;
+      height: calc(100% + 10px);
+      background-color: #4CAF50;
+    }
+    
+    .timeline-item:last-child:after {
+      display: none;
+    }
+    
+    .footer {
+      background-color: #212529;
+      color: white;
+    }
+    
+    .scroll-top {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: #4CAF50;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      opacity: 0.8;
+      transition: all 0.3s;
+    }
+    
+    .scroll-top:hover {
+      opacity: 1;
+      color: white;
+    }
+    
+    /* Custom text indent for paragraphs */
+    .text-indent {
+      text-indent: 2rem;
+    }
+  </style>
+</head>
+<body id="top">
+  <!-- Header -->
+  <header class="site-header sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+          <img src="Images/Logo/download.png" alt="Prehistoric Dinosaurs Logo" height="60">
+          <span class="logo-text ms-2">DinoPrehistoric</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="video.html">Video Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="photo.html">Photo Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="history.html">History</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
 
+  <!-- Page Title -->
+  <div class="container mt-4">
+    <div class="text-center mb-4">
+      <img src="Images/Animated%20Text/About%20us.gif" alt="About Us" class="img-fluid">
+    </div>
+  </div>
 
+  <!-- Main Content -->
+  <main class="py-5">
+    <div class="container">
+      <div class="content-card p-4 p-md-5">
+        <h1 class="page-title text-center mb-4">Dinosaurs</h1>
+        
+        <div class="row">
+          <div class="col-md-10 mx-auto">
+            <div class="timeline-item">
+              <h3>The Origin of Dinosaurs</h3>
+              <p class="text-indent">
+                The prehistoric reptiles known as dinosaurs arose during the Middle to Late Triassic Period of
+                the Mesozoic Era, some 230 million years ago. They were members of a subclass
+                of reptiles called the archosaurs ("ruling reptiles"), a group that also
+                includes birds and crocodiles. Scientists first
+                began studying dinosaurs during the 1820s, when they discovered the bones of a
+                large land reptile they dubbed a Megalosaurus ("big lizard") buried in the
+                English countryside.
+              </p>
+              <p class="text-indent">
+                In 1842, Sir Richard Owen, Britain's leading paleontologist,
+                first coined the term "dinosaur." Owen had examined bones from three different
+                creatures–Megalosaurus, Iguanadon ("iguana tooth") and Hylaeosaurus ("woodland
+                lizard"). Each of them lived on land, was larger than any living reptile, walked
+                with their legs directly beneath their bodies instead of out to the sides and
+                had three more vertebrae in their hips than other known reptiles. Using this
+                information, Owen determined that the three formed a special group of reptiles,
+                which he named Dinosauria. The word comes from the ancient Greek word deinos
+                ("terrible") and sauros ("lizard" or "reptile").
+              </p>
+            </div>
+            
+            <div class="timeline-item">
+              <h3>Dinosaur Classification</h3>
+              <p class="text-indent">
+                Since then, dinosaur fossils have been found all over the world and studied by paleontologists
+                to find out more about the many different types of these creatures that existed.
+                Scientists have traditionally divided the dinosaur group into two orders: the "bird-hipped"
+                Ornithischia and the "lizard-hipped" Saurischia. From there, dinosaurs have been
+                broken down into numerous genera (e.g. Tyrannosaurus or Triceratops) and each genus
+                into one or more species.
+              </p>
+              <p class="text-indent">
+                Some dinosaurs were bipedal, which means they walked on
+                two legs. Some walked on four legs (quadrupedal), and some were able to switch between
+                these two walking styles. Some dinosaurs were covered with a type of body armor,
+                and some probably had feathers, like their modern bird relatives. Some moved quickly,
+                while others were lumbering and slow. Most dinosaurs were herbivores, or plant-eaters,
+                but some were carnivorous and hunted or scavenged other dinosaurs in order to survive.
+              </p>
+            </div>
+            
+            <div class="timeline-item">
+              <h3>The Earth During Dinosaur Times</h3>
+              <p class="text-indent">
+                At the time the dinosaurs arose, all of the Earth's continents were connected together in one land
+                mass, now known as Pangaea, and surrounded by one enormous ocean. Pangaea began
+                to break apart into separate continents during the Early Jurassic Period
+                (around 200 million years ago), and dinosaurs would have seen great changes in the
+                world in which they lived over the course of their existence.
+              </p>
+              <p class="text-indent">
+                Dinosaurs mysteriously disappeared at the end of the Cretaceous Period, around 65 million
+                years ago. Many other types of animals, as well as many species of plants, died
+                out around the same time, and numerous competing theories exist as to what
+                caused this mass extinction. In addition to the great volcanic or tectonic
+                activity that was occurring around that time, scientists have also discovered
+                that a giant asteroid hit Earth about 65.5 million years ago, landing with the
+                force of 180 trillion tons of TNT and spreading an enormous amount of ash all
+                over the Earth's surface. Deprived of water and sunlight, plants and algae
+                would have died, killing off the planet's herbivores; after a period of
+                surviving on the carcasses of these herbivores, carnivores would have died out
+                as well.
+              </p>
+            </div>
+            
+            <div class="timeline-item">
+              <h3>Dinosaurs Today</h3>
+              <p class="text-indent">
+                Despite the fact that dinosaurs no longer walk the Earth as they did during the Mesozoic Era,
+                unmistakable traces of these enormous reptiles can be identified in their modern-day
+                descendants: birds. Dinosaurs also live on in the study of paleontology, and new
+                information about them is constantly being uncovered. Finally, judging from
+                their frequent appearances in the movies and on television, dinosaurs have a
+                firm hold in the popular imagination, one realm in which they show no danger of
+                becoming extinct.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
 
+  <!-- Footer -->
+  <footer class="footer py-4 mt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 text-center text-md-start">
+          <p>&copy; 2025 DinoPrehistoric.com. All rights reserved.</p>
+        </div>
+        <div class="col-md-6 text-center text-md-end">
+          <a href="#top" class="text-white me-3"><i class="fas fa-arrow-up"></i> Back to Top</a>
+          <a href="contact.html" class="text-white">Contact Us</a>
+        </div>
+      </div>
+    </div>
+  </footer>
 
+  <!-- Scroll to Top Button -->
+  <a href="#top" class="scroll-top">
+    <i class="fas fa-chevron-up"></i>
+  </a>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<meta content="text/html; charset=ISO-8859-1" http-equiv="content-type"><title>aboutus.dinoprehistoric.com</title><style type="text/css">
-@import url(file:///C:/Users/Altaf%20Suhana/Desktop/sec) all;
-h1 {
-  border-color: red;
-  font-weight: normal;
-  font-family: Chiller;
-  font-style: normal;
-  text-decoration: none;
-  background-color: transparent;
-  color: black;
-  line-height: normal;
-  font-size: x-large;
-}
-h2 {
-  color: white;
-  text-align: justify;
-  line-height: normal;
-  font-style: normal;
-  font-family: Times New Roman;
-  font-weight: inherit;
-  background-color: transparent;
-  font-size: large;
-}
-
-</style></head><body style="color: rgb(0, 0, 0); background-color: rgb(255, 255, 255); background-image: url(Images/Backgrounds/3.png);" alink="#000099" link="yellow" vlink="yellow"><a name="TOP"></a>
-<table style="background-color: rgb(51, 204, 0); width: 100%; height: 1%; text-align: left; margin-left: auto; margin-right: auto;" border="0" cellpadding="0" cellspacing="0">
-  <tbody>
-    <tr>
-      <td style="vertical-align: middle; text-align: center; width: 187px;">
-      <a href="menu.html"><img style="border: 0px solid ; width: 50px; height: 50px;" src="Images/NegKeys/M.png" alt="M.png"></a><a href="menu.html"><br>
-MENU</a><br>
-</td>
-      <td style="vertical-align: middle; text-align: right; width: 0px;">
-      <a href="menu.html"><img style="border: 0px solid ; width: 100px; height: 100px;" src="Images/Logo/download.png" alt="download.png"></a></td><td style="text-align: left; width: 399px;"><img style="width: 500px; height: 101px;" src="Images/Banners/Final.png" alt="Final.png"></td>
-    </tr>
-  </tbody>
-</table><table style="text-align: left; width: 100%; margin-left: auto; margin-right: auto; background-color: rgb(0, 102, 0); height: 1%;" border="0" cellpadding="2" cellspacing="2">
-  <tbody>
-    <tr>
-      <td style="vertical-align: middle; text-align: center; background-color: rgb(0, 102, 0);">
-      <h1><a href="index.html">HOME</a>
-      </h1>
-</td>
-      <td style="vertical-align: middle; text-align: center; background-color: transparent;">
-      
-      <h1><span class=""></span><a href="video.html">VIDEO GALLERY</a></h1>
-
-
-      </td>
-      <td style="vertical-align: middle; text-align: center; background-color: transparent;">
-      
-      
-      <h1><a href="photo.html">PHOTO GALLERY</a></h1>
-
-
-      </td>
-      <td style="vertical-align: middle; text-align: center; background-color: transparent;">
-      <h1><a href="about.html">ABOUT US</a></h1>
-
-      </td>
-      <td style="vertical-align: middle; text-align: center; background-color: transparent;">
-      <h1><a href="contact.html">CONTACT US</a></h1>
-
-      </td>
-      <td style="vertical-align: middle; text-align: center; background-color: transparent;">
-      <h1><a href="history.html">HISTORY</a></h1>
-
-      </td>
-    </tr>
-  </tbody>
-</table><table style="text-align: left; width: 100%; height: 1%; margin-left: auto; margin-right: auto;" border="0" cellpadding="0" cellspacing="0">
-  <tbody>
-    <tr>
-      <td style="vertical-align: middle; text-align: center;"><img style="width: 100%; height: 100%;" src="Images/Animated%20Text/About%20us.gif" alt="About%20us.gif"></td>
-    </tr>
-  </tbody>
-</table><table style="text-align: left; width: 100%; height: 1%;" border="0" cellpadding="2" cellspacing="2"><tbody><tr><td style="vertical-align: middle; text-align: justify;">
-      <h2>
-
-      </h2>
-      <h2 style="text-align: center; font-weight: bold;"><big>Dinosaurs</big></h2>
-
-
-      
-
-
-      <h2>&nbsp;&nbsp;&nbsp; The prehistoric
-reptiles known as dinosaurs arose during the Middle to Late Triassic Period of
-the Mesozoic Era, some 230 million years ago. They were members of a subclass
-of reptiles called the archosaurs (&#8220;ruling reptiles&#8221;), a group that also
-includes birds and crocodiles. Scientists first
-began studying dinosaurs during the 1820s, when they discovered the bones of a
-large land reptile they dubbed a Megalosaurus (&#8220;big lizard&#8221;) buried in the
-English countryside. In 1842, Sir Richard Owen, Britain&#8217;s leading paleontologist,
-first coined the term &#8220;dinosaur.&#8221; Owen had examined bones from three different
-creatures&#8211;Megalosaurus, Iguanadon (&#8220;iguana tooth&#8221;) and Hylaeosaurus (&#8220;woodland
-lizard&#8221;). Each of them lived on land, was larger than any living reptile, walked
-with their legs directly beneath their bodies instead of out to the sides and
-had three more vertebrae in their hips than other known reptiles. Using this
-information, Owen determined that the three formed a special group of reptiles,
-which he named Dinosauria. The word comes from the ancient Greek word deinos
-(&#8220;terrible&#8221;) and sauros (&#8220;lizard&#8221; or &#8220;reptile&#8221;). Did you know? Despite the fact
-that dinosaurs no longer walk the Earth as they did during the Mesozoic Era,
-unmistakable traces of these enormous reptiles can be identified in their
-modern-day descendants: birds.</h2>
-
-
-      <h2>&nbsp;&nbsp;&nbsp; Since then,
-dinosaur fossils have been found all over the world and studied by paleontologists
-to find out more about the many different types of these creatures that existed.
-Scientists have traditionally divided the dinosaur group into two orders: the &#8220;bird-hipped&#8221;
-Ornithischia and the &#8220;lizard-hipped&#8221; Saurischia. From there, dinosaurs have been
-broken down into numerous genera (e.g. Tyrannosaurus or Triceratops) and each genus
-into one or more species. Some dinosaurs were bipedal, which means they walked on
-two legs. Some walked on four legs (quadrupedal), and some were able to switch between
-these two walking styles. Some dinosaurs were covered with a type of body armor,
-and some probably had feathers, like their modern bird relatives. Some moved quickly,
-while others were lumbering and slow. Most dinosaurs were herbivores, or plant-eaters,
-but some were carnivorous and hunted or scavenged other dinosaurs in order to survive.</h2>
-
-
-      <h2>&nbsp;&nbsp;&nbsp; At the time the
-dinosaurs arose, all of the Earth&#8217;s continents were connected together in one land
-mass, now known as Pangaea, and surrounded by one enormous ocean. Pangaea began
-to break apart into separate continents during the Early Jurassic Period
-(around 200 million years ago), and dinosaurs would have seen great changes in the
-world in which they lived over the course of their existence. Dinosaurs
-mysteriously disappeared at the end of the Cretaceous Period, around 65 million
-years ago. Many other types of animals, as well as many species of plants, died
-out around the same time, and numerous competing theories exist as to what
-caused this mass extinction. In addition to the great volcanic or tectonic
-activity that was occurring around that time, scientists have also discovered
-that a giant asteroid hit Earth about 65.5 million years ago, landing with the
-force of 180 trillion tons of TNT and spreading an enormous amount of ash all
-over the Earth&#8217;s surface. Deprived of water and sunlight, plants and algae
-would have died, killing off the planet&#8217;s herbivores; after a period of
-surviving on the carcasses of these herbivores, carnivores would have died out
-as well.</h2>
-
-
-      <h2>&nbsp;&nbsp;&nbsp; Despite the fact
-that dinosaurs no longer walk the Earth as they did during the Mesozoic Era,
-unmistakable traces of these enormous reptiles can be identified in their modern-day
-descendants: birds. Dinosaurs also live on in the study of paleontology, and new
-information about them is constantly being uncovered. Finally, judging from
-their frequent appearances in the movies and on television, dinosaurs have a
-firm hold in the popular imagination, one realm in which they show no danger of
-becoming extinct.</h2>
-
-
-</td>
-    </tr>
-  </tbody>
-</table>
-<table style="text-align: left; width: 100%; height: 1%; margin-left: auto; margin-right: auto; background-color: black;" border="0" cellpadding="0" cellspacing="0">
-  <tbody>
-    <tr>
-      <td style="vertical-align: middle; text-align: center; background-color: transparent;">
-      <h1 style="background-color: black;"><a href="#TOP">Go to top of the Page</a></h1>
-      </td>
-    </tr>
-  </tbody>
-</table>
-
-</body></html>
+  <!-- Bootstrap JS Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
