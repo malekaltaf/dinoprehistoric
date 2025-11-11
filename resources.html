@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resources - Prehistoric Dinosaurs</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .section-title {
+      position: relative;
+      padding-bottom: 15px;
+      margin-bottom: 30px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      color: #2c7744; /* Consistent with main-title */
+    }
+    
+    .section-title:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100px;
+      height: 5px;
+      background: #e9ff00; /* Consistent with logo-text */
+      border-radius: 5px;
+    }
+    
+    .card {
+      transition: all 0.3s ease;
+      border-radius: 15px;
+      overflow: hidden;
+      margin-bottom: 20px;
+      box-shadow: 0 6px 10px rgba(0,0,0,0.1);
+    }
+    
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 12px 20px rgba(0,0,0,0.2);
+    }
+    
+    .pdf-card {
+      background: linear-gradient(135deg, #33ccff 0%, #2980b9 100%); /* dino-blue */
+      color: white;
+    }
+    
+    .audio-card {
+      background: linear-gradient(135deg, #33cc00 0%, #27ae60 100%); /* dino-green */
+      color: white;
+    }
+    
+    .btn-dino {
+      background-color: #ff6600; /* dino-orange */
+      color: white;
+      border-radius: 30px;
+      padding: 10px 25px;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      border: none;
+    }
+    
+    .btn-dino:hover {
+      background-color: #e55b00;
+      transform: scale(1.05);
+      color: white;
+    }
+  </style>
+</head>
+<body id="top">
+  <!-- Header -->
+  <header class="site-header sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+          <img src="Images/Logo/download.png" alt="Prehistoric Dinosaurs Logo" height="60">
+          <span class="logo-text ms-2">DinoPrehistoric</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="video.html">Video Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="photo.html">Photo Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="history.html">History</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="resources.html">Resources</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Page Title -->
+  <div class="container mt-4">
+    <div class="text-center mb-4">
+      <h1 class="main-title">Dinosaur Resources</h1>
+      <p class="lead">Explore our collection of PDF documents and dinosaur sounds.</p>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <main class="py-5">
+    <div class="container">
+      <!-- PDF Section -->
+      <section id="pdf-section" class="py-5">
+        <div class="container">
+          <h2 class="section-title text-center">Dinosaur PDF Files</h2>
+          <div class="row g-4">
+            <div class="col-md-4">
+              <div class="card pdf-card">
+                <div class="card-body text-center">
+                  <i class="fas fa-file-pdf fa-4x mb-3"></i>
+                  <h3 class="card-title">Dinosaurs.pdf</h3>
+                  <p class="card-text">Learn about various dinosaur species and their habitats.</p>
+                  <a href="PDFs/Dinosours.pdf" class="btn btn-light mt-3">
+                    <i class="fas fa-download me-2"></i>Download
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card pdf-card">
+                <div class="card-body text-center">
+                  <i class="fas fa-file-pdf fa-4x mb-3"></i>
+                  <h3 class="card-title">Jurassic.pdf</h3>
+                  <p class="card-text">Explore the fascinating Jurassic period of Earth's history.</p>
+                  <a href="PDFs/Jurassic.pdf" class="btn btn-light mt-3">
+                    <i class="fas fa-download me-2"></i>Download
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card pdf-card">
+                <div class="card-body text-center">
+                  <i class="fas fa-file-pdf fa-4x mb-3"></i>
+                  <h3 class="card-title">डायनासोर.pdf</h3>
+                  <p class="card-text">Dinosaur information in Hindi language.</p>
+                  <a href="PDFs/%E0%A4%A1%E0%A4%BE%E0%A4%AF%E0%A4%A8%E0%A4%BE%E0%A4%B8%E0%A5%8B%E0%A4%B0.pdf" class="btn btn-light mt-3">
+                    <i class="fas fa-download me-2"></i>Download
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Songs Section -->
+      <section id="songs-section" class="py-5 bg-light">
+        <div class="container">
+          <h2 class="section-title text-center">Dinosaur Sounds</h2>
+          <div class="row g-4">
+            <!-- Sound 1 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card audio-card">
+                <div class="card-body">
+                  <div class="d-flex align-items-center">
+                    <div class="me-3">
+                      <i class="fas fa-volume-up fa-3x"></i>
+                    </div>
+                    <div>
+                      <h5 class="card-title">Dino Footsteps</h5>
+                      <audio controls class="w-100 mt-2">
+                        <source src="Songs/dinofootstap.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                      </audio>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Sound 2 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card audio-card">
+                <div class="card-body">
+                  <div class="d-flex align-items-center">
+                    <div class="me-3">
+                      <i class="fas fa-volume-up fa-3x"></i>
+                    </div>
+                    <div>
+                      <h5 class="card-title">Dinosaur Roar</h5>
+                      <audio controls class="w-100 mt-2">
+                        <source src="Songs/Dinosaur%20Roar-SoundBible.com-605392672.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                      </audio>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Sound 3 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card audio-card">
+                <div class="card-body">
+                  <div class="d-flex align-items-center">
+                    <div class="me-3">
+                      <i class="fas fa-volume-up fa-3x"></i>
+                    </div>
+                    <div>
+                      <h5 class="card-title">Dinosaur Sound</h5>
+                      <audio controls class="w-100 mt-2">
+                        <source src="Songs/Dinosaur-SoundBible.com-2770858.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                      </audio>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Sound 4 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card audio-card">
+                <div class="card-body">
+                  <div class="d-flex align-items-center">
+                    <div class="me-3">
+                      <i class="fas fa-volume-up fa-3x"></i>
+                    </div>
+                    <div>
+                      <h5 class="card-title">Dragon Roar</h5>
+                      <audio controls class="w-100 mt-2">
+                        <source src="Songs/dragonror.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                      </audio>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Sound 5 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card audio-card">
+                <div class="card-body">
+                  <div class="d-flex align-items-center">
+                    <div class="me-3">
+                      <i class="fas fa-volume-up fa-3x"></i>
+                    </div>
+                    <div>
+                      <h5 class="card-title">Pterodactyl Scream</h5>
+                      <audio controls class="w-100 mt-2">
+                        <source src="Songs/Pterodactyl%20Scream-SoundBible.com-244923111.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                      </audio>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Sound 6 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card audio-card">
+                <div class="card-body">
+                  <div class="d-flex align-items-center">
+                    <div class="me-3">
+                      <i class="fas fa-volume-up fa-3x"></i>
+                    </div>
+                    <div>
+                      <h5 class="card-title">T-Rex Roar</h5>
+                      <audio controls class="w-100 mt-2">
+                        <source src="Songs/Tyrannosaurus%20Rex%20Roar-SoundBible.com-807702404.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                      </audio>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Sound 7 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card audio-card">
+                <div class="card-body">
+                  <div class="d-flex align-items-center">
+                    <div class="me-3">
+                      <i class="fas fa-volume-up fa-3x"></i>
+                    </div>
+                    <div>
+                      <h5 class="card-title">Raptor Call</h5>
+                      <audio controls class="w-100 mt-2">
+                        <source src="Songs/Raptor%20Call-SoundBible.com-858657807.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                      </audio>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Sound 8 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card audio-card">
+                <div class="card-body">
+                  <div class="d-flex align-items-center">
+                    <div class="me-3">
+                      <i class="fas fa-volume-up fa-3x"></i>
+                    </div>
+                    <div>
+                      <h5 class="card-title">Pterodactyl</h5>
+                      <audio controls class="w-100 mt-2">
+                        <source src="Songs/Pterodactyl-SoundBible.com-1158760974.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                      </audio>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Sound 9 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card audio-card">
+                <div class="card-body">
+                  <div class="d-flex align-items-center">
+                    <div class="me-3">
+                      <i class="fas fa-volume-up fa-3x"></i>
+                    </div>
+                    <div>
+                      <h5 class="card-title">T-Rex</h5>
+                      <audio controls class="w-100 mt-2">
+                        <source src="Songs/Tyrannosaurus%20Rex%20-SoundBible.com-45786848.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                      </audio>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer py-4 mt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 text-center text-md-start">
+          <p>&copy; 2025 DinoPrehistoric.com. All rights reserved.</p>
+        </div>
+        <div class="col-md-6 text-center text-md-end">
+          <a href="#top" class="text-white me-3"><i class="fas fa-arrow-up"></i> Back to Top</a>
+          <a href="contact.html" class="text-white">Contact Us</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top Button -->
+  <a href="#top" class="scroll-top" id="backToTop">
+    <i class="fas fa-chevron-up"></i>
+  </a>
+
+  <!-- Bootstrap JS Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

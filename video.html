@@ -1,182 +1,384 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html><head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video Gallery - Prehistoric Dinosaurs</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .video-item {
+      margin-bottom: 15px;
+    }
+    .video-item img {
+      width: 100%;
+      height: 200px; /* Fixed height for uniformity */
+      object-fit: cover; /* Ensures images cover the area without distortion */
+      border-radius: 8px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .video-item img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+  </style>
+</head>
+<body id="top" style="background-image: url('Images/Backgrounds/1.png'); background-size: cover; background-attachment: fixed;">
+  <!-- Header -->
+  <header class="site-header sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+          <img src="Images/Logo/download.png" alt="Prehistoric Dinosaurs Logo" height="60">
+          <span class="logo-text ms-2">DinoPrehistoric</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="video.html">Video Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="photo.html">Photo Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="history.html">History</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="resources.html">Resources</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
 
+  <!-- Page Title -->
+  <div class="container mt-4">
+    <div class="text-center mb-4">
+      <img src="Images/Animated Text/videogallery.gif" alt="Video Gallery" class="img-fluid" width="300" height="100">
+    </div>
+  </div>
 
+  <!-- Main Content - Video Gallery -->
+  <main class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center mb-4">
+          <h1 class="main-title">Our Video Gallery</h1>
+          <p class="lead">Watch fascinating videos about dinosaurs and prehistoric life.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 col-lg-4 video-item">
+          <a href="https://www.youtube.com/embed/dQw4w9WgXcQ" target="_blank">
+            <img src="Images/Logo/videos.png" alt="A Look At Prehistoric Mammals" class="img-fluid" width="100%" height="auto">
+            <div class="text-center mt-2">A Look At Prehistoric Mammals</div>
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-4 video-item">
+          <a href="https://www.youtube.com/embed/dQw4w9WgXcQ" target="_blank">
+            <img src="Images/Logo/videos.png" alt="A Look INSIDE Dinosaurs" class="img-fluid" width="100%" height="auto">
+            <div class="text-center mt-2">A Look INSIDE Dinosaurs</div>
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-4 video-item">
+          <a href="https://www.youtube.com/embed/dQw4w9WgXcQ" target="_blank">
+            <img src="Images/Logo/videos.png" alt="Baby Dinosaur's First Flight!" class="img-fluid" width="100%" height="auto">
+            <div class="text-center mt-2">Baby Dinosaur's First Flight!</div>
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-4 video-item">
+          <a href="https://www.youtube.com/embed/dQw4w9WgXcQ" target="_blank">
+            <img src="Images/Logo/videos.png" alt="Big HORNED Dinosaurs" class="img-fluid" width="100%" height="auto">
+            <div class="text-center mt-2">Big HORNED Dinosaurs</div>
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-4 video-item">
+          <a href="https://www.youtube.com/embed/dQw4w9WgXcQ" target="_blank">
+            <img src="Images/Logo/videos.png" alt="Biggest T-Rex BATTLES!" class="img-fluid" width="100%" height="auto">
+            <div class="text-center mt-2">Biggest T-Rex BATTLES!</div>
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-4 video-item">
+          <a href="https://www.youtube.com/embed/dQw4w9WgXcQ" target="_blank">
+            <img src="Images/Logo/videos.png" alt="Completed Dinosaur Fossils Revealed" class="img-fluid" width="100%" height="auto">
+            <div class="text-center mt-2">Completed Dinosaur Fossils Revealed</div>
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-4 video-item">
+          <a href="https://www.youtube.com/embed/dQw4w9WgXcQ" target="_blank">
+            <img src="Images/Logo/videos.png" alt="Crazy Dinosaur Mating Dance" class="img-fluid" width="100%" height="auto">
+            <div class="text-center mt-2">Crazy Dinosaur Mating Dance</div>
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-4 video-item">
+          <a href="https://www.youtube.com/embed/dQw4w9WgXcQ" target="_blank">
+            <img src="Images/Logo/videos.png" alt="Cutest Baby Dinosaurs" class="img-fluid" width="100%" height="auto">
+            <div class="text-center mt-2">Cutest Baby Dinosaurs</div>
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-4 video-item">
+          <a href="https://www.youtube.com/embed/dQw4w9WgXcQ" target="_blank">
+            <img src="Images/Logo/videos.png" alt="DANGER_ Attack of the Nighttime Dinosaur!" class="img-fluid" width="100%" height="auto">
+            <div class="text-center mt-2">DANGER_ Attack of the Nighttime Dinosaur!</div>
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-4 video-item">
+          <a href="https://www.youtube.com/embed/dQw4w9WgXcQ" target="_blank">
+            <img src="Images/Logo/videos.png" alt="Dinos Invade Our World!" class="img-fluid" width="100%" height="auto">
+            <div class="text-center mt-2">Dinos Invade Our World!</div>
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-4 video-item">
+          <a href="https://www.youtube.com/embed/dQw4w9WgXcQ" target="_blank">
+            <img src="Images/Logo/videos.png" alt="Dinosaur Babies In Danger!" class="img-fluid" width="100%" height="auto">
+            <div class="text-center mt-2">Dinosaur Babies In Danger!</div>
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-4 video-item">
+          <a href="https://www.youtube.com/embed/dQw4w9WgXcQ" target="_blank">
+            <img src="Images/Logo/videos.png" alt="Dinosaur Eats Poison Mushrooms!" class="img-fluid" width="100%" height="auto">
+            <div class="text-center mt-2">Dinosaur Eats Poison Mushrooms!</div>
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-4 video-item">
+          <a href="https://www.youtube.com/embed/dQw4w9WgXcQ" target="_blank">
+            <img src="Images/Logo/videos.png" alt="Dinosaur Heroes" class="img-fluid" width="100%" height="auto">
+            <div class="text-center mt-2">Dinosaur Heroes</div>
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-4 video-item">
+          <a href="https://www.youtube.com/embed/dQw4w9WgXcQ" target="_blank">
+            <img src="Images/Logo/videos.png" alt="Dinosaur Hordes On The Move" class="img-fluid" width="100%" height="auto">
+            <div class="text-center mt-2">Dinosaur Hordes On The Move</div>
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-4 video-item">
+          <a href="https://www.youtube.com/embed/dQw4w9WgXcQ" target="_blank">
+            <img src="Images/Logo/videos.png" alt="Dinosaur ROMANCE" class="img-fluid" width="100%" height="auto">
+            <div class="text-center mt-2">Dinosaur ROMANCE</div>
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-4 video-item">
+          <a href="https://www.youtube.com/embed/dQw4w9WgXcQ" target="_blank">
+            <img src="Images/Logo/videos.png" alt="Dinosaurs In Love" class="img-fluid" width="100%" height="auto">
+            <div class="text-center mt-2">Dinosaurs In Love</div>
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-4 video-item">
+          <a href="https://www.youtube.com/embed/dQw4w9WgXcQ" target="_blank">
+            <img src="Images/Logo/videos.png" alt="Dinosaurs Running From Danger!" class="img-fluid" width="100%" height="auto">
+            <div class="text-center mt-2">Dinosaurs Running From Danger!</div>
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-4 video-item">
+          <a href="https://www.youtube.com/embed/dQw4w9WgXcQ" target="_blank">
+            <img src="Images/Logo/videos.png" alt="Epic Turf Battle!" class="img-fluid" width="100%" height="auto">
+            <div class="text-center mt-2">Epic Turf Battle!</div>
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-4 video-item">
+          <a href="https://www.youtube.com/embed/dQw4w9WgXcQ" target="_blank">
+            <img src="Images/Logo/videos.png" alt="Even Bigger Dinosaur Battles!" class="img-fluid" width="100%" height="auto">
+            <div class="text-center mt-2">Even Bigger Dinosaur Battles!</div>
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-4 video-item">
+          <a href="https://www.youtube.com/embed/dQw4w9WgXcQ" target="_blank">
+            <img src="Images/Logo/videos.png" alt="Exclusive Video of Tyrannosaurus Rex the KILLER!" class="img-fluid" width="100%" height="auto">
+            <div class="text-center mt-2">Exclusive Video of Tyrannosaurus Rex the KILLER!</div>
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-4 video-item">
+          <a href="https://www.youtube.com/embed/dQw4w9WgXcQ" target="_blank">
+            <img src="Images/Logo/videos.png" alt="Feathered Dinosaurs_ Bird Ancestors_!" class="img-fluid" width="100%" height="auto">
+            <div class="text-center mt-2">Feathered Dinosaurs_ Bird Ancestors_!</div>
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-4 video-item">
+          <a href="https://www.youtube.com/embed/dQw4w9WgXcQ" target="_blank">
+            <img src="Images/Logo/videos.png" alt="GROSS Dinosaur Stuff" class="img-fluid" width="100%" height="auto">
+            <div class="text-center mt-2">GROSS Dinosaur Stuff</div>
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-4 video-item">
+          <a href="https://www.youtube.com/embed/dQw4w9WgXcQ" target="_blank">
+            <img src="Images/Logo/videos.png" alt="How Dinosaurs Are Born" class="img-fluid" width="100%" height="auto">
+            <div class="text-center mt-2">How Dinosaurs Are Born</div>
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-4 video-item">
+          <a href="https://www.youtube.com/embed/dQw4w9WgXcQ" target="_blank">
+            <img src="Images/Logo/videos.png" alt="How Dinosaurs Went Extinct!" class="img-fluid" width="100%" height="auto">
+            <div class="text-center mt-2">How Dinosaurs Went Extinct!</div>
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-4 video-item">
+          <a href="https://www.youtube.com/embed/dQw4w9WgXcQ" target="_blank">
+            <img src="Images/Logo/videos.png" alt="KILLER Dinosaur Bugs!" class="img-fluid" width="100%" height="auto">
+            <div class="text-center mt-2">KILLER Dinosaur Bugs!</div>
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-4 video-item">
+          <a href="https://www.youtube.com/embed/dQw4w9WgXcQ" target="_blank">
+            <img src="Images/Logo/videos.png" alt="Laziest Dinosaurs Ever" class="img-fluid" width="100%" height="auto">
+            <div class="text-center mt-2">Laziest Dinosaurs Ever</div>
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-4 video-item">
+          <a href="https://www.youtube.com/embed/dQw4w9WgXcQ" target="_blank">
+            <img src="Images/Logo/videos.png" alt="Look Inside A Dinosaur!" class="img-fluid" width="100%" height="auto">
+            <div class="text-center mt-2">Look Inside A Dinosaur!</div>
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-4 video-item">
+          <a href="https://www.youtube.com/embed/dQw4w9WgXcQ" target="_blank">
+            <img src="Images/Logo/videos.png" alt="Mammoths Hunted for their Hides" class="img-fluid" width="100%" height="auto">
+            <div class="text-center mt-2">Mammoths Hunted for their Hides</div>
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-4 video-item">
+          <a href="https://www.youtube.com/embed/dQw4w9WgXcQ" target="_blank">
+            <img src="Images/Logo/videos.png" alt="MEGA-HUGE_ The Biggest Dinosaurs Ever!" class="img-fluid" width="100%" height="auto">
+            <div class="text-center mt-2">MEGA-HUGE_ The Biggest Dinosaurs Ever!</div>
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-4 video-item">
+          <a href="https://www.youtube.com/embed/dQw4w9WgXcQ" target="_blank">
+            <img src="Images/Logo/videos.png" alt="Most Gruesome Dinosaur Deaths" class="img-fluid" width="100%" height="auto">
+            <div class="text-center mt-2">Most Gruesome Dinosaur Deaths</div>
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-4 video-item">
+          <a href="https://www.youtube.com/embed/dQw4w9WgXcQ" target="_blank">
+            <img src="Images/Logo/videos.png" alt="Only The Strong Survive_ Dinosaurs BATTLE" class="img-fluid" width="100%" height="auto">
+            <div class="text-center mt-2">Only The Strong Survive_ Dinosaurs BATTLE</div>
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-4 video-item">
+          <a href="https://www.youtube.com/embed/dQw4w9WgXcQ" target="_blank">
+            <img src="Images/Logo/videos.png" alt="Prehistoric Beavers Make A Daring Escape!!" class="img-fluid" width="100%" height="auto">
+            <div class="text-center mt-2">Prehistoric Beavers Make A Daring Escape!!</div>
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-4 video-item">
+          <a href="https://www.youtube.com/embed/dQw4w9WgXcQ" target="_blank">
+            <img src="Images/Logo/videos.png" alt="Prehistoric Flying Squirrels Take Flight!" class="img-fluid" width="100%" height="auto">
+            <div class="text-center mt-2">Prehistoric Flying Squirrels Take Flight!</div>
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-4 video-item">
+          <a href="https://www.youtube.com/embed/dQw4w9WgXcQ" target="_blank">
+            <img src="Images/Logo/videos.png" alt="RUTHLESS Dinosaur Take Downs! In CGI!" class="img-fluid" width="100%" height="auto">
+            <div class="text-center mt-2">RUTHLESS Dinosaur Take Downs! In CGI!</div>
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-4 video-item">
+          <a href="https://www.youtube.com/embed/dQw4w9WgXcQ" target="_blank">
+            <img src="Images/Logo/videos.png" alt="SCARY Dinosaur Roars!" class="img-fluid" width="100%" height="auto">
+            <div class="text-center mt-2">SCARY Dinosaur Roars!</div>
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-4 video-item">
+          <a href="https://www.youtube.com/embed/dQw4w9WgXcQ" target="_blank">
+            <img src="Images/Logo/videos.png" alt="Small But Deadly!" class="img-fluid" width="100%" height="auto">
+            <div class="text-center mt-2">Small But Deadly!</div>
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-4 video-item">
+          <a href="https://www.youtube.com/embed/dQw4w9WgXcQ" target="_blank">
+            <img src="Images/Logo/videos.png" alt="Small Dinosaurs Get Their Revenge" class="img-fluid" width="100%" height="auto">
+            <div class="text-center mt-2">Small Dinosaurs Get Their Revenge</div>
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-4 video-item">
+          <a href="https://www.youtube.com/embed/dQw4w9WgXcQ" target="_blank">
+            <img src="Images/Logo/videos.png" alt="SO CUTE_ Sleeping Dinosaurs!!" class="img-fluid" width="100%" height="auto">
+            <div class="text-center mt-2">SO CUTE_ Sleeping Dinosaurs!!</div>
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-4 video-item">
+          <a href="https://www.youtube.com/embed/dQw4w9WgXcQ" target="_blank">
+            <img src="Images/Logo/videos.png" alt="So You Think Dinosaurs Can Dance" class="img-fluid" width="100%" height="auto">
+            <div class="text-center mt-2">So You Think Dinosaurs Can Dance</div>
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-4 video-item">
+          <a href="https://www.youtube.com/embed/dQw4w9WgXcQ" target="_blank">
+            <img src="Images/Logo/videos.png" alt="SUPER-CUTE VIDEO OF DINOSAUR BABIES!!!" class="img-fluid" width="100%" height="auto">
+            <div class="text-center mt-2">SUPER-CUTE VIDEO OF DINOSAUR BABIES!!!</div>
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-4 video-item">
+          <a href="https://www.youtube.com/embed/dQw4w9WgXcQ" target="_blank">
+            <img src="Images/Logo/videos.png" alt="These Dinosaurs Are Hungry!" class="img-fluid" width="100%" height="auto">
+            <div class="text-center mt-2">These Dinosaurs Are Hungry!</div>
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-4 video-item">
+          <a href="https://www.youtube.com/embed/dQw4w9WgXcQ" target="_blank">
+            <img src="Images/Logo/videos.png" alt="T-Rex Babies In HUGE Danger!" class="img-fluid" width="100%" height="auto">
+            <div class="text-center mt-2">T-Rex Babies In HUGE Danger!</div>
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-4 video-item">
+          <a href="https://www.youtube.com/embed/dQw4w9WgXcQ" target="_blank">
+            <img src="Images/Logo/videos.png" alt="What Did Dinosaurs Eat" class="img-fluid" width="100%" height="auto">
+            <div class="text-center mt-2">What Did Dinosaurs Eat</div>
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-4 video-item">
+          <a href="https://www.youtube.com/embed/dQw4w9WgXcQ" target="_blank">
+            <img src="Images/Logo/videos.png" alt="When Dinosaurs ATTACK!" class="img-fluid" width="100%" height="auto">
+            <div class="text-center mt-2">When Dinosaurs ATTACK!</div>
+          </a>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col-12 text-center">
+          <a href="viduni.html" class="btn btn-success btn-lg">For More Videos Go to Video Univers</a>
+        </div>
+      </div>
+    </div>
+  </main>
 
+  <!-- Footer -->
+  <footer class="footer py-4 mt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 text-center text-md-start">
+          <p>&copy; 2025 DinoPrehistoric.com. All rights reserved.</p>
+        </div>
+        <div class="col-md-6 text-center text-md-end">
+          <a href="#top" class="text-white me-3"><i class="fas fa-arrow-up"></i> Back to Top</a>
+          <a href="contact.html" class="text-white">Contact Us</a>
+        </div>
+      </div>
+    </div>
+  </footer>
 
+  <!-- Scroll to Top Button -->
+  <a href="#top" class="scroll-top" id="backToTop">
+    <i class="fas fa-chevron-up"></i>
+  </a>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<meta content="text/html; charset=ISO-8859-1" http-equiv="content-type"><title>videogallery.dinoprehistoric.com</title><style type="text/css">
-h1 {
-  border-color: black;
-  font-family: Curlz MT;
-  text-decoration: none;
-  background-color: transparent;
-  font-size: x-large;
-}
-
-</style></head><body style="color: rgb(0, 0, 0); background-color: rgb(255, 255, 255); background-image: url(Images/Backgrounds/1.png);" alink="#000099" link="white" vlink="white">
-<a name="top"></a>
-<table style="text-align: left; height: 1%; background-color: rgb(153, 51, 0); width: 100%; margin-left: auto; margin-right: auto;" border="0" cellpadding="2" cellspacing="2">
-<tbody>
-<tr>
-      <td style="vertical-align: middle; text-align: center; width: 78px;"><a href="menu.html"><img style="border: 0px solid ; width: 50px; height: 50px;" src="Images/NegKeys/M.png" alt="M.png"></a><br>
-      <a href="menu.html">MENU</a></td>
-      <td style="vertical-align: middle; text-align: right; width: 12px;"><img style="width: 100px; height: 100px;" src="Images/Logo/download.png" alt="download.png"></td>
-
-<td style="vertical-align: middle; text-align: left; width: 383px;"><img style="width: 500px; height: 101px;" src="Images/Banners/Final.png" alt="Final.png"> </td>
-</tr>
-</tbody>
-</table><table style="text-align: left; width: 100%; height: 1%; margin-left: auto; margin-right: auto; background-color: black;" border="0" cellpadding="2" cellspacing="2">
-<tbody>
-<tr>
-<td style="vertical-align: middle; text-align: center;">
-      
-      
-      
-      <h1><span style="font-weight: bold;"><a href="index.html">Home</a></span><span style="font-family: Lucida Calligraphy; font-weight: bold;"><br>
-      </span></h1>
-
-
-
-</td>
-<td style="vertical-align: middle; text-align: center;">
-      
-      
-      <h1><a href="video.html"><span style="font-weight: bold;">Video
-Gallery</span></a></h1>
-
-
-</td>
-<td style="vertical-align: middle; text-align: center;">
-      
-      
-      <h1><span style="font-weight: bold;"><a href="photo.html">Photo
-Gallery</a></span><span style="font-family: Lucida Calligraphy; font-weight: bold;"><br>
-      </span></h1>
-
-
-</td>
-<td style="vertical-align: middle; text-align: center;">
-      
-      
-      <h1><span style="font-weight: bold;"><a href="contact.html">Contact
-us</a></span><span style="font-family: Lucida Calligraphy; font-weight: bold;"><br>
-      </span></h1>
-
-
-</td>
-<td style="vertical-align: middle; text-align: center;">
-      
-      
-      <h1><span style="font-weight: bold;"><a href="about.html">About
-us</a></span><span style="font-family: Lucida Calligraphy; font-weight: bold;"><br>
-      </span></h1>
-
-
-</td>
-<td style="vertical-align: middle; text-align: center;">
-      
-      
-      <h1><a href="history.html"><span style="font-weight: bold;">History</span></a></h1>
-
-
-</td>
-</tr>
-</tbody>
-</table><table style="text-align: left; width: 100%; height: 1%; margin-left: auto; margin-right: auto;" border="0" cellpadding="2" cellspacing="2">
-<tbody>
-<tr>
-<td style="vertical-align: middle; text-align: center;"><img style="width: 100%; height: 100%;" src="Images/Animated%20Text/videogallery.gif" alt="videogallery.gif"></td>
-</tr>
-</tbody>
-</table>
-<table style="background-color: rgb(102, 255, 153); height: 1%; text-align: left; margin-right: auto; width: 100%; margin-left: auto;" border="2" cellpadding="0" cellspacing="2">
-<tbody>
-<tr>
-<td style="text-align: center; width: 349px;"><a href="Videoder%20Downloads/A%20Look%20At%20Prehistoric%20Mammals%20%28%20720%20X%201280%20%29.mp4"><img style="border: 0px solid ; width: 100%; height: 100%;" src="GifStudio/bigandsmalldino.gif" alt="bigandsmalldino.gif"></a></td>
-<td style="text-align: center; width: 350px;"><a href="Videoder%20Downloads/A%20Look%20INSIDE%20Dinosaurs%20%28%20480%20X%20854%20%29.mp4"><img style="border: 0px solid ; width: 100%; height: 100%;" src="GifStudio/dinobabys.gif" alt="dinobabys.gif"></a></td>
-
-</tr>
-<tr>
-<td style="text-align: center; background-color: rgb(102, 255, 255); width: 349px;"><marquee>A Look At Prehistoric Mammals .mp4</marquee></td>
-<td style="text-align: center; background-color: rgb(102, 255, 255); width: 350px;">
-<marquee>A Look INSIDE Dinosaurs.mp4</marquee>
-</td>
-
-</tr>
-<tr>
-<td style="text-align: center; width: 349px;"><a href="Videoder%20Downloads/Big%20HORNED%20Dinosaurs%20%28%20480%20X%20854%20%29.mp4"><img style="border: 0px solid ; width: 100%; height: 100%;" src="GifStudio/dinoeating.gif" alt="dinoeating.gif"></a></td>
-<td style="text-align: center; width: 350px;"><a href="Videoder%20Downloads/Biggest%20T-Rex%20BATTLES%21%20%28%20480%20X%20854%20%29.mp4"><img style="border: 0px solid ; width: 100%; height: 100%;" src="GifStudio/DinoGrasing.gif" alt="DinoGrasing.gif"></a></td>
-
-</tr>
-<tr>
-<td style="text-align: center; background-color: rgb(102, 255, 255); width: 349px;"><marquee>Big HORNED Dinosaurs</marquee></td>
-<td style="text-align: center; background-color: rgb(102, 255, 255); width: 350px;"><marquee>Biggest T-Rex BATTLES!.mp4</marquee></td>
-
-</tr>
-<tr>
-<td style="text-align: center; width: 349px;"><a href="Videoder%20Downloads/Crazy%20Dinosaur%20Mating%20Dance%20%28%20480%20X%20854%20%29.mp4"><img style="border: 0px solid ; width: 100%; height: 100%;" src="GifStudio/KilllerDinos.gif" alt="KilllerDinos.gif"></a></td>
-<td style="text-align: center; width: 350px;"><a href="Videoder%20Downloads/Cutest%20Baby%20Dinosaurs%20%28%20480%20X%20854%20%29.mp4"><img style="border: 0px solid ; width: 100%; height: 100%;" src="GifStudio/littledino.gif" alt="littledino.gif"></a></td>
-
-</tr>
-<tr>
-<td style="text-align: center; background-color: rgb(102, 255, 255); width: 349px;"><marquee>Crazy Dinosaur Mating Dance.mp4</marquee></td>
-<td style="text-align: center; background-color: rgb(102, 255, 255); width: 350px;"><marquee>Cutest Baby Dinosaurs.mp4</marquee></td>
-
-</tr><tr>
-      <td style="vertical-align: middle; text-align: center; width: 349px;"><a href="Videoder%20Downloads/Baby%20Dinosaur%27s%20First%20Flight%21%20%28%20480%20X%20854%20%29.mp4"><img style="border: 0px solid ; width: 100%; height: 100%;" src="GifStudio/dinodancing.gif" alt="dinodancing.gif"></a></td>
-      <td style="vertical-align: middle; text-align: center; width: 350px;"><a href="Videoder%20Downloads/Completed%20Dinosaur%20Fossils%20Revealed%20%28%20480%20X%20854%20%29.mp4"><img style="border: 0px solid ; width: 100%; height: 100%;" src="GifStudio/Dinohugs.gif" alt="Dinohugs.gif"></a></td>
-    </tr>
-    <tr>
-      <td style="vertical-align: middle; text-align: center; background-color: rgb(51, 255, 255); width: 349px;"><marquee>Baby Dinosaur's First Flight!</marquee></td>
-      <td style="vertical-align: middle; text-align: center; background-color: rgb(51, 255, 255); width: 350px;"><marquee>Completed Dinosaur Fossils Revealed</marquee></td>
-    </tr>
-
-</tbody>
-</table>
-<table style="text-align: left; width: 100%; height: 1%; margin-left: auto; margin-right: auto; font-family: monospace;" border="0" cellpadding="2" cellspacing="2">
-  <tbody>
-    <tr>
-      <td style="vertical-align: middle; text-align: center;">
-      <h1><a href="viduni.html">For More Videos Go to Video Univers(viduni.dinoprehistoric.com)</a></h1>
-      </td>
-    </tr>
-  </tbody>
-</table>
-<table style="text-align: left; width: 100%; height: 1%; margin-left: auto; margin-right: auto;" border="0" cellpadding="0" cellspacing="0">
-  <tbody>
-    <tr>
-      <td style="vertical-align: middle; text-align: center; width: 429px;">
-      <img style="width: 450px; height: 25px;" src="Images/Animations%20By%20MM%20Flash%208/Loading.gif" alt="Loading.gif">
-      </td>
-      <td style="vertical-align: middle; text-align: center; width: 278px;">
-      <h1><a href="#top">Go to top of the Page</a></h1>
-      </td>
-    </tr>
-  </tbody>
-</table>
-
-
-</body></html>
+  <!-- Bootstrap JS Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

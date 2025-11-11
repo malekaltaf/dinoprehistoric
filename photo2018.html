@@ -1,144 +1,239 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html><head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photo Gallery 2018 - Prehistoric Dinosaurs</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .gallery-item {
+      margin-bottom: 15px;
+    }
+    .gallery-item img {
+      width: 100%;
+      height: 200px; /* Fixed height for uniformity */
+      object-fit: cover; /* Ensures images cover the area without distortion */
+      border-radius: 8px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .gallery-item img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+  </style>
+</head>
+<body id="top" style="background-image: url('Images/Big Size/mystery-1599527_960_720.jpg'); background-size: cover; background-attachment: fixed;">
+  <!-- Header -->
+  <header class="site-header sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+          <img src="Images/Logo/download.png" alt="Prehistoric Dinosaurs Logo" height="60">
+          <span class="logo-text ms-2">DinoPrehistoric</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="video.html">Video Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="photo.html">Photo Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="photo2018.html">Photo Gallery 2018</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="history.html">History</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="resources.html">Resources</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
 
+  <!-- Page Title -->
+  <div class="container mt-4">
+    <div class="text-center mb-4">
+      <h1 class="main-title">Photo Gallery 2018</h1>
+      <p class="lead">A collection of images from 2018.</p>
+    </div>
+  </div>
 
+  <!-- Main Content - Photo Gallery -->
+  <main class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 col-sm-6 gallery-item">
+          <img src="Images/Gallery60/1.png" alt="Dinosaur Image 1" class="img-fluid">
+        </div>
+        <div class="col-md-4 col-sm-6 gallery-item">
+          <img src="Images/Gallery60/2.png" alt="Dinosaur Image 2" class="img-fluid">
+        </div>
+        <div class="col-md-4 col-sm-6 gallery-item">
+          <img src="Images/Gallery60/3.png" alt="Dinosaur Image 3" class="img-fluid">
+        </div>
+        <div class="col-md-4 col-sm-6 gallery-item">
+          <img src="Images/Gallery60/4.png" alt="Dinosaur Image 4" class="img-fluid">
+        </div>
+        <div class="col-md-4 col-sm-6 gallery-item">
+          <img src="Images/Gallery60/5.png" alt="Dinosaur Image 5" class="img-fluid">
+        </div>
+        <div class="col-md-4 col-sm-6 gallery-item">
+          <img src="Images/Gallery60/6.png" alt="Dinosaur Image 6" class="img-fluid">
+        </div>
+        <div class="col-md-4 col-sm-6 gallery-item">
+          <img src="Images/Gallery60/7.png" alt="Dinosaur Image 7" class="img-fluid">
+        </div>
+        <div class="col-md-4 col-sm-6 gallery-item">
+          <img src="Images/Gallery60/8.png" alt="Dinosaur Image 8" class="img-fluid">
+        </div>
+        <div class="col-md-4 col-sm-6 gallery-item">
+          <img src="Images/Gallery60/9.png" alt="Dinosaur Image 9" class="img-fluid">
+        </div>
+        <div class="col-md-4 col-sm-6 gallery-item">
+          <img src="Images/Gallery60/10.png" alt="Dinosaur Image 10" class="img-fluid">
+        </div>
+        <div class="col-md-4 col-sm-6 gallery-item">
+          <img src="Images/Gallery60/11.png" alt="Dinosaur Image 11" class="img-fluid">
+        </div>
+        <div class="col-md-4 col-sm-6 gallery-item">
+          <img src="Images/Gallery60/12.png" alt="Dinosaur Image 12" class="img-fluid">
+        </div>
+        <div class="col-md-4 col-sm-6 gallery-item">
+          <img src="Images/Gallery60/13.png" alt="Dinosaur Image 13" class="img-fluid">
+        </div>
+        <div class="col-md-4 col-sm-6 gallery-item">
+          <img src="Images/Gallery60/14.png" alt="Dinosaur Image 14" class="img-fluid">
+        </div>
+        <div class="col-md-4 col-sm-6 gallery-item">
+          <img src="Images/Gallery60/15.png" alt="Dinosaur Image 15" class="img-fluid">
+        </div>
+        <div class="col-md-4 col-sm-6 gallery-item">
+          <img src="Images/Gallery60/16.png" alt="Dinosaur Image 16" class="img-fluid">
+        </div>
+        <div class="col-md-4 col-sm-6 gallery-item">
+          <img src="Images/Gallery60/17.png" alt="Dinosaur Image 17" class="img-fluid">
+        </div>
+        <div class="col-md-4 col-sm-6 gallery-item">
+          <img src="Images/Gallery60/18.png" alt="Dinosaur Image 18" class="img-fluid">
+        </div>
+        <div class="col-md-4 col-sm-6 gallery-item">
+          <img src="Images/Gallery60/19.png" alt="Dinosaur Image 19" class="img-fluid">
+        </div>
+        <div class="col-md-4 col-sm-6 gallery-item">
+          <img src="Images/Gallery60/20.png" alt="Dinosaur Image 20" class="img-fluid">
+        </div>
+        <div class="col-md-4 col-sm-6 gallery-item">
+          <img src="Images/Gallery60/21.png" alt="Dinosaur Image 21" class="img-fluid">
+        </div>
+        <div class="col-md-4 col-sm-6 gallery-item">
+          <img src="Images/Gallery60/22.png" alt="Dinosaur Image 22" class="img-fluid">
+        </div>
+        <div class="col-md-4 col-sm-6 gallery-item">
+          <img src="Images/Gallery60/23.png" alt="Dinosaur Image 23" class="img-fluid">
+        </div>
+        <div class="col-md-4 col-sm-6 gallery-item">
+          <img src="Images/Gallery60/24.png" alt="Dinosaur Image 24" class="img-fluid">
+        </div>
+        <div class="col-md-4 col-sm-6 gallery-item">
+          <img src="Images/Gallery60/25.png" alt="Dinosaur Image 25" class="img-fluid">
+        </div>
+        <div class="col-md-4 col-sm-6 gallery-item">
+          <img src="Images/Gallery60/26.png" alt="Dinosaur Image 26" class="img-fluid">
+        </div>
+        <div class="col-md-4 col-sm-6 gallery-item">
+          <img src="Images/Gallery60/27.png" alt="Dinosaur Image 27" class="img-fluid">
+        </div>
+        <div class="col-md-4 col-sm-6 gallery-item">
+          <img src="Images/Gallery60/28.png" alt="Dinosaur Image 28" class="img-fluid">
+        </div>
+        <div class="col-md-4 col-sm-6 gallery-item">
+          <img src="Images/Gallery60/29.png" alt="Dinosaur Image 29" class="img-fluid">
+        </div>
+        <div class="col-md-4 col-sm-6 gallery-item">
+          <img src="Images/Gallery60/30.png" alt="Dinosaur Image 30" class="img-fluid">
+        </div>
+        <div class="col-md-4 col-sm-6 gallery-item">
+          <img src="Images/Gallery60/31.png" alt="Dinosaur Image 31" class="img-fluid">
+        </div>
+        <div class="col-md-4 col-sm-6 gallery-item">
+          <img src="Images/Gallery60/32.png" alt="Dinosaur Image 32" class="img-fluid">
+        </div>
+        <div class="col-md-4 col-sm-6 gallery-item">
+          <img src="Images/Gallery60/33.png" alt="Dinosaur Image 33" class="img-fluid">
+        </div>
+        <div class="col-md-4 col-sm-6 gallery-item">
+          <img src="Images/Gallery60/34.png" alt="Dinosaur Image 34" class="img-fluid">
+        </div>
+        <div class="col-md-4 col-sm-6 gallery-item">
+          <img src="Images/Gallery60/35.png" alt="Dinosaur Image 35" class="img-fluid">
+        </div>
+        <div class="col-md-4 col-sm-6 gallery-item">
+          <img src="Images/Gallery60/36.png" alt="Dinosaur Image 36" class="img-fluid">
+        </div>
+        <div class="col-md-4 col-sm-6 gallery-item">
+          <img src="Images/Gallery60/37.png" alt="Dinosaur Image 37" class="img-fluid">
+        </div>
+        <div class="col-md-4 col-sm-6 gallery-item">
+          <img src="Images/Gallery60/38.png" alt="Dinosaur Image 38" class="img-fluid">
+        </div>
+        <div class="col-md-4 col-sm-6 gallery-item">
+          <img src="Images/Gallery60/39.png" alt="Dinosaur Image 39" class="img-fluid">
+        </div>
+        <div class="col-md-4 col-sm-6 gallery-item">
+          <img src="Images/Gallery60/40.png" alt="Dinosaur Image 40" class="img-fluid">
+        </div>
+        <div class="col-md-4 col-sm-6 gallery-item">
+          <img src="Images/Gallery60/41.png" alt="Dinosaur Image 41" class="img-fluid">
+        </div>
+        <div class="col-md-4 col-sm-6 gallery-item">
+          <img src="Images/Gallery60/42.png" alt="Dinosaur Image 42" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </main>
 
+  <!-- Footer -->
+  <footer class="footer py-4 mt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 text-center text-md-start">
+          <p>&copy; 2025 DinoPrehistoric.com. All rights reserved.</p>
+        </div>
+        <div class="col-md-6 text-center text-md-end">
+          <a href="#top" class="text-white me-3"><i class="fas fa-arrow-up"></i> Back to Top</a>
+          <a href="contact.html" class="text-white">Contact Us</a>
+        </div>
+      </div>
+    </div>
+  </footer>
 
+  <!-- Scroll to Top Button -->
+  <a href="#top" class="scroll-top" id="backToTop">
+    <i class="fas fa-chevron-up"></i>
+  </a>
 
-
-
-
-
-
-
-
-
-<meta content="text/html; charset=ISO-8859-1" http-equiv="content-type"><title>photogallery_2018.dinoprehistoric.com</title>
-
-<style type="text/css">
-h1 {
-  border-style: groove;
-  border-color: white;
-  font-family: Chiller;
-  color: white;
-  text-decoration: none;
-  font-weight: inherit;
-  text-align: center;
-  background-color: transparent;
-}
-h2 {
-  font-family: Jokerman;
-  color: #3366ff;
-  font-weight: inherit;
-}
-h3 {
-  font-family: Stencil Std;
-  color: #6666cc;
-  font-weight: bolder;
-  font-style: normal;
-  text-transform: lowercase;
-  text-align: center;
-}
-
-</style></head><body style="background-image: url(Images/Big%20Size/mystery-1599527_960_720.jpg); color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);" alink="#000099" link="white" vlink="white">
-<a name="top"></a><table style="text-align: left; width: 100%; height: 1%; margin-left: auto; margin-right: auto; color: black;" border="0" cellpadding="2" cellspacing="2">
-  <tbody>
-    <tr>
-      <td style="vertical-align: middle; text-align: center;">
-      <h1>Photo Gallery 2018<br>
-</h1>
-      </td>
-    </tr>
-  </tbody>
-</table>
-
-  
-<table style="text-align: left; width: 713px; height: 99px; margin-left: auto; margin-right: auto;" border="0" cellpadding="2" cellspacing="2">
-  <tbody>
-    <tr>
-      <td style="vertical-align: middle; height: 84px; color: black; text-align: left; width: 293px;"><a href="photo.html"><img style="border: 0px solid ; width: 52px; height: 42px;" src="Images/NegKeys/1.png" alt="1.png"></a></td>
-      <td style="vertical-align: middle; text-align: center; width: 95px; height: 84px; background-color: black;"><a href="menu.html"><img style="border: 0px solid ; width: 50px; height: 50px;" src="Images/NegKeys/M.png" alt="M.png"></a><br>
-      <a href="menu.html">MENU</a><a href="menu.html"><br>
-      </a></td>
-      <td style="vertical-align: middle; text-align: center; width: 314px; height: 84px;">
-      <h1><a href="index.html">HOME</a></h1>
-
-      </td>
-    </tr>
-  </tbody>
-</table>
-<table style="text-align: left; width: 100%; height: 1%; margin-left: auto; margin-right: auto;" border="0" cellpadding="0" cellspacing="0">
-  <tbody>
-    <tr>
-      <td style="vertical-align: middle; text-align: center;"><a href="image1.html"><img style="border: 0px solid ; width: 100%; height: 100%;" src="Images/PhotoGallery/1.png" alt="1.png"></a></td>
-    </tr>
-    <tr>
-      <td style="text-align: center;"><a href="image10.html"><img alt="10.png" src="Images/PhotoGallery/10.png" style="border: 0px solid ; width: 100%; height: 100%;"></a></td>
-    </tr>
-    <tr>
-      <td style="text-align: center;"><a href="image12.html"><img style="border: 0px solid ; width: 100%; height: 100%;" src="Images/PhotoGallery/12.png" alt="12.png"></a></td>
-    </tr>
-    <tr>
-      <td style="vertical-align: middle; text-align: center;"><a href="image13.html"><img style="border: 0px solid ; width: 100%; height: 100%;" src="Images/PhotoGallery/13.png" alt="13.png"></a></td>
-    </tr>
-    <tr>
-      <td style="vertical-align: middle; text-align: center;"><a href="image14.html"><img style="border: 0px solid ; width: 100%; height: 100%;" src="Images/PhotoGallery/14.png" alt="14.png"></a></td>
-    </tr>
-    <tr>
-      <td style="vertical-align: middle; text-align: center;"><a href="image15.html"><img style="border: 0px solid ; width: 100%; height: 100%;" src="Images/PhotoGallery/15.png" alt="15.png"></a></td>
-    </tr>
-    <tr>
-      <td style="vertical-align: middle; text-align: center;"><a href="image16.html"><img style="border: 0px solid ; width: 100%; height: 100%;" src="Images/PhotoGallery/16.png" alt="16.png"></a></td>
-    </tr>
-    <tr>
-      <td style="vertical-align: middle; text-align: center;"><a href="image17.html"><img style="border: 0px solid ; width: 100%; height: 100%;" src="Images/PhotoGallery/17.png" alt="17.png"></a></td>
-    </tr>
-    <tr>
-      <td style="vertical-align: middle; text-align: center;"><a href="image18.html"><img style="border: 0px solid ; width: 100%; height: 100%;" src="Images/PhotoGallery/18.png" alt="18.png"></a></td>
-    </tr>
-    <tr>
-      <td style="vertical-align: middle; text-align: center;"><a href="image2.html"><img style="border: 0px solid ; width: 100%; height: 100%;" src="Images/PhotoGallery/2.png" alt="2.png"></a></td>
-    </tr>
-    <tr>
-      <td style="vertical-align: middle; text-align: center;"><a href="image20.html"><img style="border: 0px solid ; width: 100%; height: 100%;" src="Images/PhotoGallery/20.png" alt="20.png"></a></td>
-    </tr>
-    <tr>
-      <td style="vertical-align: middle; text-align: center;"><a href="image22.html"><img style="border: 0px solid ; width: 100%; height: 100%;" src="Images/PhotoGallery/22.png" alt="22.png"></a></td>
-    </tr>
-    <tr>
-      <td style="vertical-align: middle; text-align: center;"><a href="image3.html"><img style="border: 0px solid ; width: 100%; height: 100%;" src="Images/PhotoGallery/3.png" alt="3.png"></a></td>
-    </tr>
-    <tr>
-      <td style="vertical-align: middle; text-align: center;"><a href="image4.html"><img style="border: 0px solid ; width: 100%; height: 100%;" src="Images/PhotoGallery/4.png" alt="4.png"></a></td>
-    </tr>
-    <tr>
-      <td style="vertical-align: middle; text-align: center;"><a href="image5.html"><img style="border: 0px solid ; width: 100%; height: 100%;" src="Images/PhotoGallery/5.png" alt="5.png"></a></td>
-    </tr>
-    <tr>
-      <td style="vertical-align: middle; text-align: center;"><a href="image6.html"><img style="border: 0px solid ; width: 100%; height: 100%;" src="Images/PhotoGallery/6.png" alt="6.png"></a></td>
-    </tr>
-    <tr>
-      <td style="vertical-align: middle; text-align: center;"><a href="image7.html"><img style="border: 0px solid ; width: 100%; height: 100%;" src="Images/PhotoGallery/7.png" alt="7.png"></a></td>
-    </tr>
-    <tr>
-      <td style="vertical-align: middle; text-align: center;"><a href="image9.html"><img style="border: 0px solid ; width: 100%; height: 100%;" src="Images/PhotoGallery/9.png" alt="9.png"></a></td>
-    </tr>
-    <tr>
-      <td style="vertical-align: middle; text-align: center;"><a href="image8.html"><img style="border: 0px solid ; width: 100%; height: 100%;" src="Images/PhotoGallery/8.png" alt="8.png"></a></td>
-    </tr>
-  </tbody>
-</table>
-<table style="text-align: left; width: 713px; height: 1px; margin-left: auto; margin-right: auto;" border="0" cellpadding="0" cellspacing="0">
-  <tbody>
-    <tr>
-      <td style="vertical-align: middle; text-align: center;">
-      <h2><a href="#top">Go to top of the Page</a></h2>
-      </td>
-    </tr>
-  </tbody>
-</table>
-
-
-
-
-</body></html>
+  <!-- Bootstrap JS Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

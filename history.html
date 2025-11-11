@@ -7,275 +7,51 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-  <style>
-    :root {
-      --primary-color: #2e7d32;
-      --secondary-color: #5c6bc0;
-      --accent-color: #ffd54f;
-      --text-color: #212121;
-      --light-text: #f5f5f5;
-    }
-    
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      color: var(--text-color);
-      background-color: #f8f9fa;
-      overflow-x: hidden;
-    }
-    
-    .navbar {
-      background-color: var(--primary-color);
-      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    }
-    
-    .navbar-brand {
-      font-weight: bold;
-      font-size: 1.75rem;
-    }
-    
-    .nav-link {
-      color: var(--light-text) !important;
-      font-weight: 500;
-      transition: all 0.3s ease;
-      margin: 0 10px;
-    }
-    
-    .nav-link:hover {
-      color: var(--accent-color) !important;
-      transform: translateY(-2px);
-    }
-    
-    .hero-section {
-      background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('/api/placeholder/1200/800');
-      background-size: cover;
-      background-position: center;
-      background-attachment: fixed;
-      color: white;
-      padding: 120px 0;
-      text-align: center;
-    }
-    
-    .section-title {
-      position: relative;
-      margin-bottom: 40px;
-      padding-bottom: 15px;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-    }
-    
-    .section-title::after {
-      content: "";
-      position: absolute;
-      width: 80px;
-      height: 4px;
-      background: var(--accent-color);
-      bottom: 0;
-      left: 50%;
-      transform: translateX(-50%);
-    }
-    
-    .timeline {
-      position: relative;
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-    
-    .timeline::after {
-      content: '';
-      position: absolute;
-      width: 6px;
-      background-color: var(--secondary-color);
-      top: 0;
-      bottom: 0;
-      left: 50%;
-      margin-left: -3px;
-    }
-    
-    .container-timeline {
-      padding: 10px 40px;
-      position: relative;
-      background-color: inherit;
-      width: 50%;
-    }
-    
-    .container-timeline::after {
-      content: '';
-      position: absolute;
-      width: 25px;
-      height: 25px;
-      right: -13px;
-      background-color: white;
-      border: 4px solid var(--accent-color);
-      top: 15px;
-      border-radius: 50%;
-      z-index: 1;
-    }
-    
-    .left {
-      left: 0;
-    }
-    
-    .right {
-      left: 50%;
-    }
-    
-    .left::before {
-      content: " ";
-      height: 0;
-      position: absolute;
-      top: 22px;
-      width: 0;
-      z-index: 1;
-      right: 30px;
-      border: medium solid #f8f9fa;
-      border-width: 10px 0 10px 10px;
-      border-color: transparent transparent transparent #f8f9fa;
-    }
-    
-    .right::before {
-      content: " ";
-      height: 0;
-      position: absolute;
-      top: 22px;
-      width: 0;
-      z-index: 1;
-      left: 30px;
-      border: medium solid #f8f9fa;
-      border-width: 10px 10px 10px 0;
-      border-color: transparent #f8f9fa transparent transparent;
-    }
-    
-    .right::after {
-      left: -12px;
-    }
-    
-    .content {
-      padding: 20px 30px;
-      background-color: white;
-      position: relative;
-      border-radius: 6px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-    
-    .content:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 10px 20px rgba(0,0,0,0.15);
-    }
-    
-    .dino-card {
-      border-radius: 10px;
-      overflow: hidden;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-    
-    .dino-card:hover {
-      transform: translateY(-10px);
-      box-shadow: 0 15px 30px rgba(0,0,0,0.2);
-    }
-    
-    .classification-section {
-      background-color: #f1f8e9;
-      padding: 60px 0;
-    }
-    
-    .footer {
-      background-color: var(--primary-color);
-      color: white;
-      padding: 50px 0 20px;
-    }
-    
-    .scroll-top {
-      position: fixed;
-      bottom: 30px;
-      right: 30px;
-      width: 50px;
-      height: 50px;
-      background-color: var(--accent-color);
-      color: var(--text-color);
-      border-radius: 50%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      cursor: pointer;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-      opacity: 0;
-      transition: opacity 0.3s, transform 0.3s;
-    }
-    
-    .scroll-top.show {
-      opacity: 1;
-    }
-    
-    .scroll-top:hover {
-      transform: translateY(-5px);
-    }
-    
-    @media screen and (max-width: 768px) {
-      .timeline::after {
-        left: 31px;
-      }
-      
-      .container-timeline {
-        width: 100%;
-        padding-left: 70px;
-        padding-right: 25px;
-      }
-      
-      .container-timeline::before {
-        left: 60px;
-        border: medium solid white;
-        border-width: 10px 10px 10px 0;
-        border-color: transparent white transparent transparent;
-      }
-      
-      .left::after, .right::after {
-        left: 18px;
-      }
-      
-      .right {
-        left: 0%;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-  <!-- Navigation Bar -->
-  <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
-    <div class="container">
-      <a class="navbar-brand d-flex align-items-center" href="#">
-        <img src="/api/placeholder/50/50" alt="Logo" class="img-fluid me-2">
-        <span>DinoPrehistoric</span>
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#"><i class="fas fa-home"></i> Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#"><i class="fas fa-photo-video"></i> Gallery</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="#"><i class="fas fa-book-open"></i> History</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#"><i class="fas fa-info-circle"></i> About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#"><i class="fas fa-envelope"></i> Contact</a>
-          </li>
-        </ul>
+<body id="top">
+  <!-- Header -->
+  <header class="site-header sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+          <img src="Images/Logo/download.png" alt="Prehistoric Dinosaurs Logo" height="60">
+          <span class="logo-text ms-2">DinoPrehistoric</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="video.html">Video Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="photo.html">Photo Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="history.html">History</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="resources.html">Resources</a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
+    </nav>
+  </header>
 
   <!-- Hero Section -->
-  <section class="hero-section animate__animated animate__fadeIn">
+  <section class="hero-section animate__animated animate__fadeIn" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('Images/Backgrounds/1.png');">
     <div class="container">
       <h1 class="display-3 fw-bold mb-4 animate__animated animate__fadeInUp">Dinosaur History</h1>
       <p class="lead mb-5 animate__animated animate__fadeInUp animate__delay-1s">Explore the fascinating evolutionary journey of dinosaurs from their origins to their classification</p>
@@ -373,7 +149,7 @@
       <div class="row">
         <div class="col-md-4 mb-4">
           <div class="dino-card animate__animated animate__fadeInUp">
-            <img src="/api/placeholder/400/300" alt="Dinosaur" class="img-fluid">
+            <img src="Images/Big Size/dinosaur-1310676_960_720.jpg" alt="Dinosaur" class="img-fluid" width="400" height="300">
             <div class="p-3 bg-white text-dark">
               <h5>Early Triassic Period</h5>
               <p class="mb-0">The beginning of dinosaur evolution</p>
@@ -382,7 +158,7 @@
         </div>
         <div class="col-md-4 mb-4">
           <div class="dino-card animate__animated animate__fadeInUp animate__delay-1s">
-            <img src="/api/placeholder/400/300" alt="Dinosaur" class="img-fluid">
+            <img src="Images/Big Size/dinosaur-2106811_960_720.jpg" alt="Dinosaur" class="img-fluid" width="400" height="300">
             <div class="p-3 bg-white text-dark">
               <h5>Middle Triassic Period</h5>
               <p class="mb-0">Early dinosaur diversification</p>
@@ -391,7 +167,7 @@
         </div>
         <div class="col-md-4 mb-4">
           <div class="dino-card animate__animated animate__fadeInUp animate__delay-2s">
-            <img src="/api/placeholder/400/300" alt="Dinosaur" class="img-fluid">
+            <img src="Images/Big Size/tyrannosaurus-855188_960_720.jpg" alt="Dinosaur" class="img-fluid" width="400" height="300">
             <div class="p-3 bg-white text-dark">
               <h5>Late Triassic Period</h5>
               <p class="mb-0">Establishment of dinosaur dominance</p>
@@ -409,7 +185,7 @@
       
       <div class="row align-items-center mb-5">
         <div class="col-lg-6 mb-4 mb-lg-0">
-          <img src="/api/placeholder/600/400" alt="Pangaea Map" class="img-fluid rounded shadow-lg animate__animated animate__fadeInLeft">
+          <img src="Images/Maps/Dinosaur Land.png" alt="Pangaea Map" class="img-fluid rounded shadow-lg animate__animated animate__fadeInLeft" width="600" height="400">
         </div>
         <div class="col-lg-6 animate__animated animate__fadeInRight">
           <div class="card border-0 shadow-sm">
@@ -424,7 +200,7 @@
       
       <div class="row align-items-center">
         <div class="col-lg-6 order-lg-2 mb-4 mb-lg-0">
-          <img src="/api/placeholder/600/400" alt="Jurassic Landscape" class="img-fluid rounded shadow-lg animate__animated animate__fadeInRight">
+          <img src="Images/Big Size/island-1581872_960_720.jpg" alt="Jurassic Landscape" class="img-fluid rounded shadow-lg animate__animated animate__fadeInRight" width="600" height="400">
         </div>
         <div class="col-lg-6 order-lg-1 animate__animated animate__fadeInLeft">
           <div class="card border-0 shadow-sm">
@@ -512,11 +288,12 @@
         <div class="col-md-4 mb-4">
           <h5 class="mb-3">Quick Links</h5>
           <ul class="list-unstyled">
-            <li><a href="#" class="text-white text-decoration-none mb-2 d-inline-block">Home</a></li>
-            <li><a href="#" class="text-white text-decoration-none mb-2 d-inline-block">Gallery</a></li>
-            <li><a href="#" class="text-white text-decoration-none mb-2 d-inline-block">History</a></li>
-            <li><a href="#" class="text-white text-decoration-none mb-2 d-inline-block">About</a></li>
-            <li><a href="#" class="text-white text-decoration-none mb-2 d-inline-block">Contact</a></li>
+            <li><a href="index.html" class="text-white text-decoration-none mb-2 d-inline-block">Home</a></li>
+            <li><a href="photo.html" class="text-white text-decoration-none mb-2 d-inline-block">Photo Gallery</a></li>
+            <li><a href="video.html" class="text-white text-decoration-none mb-2 d-inline-block">Video Gallery</a></li>
+            <li><a href="history.html" class="text-white text-decoration-none mb-2 d-inline-block">History</a></li>
+            <li><a href="about.html" class="text-white text-decoration-none mb-2 d-inline-block">About</a></li>
+            <li><a href="contact.html" class="text-white text-decoration-none mb-2 d-inline-block">Contact</a></li>
           </ul>
         </div>
         <div class="col-md-4 mb-4">
@@ -538,82 +315,12 @@
   </footer>
 
   <!-- Scroll to Top Button -->
-  <div class="scroll-top" id="scroll-top">
+  <div class="scroll-top" id="backToTop">
     <i class="fas fa-arrow-up"></i>
   </div>
 
   <!-- Scripts -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
-  <script>
-    // Animation on scroll
-    document.addEventListener('DOMContentLoaded', function() {
-      // Initialize scroll-to-top button
-      const scrollTopBtn = document.getElementById('scroll-top');
-      
-      window.addEventListener('scroll', function() {
-        if (window.pageYOffset > 300) {
-          scrollTopBtn.classList.add('show');
-        } else {
-          scrollTopBtn.classList.remove('show');
-        }
-      });
-      
-      scrollTopBtn.addEventListener('click', function() {
-        window.scrollTo({
-          top: 0,
-          behavior: 'smooth'
-        });
-      });
-      
-      // Animate timeline items on scroll
-      const timelineContainers = document.querySelectorAll('.container-timeline');
-      
-      function isInViewport(element) {
-        const rect = element.getBoundingClientRect();
-        return (
-          rect.top >= 0 &&
-          rect.left >= 0 &&
-          rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-          rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-        );
-      }
-      
-      function animateOnScroll() {
-        timelineContainers.forEach(container => {
-          if (isInViewport(container)) {
-            if (container.classList.contains('left')) {
-              container.querySelector('.content').classList.add('animate__animated', 'animate__fadeInLeft');
-            } else {
-              container.querySelector('.content').classList.add('animate__animated', 'animate__fadeInRight');
-            }
-          }
-        });
-      }
-      
-      // Initial check
-      animateOnScroll();
-      
-      // Check on scroll
-      window.addEventListener('scroll', animateOnScroll);
-      
-      // Smooth scrolling for navigation links
-      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
-          e.preventDefault();
-          
-          const targetId = this.getAttribute('href');
-          if (targetId === '#') return;
-          
-          const targetElement = document.querySelector(targetId);
-          if (targetElement) {
-            window.scrollTo({
-              top: targetElement.offsetTop - 70,
-              behavior: 'smooth'
-            });
-          }
-        });
-      });
-    });
-  </script>
+  <script src="js/main.js"></script>
 </body>
 </html>
