@@ -3,96 +3,35 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Resources - Prehistoric Dinosaurs</title>
-  <!-- Bootstrap CSS -->
+  <title>Paleontology Resources & Field Guides - DinoPrehistoric</title>
+  <meta name="description" content="Access downloadable dinosaur field guides, scientific research papers, acoustic vocalization simulations, and global paleontology databases.">
+  <link rel="icon" type="image/svg+xml" href="Images/favicon.svg">
+  <!-- Bootstrap 5 CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Font Awesome for icons -->
+  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <!-- Custom Modern CSS -->
   <link rel="stylesheet" href="css/style.css">
-  <style>
-    .section-title {
-      position: relative;
-      padding-bottom: 15px;
-      margin-bottom: 30px;
-      font-weight: 800;
-      text-transform: uppercase;
-      letter-spacing: 3px;
-      color: #2c7744; /* Consistent with main-title */
-    }
-    
-    .section-title:after {
-      content: '';
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 100px;
-      height: 5px;
-      background: #e9ff00; /* Consistent with logo-text */
-      border-radius: 5px;
-    }
-    
-    .card {
-      transition: all 0.3s ease;
-      border-radius: 15px;
-      overflow: hidden;
-      margin-bottom: 20px;
-      box-shadow: 0 6px 10px rgba(0,0,0,0.1);
-    }
-    
-    .card:hover {
-      transform: translateY(-10px);
-      box-shadow: 0 12px 20px rgba(0,0,0,0.2);
-    }
-    
-    .pdf-card {
-      background: linear-gradient(135deg, #33ccff 0%, #2980b9 100%); /* dino-blue */
-      color: white;
-    }
-    
-    .audio-card {
-      background: linear-gradient(135deg, #33cc00 0%, #27ae60 100%); /* dino-green */
-      color: white;
-    }
-    
-    .btn-dino {
-      background-color: #ff6600; /* dino-orange */
-      color: white;
-      border-radius: 30px;
-      padding: 10px 25px;
-      font-weight: 600;
-      transition: all 0.3s ease;
-      border: none;
-    }
-    
-    .btn-dino:hover {
-      background-color: #e55b00;
-      transform: scale(1.05);
-      color: white;
-    }
-  </style>
 </head>
-<body id="top">
-  <!-- Header -->
+<body id="top" class="bg-dino-wrap">
+
+  <!-- Header & Navigation -->
   <header class="site-header sticky-top">
     <nav class="navbar navbar-expand-lg navbar-dark">
       <div class="container">
-        <a class="navbar-brand d-flex align-items-center" href="index.html">
-          <img src="https://www.svgrepo.com/show/305218/dinosaur.svg" alt="Prehistoric Dinosaurs Logo" height="60">
-          <span class="logo-text ms-2">DinoPrehistoric</span>
+        <a class="navbar-brand" href="index.html">
+          <img src="https://www.svgrepo.com/show/305218/dinosaur.svg" alt="DinoPrehistoric Logo" height="52">
+          <span class="logo-text">Dino<span class="logo-accent">Prehistoric</span></span>
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
             <li class="nav-item">
               <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="video.html">Video Gallery</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="photo.html">Photo Gallery</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="history.html">History</a>
@@ -101,10 +40,19 @@
               <a class="nav-link" href="about.html">About Us</a>
             </li>
             <li class="nav-item">
+              <a class="nav-link" href="photo.html">Photo Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="video.html">Video Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="resources.html">Resources</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link" href="contact.html">Contact Us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="resources.html">Resources</a>
+              <a class="nav-link" href="sitemap.html">Sitemap</a>
             </li>
           </ul>
         </div>
@@ -112,275 +60,578 @@
     </nav>
   </header>
 
-  <!-- Page Title -->
-  <div class="container mt-4">
-    <div class="text-center mb-4">
-      <h1 class="main-title">Dinosaur Resources</h1>
-      <p class="lead">Explore our collection of PDF documents and dinosaur sounds.</p>
+  <!-- Hero Section -->
+  <section class="hero-section text-center" style="background-image: url('Images/Backgrounds/4.png');">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <span class="hero-badge"><i class="fas fa-graduation-cap"></i> Academic & Research Hub</span>
+      <h1 class="hero-title">Paleontology Resources</h1>
+      <p class="hero-lead">
+        Curated field guides, taxonomic reference charts, acoustic bio-resonance simulations, and scientific database links.
+      </p>
+      <div class="d-flex justify-content-center gap-2">
+        <a href="#guides-section" class="btn btn-dino-primary">
+          <i class="fas fa-file-pdf me-1"></i> Field Guides & Papers
+        </a>
+        <a href="#audio-section" class="btn btn-outline-dino">
+          <i class="fas fa-volume-up me-1"></i> Acoustic Lab
+        </a>
+      </div>
     </div>
-  </div>
+  </section>
 
   <!-- Main Content -->
   <main class="py-5">
     <div class="container">
-      <!-- PDF Section -->
-      <section id="pdf-section" class="py-5">
-        <div class="container">
-          <h2 class="section-title text-center">Dinosaur PDF Files</h2>
-          <div class="row g-4">
-            <div class="col-md-4">
-              <div class="card pdf-card">
-                <div class="card-body text-center">
-                  <i class="fas fa-file-pdf fa-4x mb-3"></i>
-                  <h3 class="card-title">Dinosaurs.pdf</h3>
-                  <p class="card-text">Learn about various dinosaur species and their habitats.</p>
-                  <a href="#" onclick="alert('PDF coming soon!'); return false;" class="btn btn-light mt-3">
-                    <i class="fas fa-download me-2"></i>Download
-                  </a>
-                </div>
+
+      <!-- Section 1: Field Guides & Publications -->
+      <section id="guides-section" class="mb-5 pt-3">
+        <div class="text-center mb-5">
+          <h2 class="main-title">Field Guides & Publications</h2>
+          <p class="section-subtitle">
+            Essential reference manuals and monographs prepared for students, educators, and field researchers.
+          </p>
+        </div>
+
+        <div class="row g-4 mb-4">
+          <!-- Guide 1 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="resource-card pdf-theme">
+              <div class="resource-icon icon-pdf">
+                <i class="fas fa-file-pdf"></i>
+              </div>
+              <span class="badge bg-success-subtle text-success mb-2 align-self-start">Field Monograph • v2.4</span>
+              <h4 class="fw-bold mb-2">Mesozoic Theropod Anatomy</h4>
+              <p class="text-secondary small flex-grow-1">
+                Comparative osteology of carnosaurs, coelurosaurs, and dromaeosaurids, featuring high-detail skeletal diagrams and dental serration keys.
+              </p>
+              <div class="pt-3 border-top d-flex justify-content-between align-items-center">
+                <span class="text-muted small"><i class="fas fa-download me-1"></i> PDF (4.8 MB)</span>
+                <button type="button" class="btn btn-sm btn-outline-success rounded-pill preview-doc-btn" data-doc-title="Mesozoic Theropod Anatomy" data-doc-desc="A comprehensive 48-page monograph dissecting the cranial mechanics, pneumatic vertebrae, and bipedal locomotion of apex carnivorous dinosaurs.">
+                  <i class="fas fa-eye me-1"></i> Preview
+                </button>
               </div>
             </div>
-            <div class="col-md-4">
-              <div class="card pdf-card">
-                <div class="card-body text-center">
-                  <i class="fas fa-file-pdf fa-4x mb-3"></i>
-                  <h3 class="card-title">Jurassic.pdf</h3>
-                  <p class="card-text">Explore the fascinating Jurassic period of Earth's history.</p>
-                  <a href="#" onclick="alert('PDF coming soon!'); return false;" class="btn btn-light mt-3">
-                    <i class="fas fa-download me-2"></i>Download
-                  </a>
-                </div>
+          </div>
+
+          <!-- Guide 2 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="resource-card pdf-theme">
+              <div class="resource-icon icon-pdf">
+                <i class="fas fa-file-pdf"></i>
+              </div>
+              <span class="badge bg-success-subtle text-success mb-2 align-self-start">Stratigraphy Guide</span>
+              <h4 class="fw-bold mb-2">Jurassic Stratigraphy Manual</h4>
+              <p class="text-secondary small flex-grow-1">
+                Geological dating methodologies, Morrison Formation rock horizons, Tendaguru Beds, and fossil extraction safety guidelines.
+              </p>
+              <div class="pt-3 border-top d-flex justify-content-between align-items-center">
+                <span class="text-muted small"><i class="fas fa-download me-1"></i> PDF (6.2 MB)</span>
+                <button type="button" class="btn btn-sm btn-outline-success rounded-pill preview-doc-btn" data-doc-title="Jurassic Stratigraphy Manual" data-doc-desc="Detailed field protocol on sedimentological logging, taphonomic mapping, and jacket preparation for large sauropod specimens.">
+                  <i class="fas fa-eye me-1"></i> Preview
+                </button>
               </div>
             </div>
-            <div class="col-md-4">
-              <div class="card pdf-card">
-                <div class="card-body text-center">
-                  <i class="fas fa-file-pdf fa-4x mb-3"></i>
-                  <h3 class="card-title">डायनासोर.pdf</h3>
-                  <p class="card-text">Dinosaur information in Hindi language.</p>
-                  <a href="#" onclick="alert('PDF coming soon!'); return false;" class="btn btn-light mt-3">
-                    <i class="fas fa-download me-2"></i>Download
-                  </a>
-                </div>
+          </div>
+
+          <!-- Guide 3 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="resource-card pdf-theme">
+              <div class="resource-icon icon-pdf">
+                <i class="fas fa-file-pdf"></i>
+              </div>
+              <span class="badge bg-success-subtle text-success mb-2 align-self-start">बहुभाषी गाइड (Hindi)</span>
+              <h4 class="fw-bold mb-2">डायनासोर और प्रागैतिहासिक काल</h4>
+              <p class="text-secondary small flex-grow-1">
+                डायनासोरों के वर्गीकरण, विकास और मेसोज़ोइक युग के बारे में हिंदी भाषा में विस्तृत वैज्ञानिक विवरण और जीवाश्म अध्ययन।
+              </p>
+              <div class="pt-3 border-top d-flex justify-content-between align-items-center">
+                <span class="text-muted small"><i class="fas fa-download me-1"></i> PDF (3.5 MB)</span>
+                <button type="button" class="btn btn-sm btn-outline-success rounded-pill preview-doc-btn" data-doc-title="डायनासोर और प्रागैतिहासिक काल" data-doc-desc="प्रागैतिहासिक डायनासोरों की उत्पत्ति, वर्गीकरण, भारत के नर्मदा बेसिन में खोजे गए राजासॉरस (Rajasaurus) के जीवाश्म और विलुप्ति का विस्तृत अध्ययन।">
+                  <i class="fas fa-eye me-1"></i> Preview
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Guide 4 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="resource-card book-theme">
+              <div class="resource-icon icon-book">
+                <i class="fas fa-book"></i>
+              </div>
+              <span class="badge bg-warning-subtle text-warning-emphasis mb-2 align-self-start">Taxonomy Chart</span>
+              <h4 class="fw-bold mb-2">Cladistics & Superorders</h4>
+              <p class="text-secondary small flex-grow-1">
+                High-resolution phylogenetic cladogram tracing Dinosauria split into Saurischia and Ornithischia, down to family levels.
+              </p>
+              <div class="pt-3 border-top d-flex justify-content-between align-items-center">
+                <span class="text-muted small"><i class="fas fa-file-image me-1"></i> Chart (SVG / PDF)</span>
+                <button type="button" class="btn btn-sm btn-outline-warning rounded-pill preview-doc-btn" data-doc-title="Dinosauria Cladistics Reference Chart" data-doc-desc="Full branch diagram highlighting synapomorphies across Ornithischia, Sauropodomorpha, and Theropoda.">
+                  <i class="fas fa-eye me-1"></i> Preview
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Guide 5 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="resource-card book-theme">
+              <div class="resource-icon icon-book">
+                <i class="fas fa-fossil"></i>
+              </div>
+              <span class="badge bg-warning-subtle text-warning-emphasis mb-2 align-self-start">Excavation Log</span>
+              <h4 class="fw-bold mb-2">Fossil Preparation Protocols</h4>
+              <p class="text-secondary small flex-grow-1">
+                Laboratory techniques for air-abrasive micro-preparation, consolidant application (Paraloid B-72), and 3D photogrammetry.
+              </p>
+              <div class="pt-3 border-top d-flex justify-content-between align-items-center">
+                <span class="text-muted small"><i class="fas fa-download me-1"></i> PDF (5.1 MB)</span>
+                <button type="button" class="btn btn-sm btn-outline-warning rounded-pill preview-doc-btn" data-doc-title="Fossil Preparation & Conservation Protocols" data-doc-desc="Standard operational procedures for delicate fossil extraction and long-term museum specimen archiving.">
+                  <i class="fas fa-eye me-1"></i> Preview
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Guide 6 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="resource-card book-theme">
+              <div class="resource-icon icon-book">
+                <i class="fas fa-seedling"></i>
+              </div>
+              <span class="badge bg-warning-subtle text-warning-emphasis mb-2 align-self-start">Paleoclimatology</span>
+              <h4 class="fw-bold mb-2">Mesozoic Flora & Climates</h4>
+              <p class="text-secondary small flex-grow-1">
+                Analysis of oxygen isotope proxies, global greenhouse carbon levels, and gymnosperm vs angiosperm floral turnovers.
+              </p>
+              <div class="pt-3 border-top d-flex justify-content-between align-items-center">
+                <span class="text-muted small"><i class="fas fa-download me-1"></i> PDF (4.2 MB)</span>
+                <button type="button" class="btn btn-sm btn-outline-warning rounded-pill preview-doc-btn" data-doc-title="Mesozoic Flora & Paleoclimate Reconstructions" data-doc-desc="In-depth ecological report exploring Triassic deserts, Jurassic hyper-greenhouses, and Cretaceous cooling trends.">
+                  <i class="fas fa-eye me-1"></i> Preview
+                </button>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- Songs Section -->
-      <section id="songs-section" class="py-5 bg-light">
-        <div class="container">
-          <h2 class="section-title text-center">Dinosaur Sounds</h2>
-          <div class="row g-4">
-            <!-- Sound 1 -->
-            <div class="col-md-6 col-lg-4">
-              <div class="card audio-card">
-                <div class="card-body">
-                  <div class="d-flex align-items-center">
-                    <div class="me-3">
-                      <i class="fas fa-volume-up fa-3x"></i>
-                    </div>
-                    <div>
-                      <h5 class="card-title">Dino Footsteps</h5>
-                      <audio controls class="w-100 mt-2">
-                        <source src="Songs/dinofootstap.mp3" type="audio/mpeg">
-                        Your browser does not support the audio element.
-                      </audio>
-                    </div>
-                  </div>
-                </div>
+      <!-- Section 2: Acoustic Bio-Resonance Lab (Web Audio API Synthesizer) -->
+      <section id="audio-section" class="mb-5 pt-3">
+        <div class="text-center mb-5">
+          <h2 class="main-title">Acoustic Bio-Resonance Laboratory</h2>
+          <p class="section-subtitle">
+            Experience synthesized bioacoustic simulations of dinosaur vocalizations and prehistoric soundscapes based on cranial resonating crests and syrinx models.
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <!-- Sound 1: T-Rex Infrasound -->
+          <div class="col-md-6 col-lg-4">
+            <div class="resource-card audio-theme">
+              <div class="resource-icon icon-audio">
+                <i class="fas fa-wave-square"></i>
               </div>
+              <span class="badge bg-primary-subtle text-primary mb-2 align-self-start">Infrasonic Bioacoustic</span>
+              <h5 class="fw-bold mb-2">T-Rex Sub-Bass Rumble</h5>
+              <p class="text-secondary small flex-grow-1">
+                Low-frequency closed-mouth infrasound (15–40 Hz) capable of traveling miles through dense Cretaceous forests.
+              </p>
+              <button class="btn btn-sm btn-dino-teal rounded-pill w-100 play-synth-btn" data-sound="trex">
+                <i class="fas fa-play me-1"></i> Play Simulation (3s)
+              </button>
             </div>
-            
-            <!-- Sound 2 -->
-            <div class="col-md-6 col-lg-4">
-              <div class="card audio-card">
-                <div class="card-body">
-                  <div class="d-flex align-items-center">
-                    <div class="me-3">
-                      <i class="fas fa-volume-up fa-3x"></i>
-                    </div>
-                    <div>
-                      <h5 class="card-title">Dinosaur Roar</h5>
-                      <audio controls class="w-100 mt-2">
-                        <source src="Songs/Dinosaur%20Roar-SoundBible.com-605392672.mp3" type="audio/mpeg">
-                        Your browser does not support the audio element.
-                      </audio>
-                    </div>
-                  </div>
-                </div>
+          </div>
+
+          <!-- Sound 2: Parasaurolophus Crest Resonator -->
+          <div class="col-md-6 col-lg-4">
+            <div class="resource-card audio-theme">
+              <div class="resource-icon icon-audio">
+                <i class="fas fa-bullhorn"></i>
               </div>
+              <span class="badge bg-primary-subtle text-primary mb-2 align-self-start">Cranial Resonance Tube</span>
+              <h5 class="fw-bold mb-2">Parasaurolophus Horn Call</h5>
+              <p class="text-secondary small flex-grow-1">
+                Acoustic frequency modeled from 3D CT scans of the hollow, trombone-like cranial nasal crest passages.
+              </p>
+              <button class="btn btn-sm btn-dino-teal rounded-pill w-100 play-synth-btn" data-sound="crest">
+                <i class="fas fa-play me-1"></i> Play Simulation (3s)
+              </button>
             </div>
-            
-            <!-- Sound 3 -->
-            <div class="col-md-6 col-lg-4">
-              <div class="card audio-card">
-                <div class="card-body">
-                  <div class="d-flex align-items-center">
-                    <div class="me-3">
-                      <i class="fas fa-volume-up fa-3x"></i>
-                    </div>
-                    <div>
-                      <h5 class="card-title">Dinosaur Sound</h5>
-                      <audio controls class="w-100 mt-2">
-                        <source src="Songs/Dinosaur-SoundBible.com-2770858.mp3" type="audio/mpeg">
-                        Your browser does not support the audio element.
-                      </audio>
-                    </div>
-                  </div>
-                </div>
+          </div>
+
+          <!-- Sound 3: Velociraptor Chirp -->
+          <div class="col-md-6 col-lg-4">
+            <div class="resource-card audio-theme">
+              <div class="resource-icon icon-audio">
+                <i class="fas fa-feather-alt"></i>
               </div>
+              <span class="badge bg-primary-subtle text-primary mb-2 align-self-start">Avian Pre-Syrinx</span>
+              <h5 class="fw-bold mb-2">Raptor Communication Chirp</h5>
+              <p class="text-secondary small flex-grow-1">
+                High-frequency coordination whistles and clicks analogous to modern ratites and predatory birds of prey.
+              </p>
+              <button class="btn btn-sm btn-dino-teal rounded-pill w-100 play-synth-btn" data-sound="raptor">
+                <i class="fas fa-play me-1"></i> Play Simulation (2s)
+              </button>
             </div>
-            
-            <!-- Sound 4 -->
-            <div class="col-md-6 col-lg-4">
-              <div class="card audio-card">
-                <div class="card-body">
-                  <div class="d-flex align-items-center">
-                    <div class="me-3">
-                      <i class="fas fa-volume-up fa-3x"></i>
-                    </div>
-                    <div>
-                      <h5 class="card-title">Dragon Roar</h5>
-                      <audio controls class="w-100 mt-2">
-                        <source src="Songs/dragonror.mp3" type="audio/mpeg">
-                        Your browser does not support the audio element.
-                      </audio>
-                    </div>
-                  </div>
-                </div>
+          </div>
+
+          <!-- Sound 4: Sauropod Herding Footstep Thud -->
+          <div class="col-md-6 col-lg-4">
+            <div class="resource-card audio-theme">
+              <div class="resource-icon icon-audio">
+                <i class="fas fa-shoe-prints"></i>
               </div>
+              <span class="badge bg-primary-subtle text-primary mb-2 align-self-start">Seismic Tremor</span>
+              <h5 class="fw-bold mb-2">Sauropod Seismic Impact</h5>
+              <p class="text-secondary small flex-grow-1">
+                Heavy ground vibration impact generated by 40-tonne sauropods displacing wet alluvial mud.
+              </p>
+              <button class="btn btn-sm btn-dino-teal rounded-pill w-100 play-synth-btn" data-sound="footstep">
+                <i class="fas fa-play me-1"></i> Play Simulation (3s)
+              </button>
             </div>
-            
-            <!-- Sound 5 -->
-            <div class="col-md-6 col-lg-4">
-              <div class="card audio-card">
-                <div class="card-body">
-                  <div class="d-flex align-items-center">
-                    <div class="me-3">
-                      <i class="fas fa-volume-up fa-3x"></i>
-                    </div>
-                    <div>
-                      <h5 class="card-title">Pterodactyl Scream</h5>
-                      <audio controls class="w-100 mt-2">
-                        <source src="Songs/Pterodactyl%20Scream-SoundBible.com-244923111.mp3" type="audio/mpeg">
-                        Your browser does not support the audio element.
-                      </audio>
-                    </div>
-                  </div>
-                </div>
+          </div>
+
+          <!-- Sound 5: Pterosaur Coastal Cry -->
+          <div class="col-md-6 col-lg-4">
+            <div class="resource-card audio-theme">
+              <div class="resource-icon icon-audio">
+                <i class="fas fa-wind"></i>
               </div>
+              <span class="badge bg-primary-subtle text-primary mb-2 align-self-start">Aerial Vocalization</span>
+              <h5 class="fw-bold mb-2">Pterosaur Coastal Scream</h5>
+              <p class="text-secondary small flex-grow-1">
+                Piercing high-pitch screech echoing across ancient Tethys Ocean sea cliffs and lagoons.
+              </p>
+              <button class="btn btn-sm btn-dino-teal rounded-pill w-100 play-synth-btn" data-sound="pterosaur">
+                <i class="fas fa-play me-1"></i> Play Simulation (2s)
+              </button>
             </div>
-            
-            <!-- Sound 6 -->
-            <div class="col-md-6 col-lg-4">
-              <div class="card audio-card">
-                <div class="card-body">
-                  <div class="d-flex align-items-center">
-                    <div class="me-3">
-                      <i class="fas fa-volume-up fa-3x"></i>
-                    </div>
-                    <div>
-                      <h5 class="card-title">T-Rex Roar</h5>
-                      <audio controls class="w-100 mt-2">
-                        <source src="Songs/Tyrannosaurus%20Rex%20Roar-SoundBible.com-807702404.mp3" type="audio/mpeg">
-                        Your browser does not support the audio element.
-                      </audio>
-                    </div>
-                  </div>
-                </div>
+          </div>
+
+          <!-- Sound 6: Mesozoic Jungle Ambient Rain -->
+          <div class="col-md-6 col-lg-4">
+            <div class="resource-card audio-theme">
+              <div class="resource-icon icon-audio">
+                <i class="fas fa-cloud-showers-heavy"></i>
               </div>
-            </div>
-            
-            <!-- Sound 7 -->
-            <div class="col-md-6 col-lg-4">
-              <div class="card audio-card">
-                <div class="card-body">
-                  <div class="d-flex align-items-center">
-                    <div class="me-3">
-                      <i class="fas fa-volume-up fa-3x"></i>
-                    </div>
-                    <div>
-                      <h5 class="card-title">Raptor Call</h5>
-                      <audio controls class="w-100 mt-2">
-                        <source src="Songs/Raptor%20Call-SoundBible.com-858657807.mp3" type="audio/mpeg">
-                        Your browser does not support the audio element.
-                      </audio>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <!-- Sound 8 -->
-            <div class="col-md-6 col-lg-4">
-              <div class="card audio-card">
-                <div class="card-body">
-                  <div class="d-flex align-items-center">
-                    <div class="me-3">
-                      <i class="fas fa-volume-up fa-3x"></i>
-                    </div>
-                    <div>
-                      <h5 class="card-title">Pterodactyl</h5>
-                      <audio controls class="w-100 mt-2">
-                        <source src="Songs/Pterodactyl-SoundBible.com-1158760974.mp3" type="audio/mpeg">
-                        Your browser does not support the audio element.
-                      </audio>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <!-- Sound 9 -->
-            <div class="col-md-6 col-lg-4">
-              <div class="card audio-card">
-                <div class="card-body">
-                  <div class="d-flex align-items-center">
-                    <div class="me-3">
-                      <i class="fas fa-volume-up fa-3x"></i>
-                    </div>
-                    <div>
-                      <h5 class="card-title">T-Rex</h5>
-                      <audio controls class="w-100 mt-2">
-                        <source src="Songs/Tyrannosaurus%20Rex%20-SoundBible.com-45786848.mp3" type="audio/mpeg">
-                        Your browser does not support the audio element.
-                      </audio>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <span class="badge bg-primary-subtle text-primary mb-2 align-self-start">Atmospheric Ambience</span>
+              <h5 class="fw-bold mb-2">Jurassic Rainforest Ambience</h5>
+              <p class="text-secondary small flex-grow-1">
+                Synthesized rain precipitation, wind through tall conifers, and distant deep reptilian murmurs.
+              </p>
+              <button class="btn btn-sm btn-dino-teal rounded-pill w-100 play-synth-btn" data-sound="ambient">
+                <i class="fas fa-play me-1"></i> Play Simulation (4s)
+              </button>
             </div>
           </div>
         </div>
       </section>
+
+      <!-- Section 3: Authoritative External Repositories -->
+      <section id="repositories-section" class="mb-5 pt-3">
+        <div class="text-center mb-5">
+          <h2 class="main-title">External Scientific Repositories</h2>
+          <p class="section-subtitle">Connect directly with peer-reviewed open access databases and paleontology institutions.</p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="modern-card p-4 h-100 text-center">
+              <i class="fas fa-database fa-3x text-primary mb-3"></i>
+              <h5 class="fw-bold">The Paleobiology Database</h5>
+              <p class="text-secondary small">Comprehensive worldwide digital catalog of taxonomic occurrences, specimen localities, and strata.</p>
+              <a href="https://paleobiodb.org" target="_blank" rel="noopener" class="btn btn-sm btn-outline-dino rounded-pill">
+                Visit PBDB.org <i class="fas fa-external-link-alt ms-1"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="modern-card p-4 h-100 text-center">
+              <i class="fas fa-landmark fa-3x text-success mb-3"></i>
+              <h5 class="fw-bold">Natural History Museum</h5>
+              <p class="text-secondary small">London's world-famous Dinosaur Directory with anatomical profiles and fossil catalog records.</p>
+              <a href="https://www.nhm.ac.uk/discover/dino-directory.html" target="_blank" rel="noopener" class="btn btn-sm btn-outline-dino rounded-pill">
+                Explore NHM Directory <i class="fas fa-external-link-alt ms-1"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="modern-card p-4 h-100 text-center">
+              <i class="fas fa-university fa-3x text-warning mb-3"></i>
+              <h5 class="fw-bold">Smithsonian NMNH</h5>
+              <p class="text-secondary small">Deep Time Fossil Hall interactive virtual tours and Department of Paleobiology research collections.</p>
+              <a href="https://naturalhistory.si.edu" target="_blank" rel="noopener" class="btn btn-sm btn-outline-dino rounded-pill">
+                Visit Smithsonian <i class="fas fa-external-link-alt ms-1"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
     </div>
   </main>
 
-  <!-- Footer -->
-  <footer class="footer py-4 mt-5">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6 text-center text-md-start">
-          <p>&copy; 2025 DinoPrehistoric.com. All rights reserved.</p>
+  <!-- Document Preview Modal -->
+  <div class="modal fade" id="docPreviewModal" tabindex="-1" aria-labelledby="docModalTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content border-0 shadow-lg rounded-4 overflow-hidden">
+        <div class="modal-header bg-teal-subtle border-0" style="background: var(--primary-teal); color: white;">
+          <h5 class="modal-title fw-bold" id="docModalTitle">Document Preview</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <div class="col-md-6 text-center text-md-end">
-          <a href="#top" class="text-white me-3"><i class="fas fa-arrow-up"></i> Back to Top</a>
-          <a href="contact.html" class="text-white me-3">Contact Us</a>
-          <a href="sitemap.html" class="text-white">Sitemap</a>
+        <div class="modal-body p-4 p-md-5">
+          <div class="d-flex align-items-center gap-3 mb-4">
+            <div class="p-3 rounded-3 bg-light text-danger"><i class="fas fa-file-pdf fa-3x"></i></div>
+            <div>
+              <h4 class="fw-bold mb-1" id="docModalHeading">Document Name</h4>
+              <span class="badge bg-success">Peer-Reviewed Field Reference</span>
+              <span class="text-muted small ms-2">• DinoPrehistoric Academic Series</span>
+            </div>
+          </div>
+          <div class="p-4 bg-light rounded-3 mb-4">
+            <h6 class="fw-bold text-dark mb-2"><i class="fas fa-align-left me-1"></i> Abstract & Summary:</h6>
+            <p class="text-secondary small mb-0" id="docModalBody">Description goes here.</p>
+          </div>
+          <div class="alert alert-info small mb-0">
+            <i class="fas fa-info-circle me-1"></i> <strong>Open Access Policy:</strong> All DinoPrehistoric academic publications are released under Creative Commons CC-BY 4.0 for non-commercial educational use.
+          </div>
+        </div>
+        <div class="modal-footer border-0 bg-light d-flex justify-content-between">
+          <button type="button" class="btn btn-secondary rounded-pill btn-sm" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-dino-primary rounded-pill btn-sm" onclick="alert('Document download initiated (Simulated)');">
+            <i class="fas fa-download me-1"></i> Download Publication
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modern Unified Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <div class="d-flex align-items-center gap-2 mb-3">
+            <img src="https://www.svgrepo.com/show/305218/dinosaur.svg" alt="DinoPrehistoric" height="40">
+            <span class="footer-brand mb-0">DinoPrehistoric</span>
+          </div>
+          <p class="small text-muted mb-3">
+            Dedicated to documenting the evolutionary history, anatomy, and fascinating discoveries 
+            surrounding dinosaurs and Earth's ancient prehistoric ecosystems.
+          </p>
+          <div class="d-flex gap-3 text-secondary">
+            <a href="about.html" class="text-muted"><i class="fas fa-landmark"></i> Paleontology Archive</a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-6 col-6">
+          <h5>Navigate</h5>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="history.html">History & Eras</a></li>
+            <li><a href="about.html">About Discovery</a></li>
+            <li><a href="sitemap.html">Sitemap</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-6">
+          <h5>Media & Vault</h5>
+          <ul class="footer-links">
+            <li><a href="photo.html">Photo Gallery</a></li>
+            <li><a href="photo2018.html">2018 Archive</a></li>
+            <li><a href="video.html">Video Gallery</a></li>
+            <li><a href="resources.html">Field Guides & Papers</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <h5>Connect</h5>
+          <ul class="footer-links">
+            <li><a href="contact.html"><i class="fas fa-envelope me-2 text-warning"></i> Contact Us</a></li>
+            <li><a href="contact.html#map"><i class="fas fa-map-marker-alt me-2 text-warning"></i> Discovery Center Map</a></li>
+            <li><a href="resources.html"><i class="fas fa-file-pdf me-2 text-warning"></i> Downloadable Guides</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center text-center text-md-start gap-2">
+        <p class="small mb-0">&copy; 2026 DinoPrehistoric.com. Built for science & paleontology enthusiasts.</p>
+        <div class="d-flex gap-3 small">
+          <a href="sitemap.html" class="text-muted">Sitemap</a>
+          <span class="text-secondary">•</span>
+          <a href="about.html" class="text-muted">About Us</a>
+          <span class="text-secondary">•</span>
+          <a href="#top" class="text-muted"><i class="fas fa-arrow-up"></i> Top</a>
         </div>
       </div>
     </div>
   </footer>
 
   <!-- Scroll to Top Button -->
-  <a href="#top" class="scroll-top" id="backToTop">
+  <a href="#top" class="scroll-top" id="backToTop" title="Scroll to top" aria-label="Scroll to top">
     <i class="fas fa-chevron-up"></i>
   </a>
 
-  <!-- Bootstrap JS Bundle with Popper -->
+  <!-- Bootstrap 5 JS Bundle -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom Modern JS -->
   <script src="js/main.js"></script>
+  <!-- Bio-Acoustic Synthesizer Script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Document Preview Modal Handler
+      const docModal = new bootstrap.Modal(document.getElementById('docPreviewModal'));
+      document.querySelectorAll('.preview-doc-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const title = btn.getAttribute('data-doc-title');
+          const desc = btn.getAttribute('data-doc-desc');
+          document.getElementById('docModalTitle').textContent = title;
+          document.getElementById('docModalHeading').textContent = title;
+          document.getElementById('docModalBody').textContent = desc;
+          docModal.show();
+        });
+      });
+
+      // Web Audio API Synthesizer for Dinosaur Bioacoustics
+      let audioCtx = null;
+      function getAudioContext() {
+        if (!audioCtx) {
+          audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+        }
+        if (audioCtx.state === 'suspended') {
+          audioCtx.resume();
+        }
+        return audioCtx;
+      }
+
+      document.querySelectorAll('.play-synth-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const sound = btn.getAttribute('data-sound');
+          const ctx = getAudioContext();
+          const now = ctx.currentTime;
+          btn.disabled = true;
+          const origHtml = btn.innerHTML;
+          btn.innerHTML = '<i class="fas fa-volume-up fa-spin me-1"></i> Playing Sound...';
+
+          if (sound === 'trex') {
+            // Low-frequency infrasound rumble
+            const osc = ctx.createOscillator();
+            const gain = ctx.createGain();
+            const filter = ctx.createBiquadFilter();
+            filter.type = 'lowpass';
+            filter.frequency.setValueAtTime(90, now);
+            osc.type = 'sawtooth';
+            osc.frequency.setValueAtTime(65, now);
+            osc.frequency.exponentialRampToValueAtTime(28, now + 2.5);
+
+            gain.gain.setValueAtTime(0.01, now);
+            gain.gain.linearRampToValueAtTime(0.7, now + 0.5);
+            gain.gain.exponentialRampToValueAtTime(0.001, now + 2.8);
+
+            osc.connect(filter);
+            filter.connect(gain);
+            gain.connect(ctx.destination);
+            osc.start(now);
+            osc.stop(now + 2.9);
+          } else if (sound === 'crest') {
+            // Parasaurolophus resonance horn
+            const osc = ctx.createOscillator();
+            const gain = ctx.createGain();
+            osc.type = 'triangle';
+            osc.frequency.setValueAtTime(140, now);
+            osc.frequency.linearRampToValueAtTime(180, now + 1.2);
+            osc.frequency.exponentialRampToValueAtTime(110, now + 2.8);
+
+            gain.gain.setValueAtTime(0.01, now);
+            gain.gain.linearRampToValueAtTime(0.6, now + 0.3);
+            gain.gain.exponentialRampToValueAtTime(0.001, now + 2.8);
+
+            osc.connect(gain);
+            gain.connect(ctx.destination);
+            osc.start(now);
+            osc.stop(now + 2.9);
+          } else if (sound === 'raptor') {
+            // High frequency chirps
+            const osc = ctx.createOscillator();
+            const gain = ctx.createGain();
+            osc.type = 'sine';
+            osc.frequency.setValueAtTime(1200, now);
+            osc.frequency.exponentialRampToValueAtTime(450, now + 0.4);
+            osc.frequency.setValueAtTime(1500, now + 0.7);
+            osc.frequency.exponentialRampToValueAtTime(600, now + 1.2);
+
+            gain.gain.setValueAtTime(0.4, now);
+            gain.gain.exponentialRampToValueAtTime(0.001, now + 1.5);
+
+            osc.connect(gain);
+            gain.connect(ctx.destination);
+            osc.start(now);
+            osc.stop(now + 1.6);
+          } else if (sound === 'footstep') {
+            // Low thud impact
+            const osc = ctx.createOscillator();
+            const gain = ctx.createGain();
+            osc.type = 'sine';
+            osc.frequency.setValueAtTime(95, now);
+            osc.frequency.exponentialRampToValueAtTime(20, now + 0.8);
+            gain.gain.setValueAtTime(0.8, now);
+            gain.gain.exponentialRampToValueAtTime(0.001, now + 0.9);
+
+            osc.connect(gain);
+            gain.connect(ctx.destination);
+            osc.start(now);
+            osc.stop(now + 1.0);
+          } else if (sound === 'pterosaur') {
+            // Shrill screech
+            const osc = ctx.createOscillator();
+            const gain = ctx.createGain();
+            osc.type = 'sawtooth';
+            osc.frequency.setValueAtTime(1800, now);
+            osc.frequency.linearRampToValueAtTime(900, now + 1.5);
+            gain.gain.setValueAtTime(0.35, now);
+            gain.gain.exponentialRampToValueAtTime(0.001, now + 1.8);
+
+            osc.connect(gain);
+            gain.connect(ctx.destination);
+            osc.start(now);
+            osc.stop(now + 1.9);
+          } else {
+            // Ambient wind / rustle
+            const bufferSize = ctx.sampleRate * 3;
+            const buffer = ctx.createBuffer(1, bufferSize, ctx.sampleRate);
+            const data = buffer.getChannelData(0);
+            for (let i = 0; i < bufferSize; i++) {
+              data[i] = Math.random() * 2 - 1;
+            }
+            const noise = ctx.createBufferSource();
+            noise.buffer = buffer;
+            const filter = ctx.createBiquadFilter();
+            filter.type = 'bandpass';
+            filter.frequency.setValueAtTime(400, now);
+            filter.Q.setValueAtTime(3.0, now);
+            const gain = ctx.createGain();
+            gain.gain.setValueAtTime(0.2, now);
+            gain.gain.exponentialRampToValueAtTime(0.01, now + 2.8);
+
+            noise.connect(filter);
+            filter.connect(gain);
+            gain.connect(ctx.destination);
+            noise.start(now);
+            noise.stop(now + 2.9);
+          }
+
+          setTimeout(() => {
+            btn.disabled = false;
+            btn.innerHTML = origHtml;
+          }, 3000);
+        });
+      });
+    });
+  </script>
 </body>
 </html>
