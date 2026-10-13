@@ -3,35 +3,35 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Us - DinoPreHistoric</title>
-  <!-- Bootstrap CSS -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Font Awesome for icons -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <title>Contact Us & Discovery Center - DinoPrehistoric</title>
+  <meta name="description" content="Get in touch with the DinoPrehistoric curatorial team, plan visits to our Discovery Center, or inquire about educational paleontology programs.">
+  <link rel="icon" type="image/svg+xml" href="Images/favicon.svg">
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <!-- Custom Modern CSS -->
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body id="top" style="background-image: url('Images/Backgrounds/4.png'); background-repeat: repeat;">
-  <!-- Header -->
+<body id="top" class="bg-dino-wrap">
+
+  <!-- Header & Navigation -->
   <header class="site-header sticky-top">
     <nav class="navbar navbar-expand-lg navbar-dark">
       <div class="container">
-        <a class="navbar-brand d-flex align-items-center" href="index.html">
-          <img src="https://www.svgrepo.com/show/305218/dinosaur.svg" alt="Prehistoric Dinosaurs Logo" height="60">
-          <span class="logo-text ms-2">DinoPrehistoric</span>
+        <a class="navbar-brand" href="index.html">
+          <img src="https://www.svgrepo.com/show/305218/dinosaur.svg" alt="DinoPrehistoric Logo" height="52">
+          <span class="logo-text">Dino<span class="logo-accent">Prehistoric</span></span>
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
             <li class="nav-item">
               <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="video.html">Video Gallery</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="photo.html">Photo Gallery</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="history.html">History</a>
@@ -40,10 +40,19 @@
               <a class="nav-link" href="about.html">About Us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="contact.html">Contact Us</a>
+              <a class="nav-link" href="photo.html">Photo Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="video.html">Video Gallery</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="resources.html">Resources</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="contact.html">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="sitemap.html">Sitemap</a>
             </li>
           </ul>
         </div>
@@ -52,146 +61,279 @@
   </header>
 
   <!-- Hero Section -->
-  <div class="container mt-4">
-    <div class="row">
-      <div class="col-12 text-center mb-4">
-        <h2 class="animated-text">Contact Us</h2>
-      </div>
+  <section class="hero-section text-center" style="background-image: url('Images/Backgrounds/4.png');">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <span class="hero-badge"><i class="fas fa-compass"></i> Connect & Visit</span>
+      <h1 class="hero-title">Contact & Discovery Center</h1>
+      <p class="hero-lead">
+        Have questions regarding fossil taxonomy, school group expeditions, or paleontology research collaborations? We're here to help.
+      </p>
     </div>
-  </div>
+  </section>
 
-  <!-- Map Section -->
-  <div class="container mb-5">
-    <div class="row">
-      <div class="col-12">
-        <div class="map-container shadow">
-          <img src="Images/Maps/Dinosaur Land.png" alt="Dinosaur Land Map" class="img-fluid w-100" width="100%" height="auto">
-        </div>
-      </div>
-    </div>
-  </div>
+  <!-- Main Content -->
+  <main class="py-5">
+    <div class="container">
 
-  <!-- Contact Information Section -->
-  <div class="container mb-5">
-    <div class="row">
-      <div class="col-12 mb-4">
-        <div class="contact-header p-3 shadow" style="background-color: rgba(0, 0, 153, 0.9); color: white; border-radius: 5px;">
-          <h1 class="text-center mb-0">DinoPreHistoric Inc.</h1>
-        </div>
-      </div>
-    </div>
-    
-    <div class="row">
-      <div class="col-md-8 mx-auto">
-        <div class="contact-info p-4 shadow" style="background-color: rgba(0, 0, 153, 0.9); color: white; border-radius: 5px;">
-          <div class="row mb-3">
-            <div class="col-md-3">
-              <h4><i class="fas fa-map-marker-alt me-2"></i>Address</h4>
+      <!-- Contact Info & Form Row -->
+      <div class="row g-5 mb-5">
+        
+        <!-- Left: Contact Form -->
+        <div class="col-lg-7">
+          <div class="modern-card p-4 p-md-5 h-100">
+            <div class="mb-4">
+              <h3 class="fw-bold mb-1" style="color: var(--primary-teal);">Send Us a Message</h3>
+              <p class="text-secondary small">Fill out the form below and our curatorial team will respond within 24 to 48 hours.</p>
             </div>
-            <div class="col-md-9">
-              <p class="fs-5 mb-0">3848 Stone Wall Jackson Highway, White Post, VA 22663</p>
-            </div>
-          </div>
-          
-          <div class="row mb-3">
-            <div class="col-md-3">
-              <h4><i class="fas fa-phone me-2"></i>Phone</h4>
-            </div>
-            <div class="col-md-9">
-              <p class="fs-5 mb-0">(540) 869-2222</p>
-            </div>
-          </div>
-          
-          <div class="row mb-3">
-            <div class="col-md-3">
-              <h4><i class="fas fa-fax me-2"></i>Fax</h4>
-            </div>
-            <div class="col-md-9">
-              <p class="fs-5 mb-0">(540) 869-0951</p>
-            </div>
-          </div>
-          
-          <div class="row mb-3">
-            <div class="col-md-3">
-              <h4><i class="fas fa-globe me-2"></i>Website</h4>
-            </div>
-            <div class="col-md-9">
-              <a href="index.html" class="text-white fs-5 text-decoration-none">dinoprehistoric.com</a>
-            </div>
-          </div>
-          
-          <div class="row">
-            <div class="col-md-3">
-              <h4><i class="fas fa-envelope me-2"></i>Email</h4>
-            </div>
-            <div class="col-md-9">
-              <a href="mailto:helpdinoprehistoric@yahoo.com" class="text-white fs-5 text-decoration-none">helpdinoprehistoric@yahoo.com</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 
-  <!-- Contact Form -->
-  <div class="container mb-5">
-    <div class="row">
-      <div class="col-md-8 mx-auto">
-        <div class="card shadow">
-          <div class="card-header bg-success text-white">
-            <h3 class="mb-0">Send Us a Message</h3>
-          </div>
-          <div class="card-body">
-            <form>
-              <div class="row mb-3">
-                <div class="col-md-6 mb-3 mb-md-0">
-                  <label for="name" class="form-label">Name</label>
-                  <input type="text" class="form-control" id="name" placeholder="Your Name">
+            <!-- Success Alert -->
+            <div id="contactSuccessAlert" class="alert alert-success d-none mb-4" role="alert">
+              <i class="fas fa-check-circle me-2"></i> <strong>Thank you!</strong> Your message has been sent successfully. A curator will reach out to you shortly.
+            </div>
+
+            <form id="contactForm" novalidate>
+              <div class="row g-3 mb-3">
+                <div class="col-md-6">
+                  <label for="contactName" class="form-label fw-semibold">Your Name <span class="text-danger">*</span></label>
+                  <input type="text" class="form-control form-control-lg fs-6" id="contactName" placeholder="Dr. Alan Grant" required>
+                  <div class="invalid-feedback">Please provide your name.</div>
                 </div>
                 <div class="col-md-6">
-                  <label for="email" class="form-label">Email</label>
-                  <input type="email" class="form-control" id="email" placeholder="Your Email">
+                  <label for="contactEmail" class="form-label fw-semibold">Email Address <span class="text-danger">*</span></label>
+                  <input type="email" class="form-control form-control-lg fs-6" id="contactEmail" placeholder="alan@paleo.org" required>
+                  <div class="invalid-feedback">Please provide a valid email.</div>
                 </div>
               </div>
+
               <div class="mb-3">
-                <label for="subject" class="form-label">Subject</label>
-                <input type="text" class="form-control" id="subject" placeholder="Subject">
+                <label for="contactSubject" class="form-label fw-semibold">Inquiry Subject <span class="text-danger">*</span></label>
+                <select class="form-select form-select-lg fs-6" id="contactSubject" required>
+                  <option value="" selected disabled>Select an inquiry category...</option>
+                  <option value="General">General Paleontology Inquiry</option>
+                  <option value="Education">School Tours & Educational Visits</option>
+                  <option value="Research">Fossil Identification & Research Data</option>
+                  <option value="Media">Media, Press & Licensing</option>
+                </select>
+                <div class="invalid-feedback">Please select a subject category.</div>
               </div>
-              <div class="mb-3">
-                <label for="message" class="form-label">Message</label>
-                <textarea class="form-control" id="message" rows="5" placeholder="Your Message"></textarea>
+
+              <div class="mb-4">
+                <label for="contactMessage" class="form-label fw-semibold">Your Message <span class="text-danger">*</span></label>
+                <textarea class="form-control fs-6" id="contactMessage" rows="5" placeholder="Share your inquiry, fossil query, or visit details..." required></textarea>
+                <div class="invalid-feedback">Please enter your message.</div>
               </div>
-              <button type="submit" class="btn btn-success">Send Message</button>
+
+              <button type="submit" class="btn btn-dino-primary btn-lg w-100">
+                <i class="fas fa-paper-plane me-2"></i> Submit Inquiry
+              </button>
             </form>
           </div>
         </div>
-      </div>
-    </div>
-  </div>
 
-  <!-- Footer -->
-  <footer class="footer py-4">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6 text-center text-md-start">
-          <p>&copy; 2025 DinoPrehistoric.com. All rights reserved.</p>
+        <!-- Right: Discovery Center Information -->
+        <div class="col-lg-5">
+          <div class="modern-card p-4 p-md-5 h-100 d-flex flex-direction-column">
+            <div class="mb-4">
+              <span class="badge bg-warning-subtle text-warning-emphasis mb-2">Discovery Center HQ</span>
+              <h3 class="fw-bold mb-1" style="color: var(--primary-teal);">Visit Our Center</h3>
+              <p class="text-secondary small">Experience life-sized prehistoric exhibits and fossil research displays.</p>
+            </div>
+
+            <div class="d-flex align-items-start gap-3 mb-4">
+              <div class="rounded-circle p-3 text-white flex-shrink-0" style="background: var(--primary-teal); width: 44px; height: 44px; display: flex; align-items: center; justify-content: center;">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div>
+                <h6 class="fw-bold mb-1">Physical Address</h6>
+                <p class="text-secondary small mb-0">3848 Stone Wall Jackson Highway<br>White Post, VA 22663, United States</p>
+              </div>
+            </div>
+
+            <div class="d-flex align-items-start gap-3 mb-4">
+              <div class="rounded-circle p-3 text-white flex-shrink-0" style="background: var(--accent-orange); width: 44px; height: 44px; display: flex; align-items: center; justify-content: center;">
+                <i class="fas fa-clock"></i>
+              </div>
+              <div>
+                <h6 class="fw-bold mb-1">Hours of Operation</h6>
+                <p class="text-secondary small mb-0">
+                  Monday – Saturday: 9:00 AM – 5:00 PM<br>
+                  Sunday: 11:00 AM – 4:00 PM<br>
+                  <em>Closed on major national holidays</em>
+                </p>
+              </div>
+            </div>
+
+            <div class="d-flex align-items-start gap-3 mb-4">
+              <div class="rounded-circle p-3 text-white flex-shrink-0" style="background: var(--primary-teal-light); width: 44px; height: 44px; display: flex; align-items: center; justify-content: center;">
+                <i class="fas fa-phone-alt"></i>
+              </div>
+              <div>
+                <h6 class="fw-bold mb-1">Telephone & Fax</h6>
+                <p class="text-secondary small mb-0">
+                  Direct: <a href="tel:5408692222" class="text-decoration-none text-secondary">(540) 869-2222</a><br>
+                  Fax: (540) 869-0951
+                </p>
+              </div>
+            </div>
+
+            <div class="d-flex align-items-start gap-3 mb-4">
+              <div class="rounded-circle p-3 text-white flex-shrink-0" style="background: #198754; width: 44px; height: 44px; display: flex; align-items: center; justify-content: center;">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div>
+                <h6 class="fw-bold mb-1">Electronic Mail</h6>
+                <p class="text-secondary small mb-0">
+                  General: <a href="mailto:info@dinoprehistoric.com" class="text-decoration-none text-secondary">info@dinoprehistoric.com</a><br>
+                  Support: <a href="mailto:helpdinoprehistoric@yahoo.com" class="text-decoration-none text-secondary">helpdinoprehistoric@yahoo.com</a>
+                </p>
+              </div>
+            </div>
+
+            <div class="mt-auto pt-3 border-top">
+              <span class="text-muted small"><i class="fas fa-ticket-alt me-1 text-warning"></i> General Admission Tickets available at the arrival kiosk.</span>
+            </div>
+          </div>
         </div>
-        <div class="col-md-6 text-center text-md-end">
-          <a href="#top" class="text-white me-3"><i class="fas fa-arrow-up"></i> Back to Top</a>
-          <a href="contact.html" class="text-white me-3">Contact Us</a>
-          <a href="sitemap.html" class="text-white">Sitemap</a>
+
+      </div>
+
+      <!-- Map Section -->
+      <div id="map" class="mb-5">
+        <div class="modern-card overflow-hidden">
+          <div class="card-header-styled d-flex justify-content-between align-items-center">
+            <h4 class="mb-0 fw-bold"><i class="fas fa-map me-2"></i> Dinosaur Land Discovery Center Map</h4>
+            <span class="badge bg-light text-dark">White Post, VA</span>
+          </div>
+          <div class="p-0">
+            <img src="Images/Maps/Dinosaur Land.png" alt="Dinosaur Land Discovery Center Map" class="img-fluid w-100" style="max-height: 450px; object-fit: cover;">
+          </div>
+        </div>
+      </div>
+
+      <!-- Prehistoric FAQs -->
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <div class="text-center mb-4">
+            <h2 class="main-title">Frequently Asked Questions</h2>
+            <p class="section-subtitle">Common questions from visitors, educators, and paleontology enthusiasts.</p>
+          </div>
+
+          <div class="accordion modern-card shadow-sm" id="faqAccordion">
+            <div class="accordion-item border-0 border-bottom">
+              <h2 class="accordion-header" id="faq1Head">
+                <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="true" aria-controls="faq1">
+                  Are the dinosaur skeletons on display authentic fossils or casts?
+                </button>
+              </h2>
+              <div id="faq1" class="accordion-collapse collapse show" aria-labelledby="faq1Head" data-bs-parent="#faqAccordion">
+                <div class="accordion-body text-secondary small">
+                  Due to the weight and fragility of multi-ton mineralized petrified bones, complete standing mounts are typically museum-grade research casts molded directly from holotype fossil specimens. Real fossilized teeth, claw elements, and gastroliths are exhibited in controlled display vitrines.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item border-0 border-bottom">
+              <h2 class="accordion-header" id="faq2Head">
+                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2">
+                  Can schools and youth organizations schedule guided paleontology workshops?
+                </button>
+              </h2>
+              <div id="faq2" class="accordion-collapse collapse" aria-labelledby="faq2Head" data-bs-parent="#faqAccordion">
+                <div class="accordion-body text-secondary small">
+                  Yes! We provide structured educational tours tailored to K-12 and university biology curricula. These include mock dig-pit excavations, fossil casting activities, and Mesozoic stratigraphy lectures. Please submit your group reservation request at least two weeks in advance.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item border-0">
+              <h2 class="accordion-header" id="faq3Head">
+                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3">
+                  I found a potential fossil on private property. Can DinoPrehistoric evaluate it?
+                </button>
+              </h2>
+              <div id="faq3" class="accordion-collapse collapse" aria-labelledby="faq3Head" data-bs-parent="#faqAccordion">
+                <div class="accordion-body text-secondary small">
+                  You can submit high-resolution photographs with accurate measurement scales and locality details via our contact form. Our paleontology advisory team can provide educational preliminary assessments to determine if the specimen warrants formal academic examination.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Modern Unified Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <div class="d-flex align-items-center gap-2 mb-3">
+            <img src="https://www.svgrepo.com/show/305218/dinosaur.svg" alt="DinoPrehistoric" height="40">
+            <span class="footer-brand mb-0">DinoPrehistoric</span>
+          </div>
+          <p class="small text-muted mb-3">
+            Dedicated to documenting the evolutionary history, anatomy, and fascinating discoveries 
+            surrounding dinosaurs and Earth's ancient prehistoric ecosystems.
+          </p>
+          <div class="d-flex gap-3 text-secondary">
+            <a href="about.html" class="text-muted"><i class="fas fa-landmark"></i> Paleontology Archive</a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-6 col-6">
+          <h5>Navigate</h5>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="history.html">History & Eras</a></li>
+            <li><a href="about.html">About Discovery</a></li>
+            <li><a href="sitemap.html">Sitemap</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-6">
+          <h5>Media & Vault</h5>
+          <ul class="footer-links">
+            <li><a href="photo.html">Photo Gallery</a></li>
+            <li><a href="photo2018.html">2018 Archive</a></li>
+            <li><a href="video.html">Video Gallery</a></li>
+            <li><a href="resources.html">Field Guides & Papers</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <h5>Connect</h5>
+          <ul class="footer-links">
+            <li><a href="contact.html"><i class="fas fa-envelope me-2 text-warning"></i> Contact Us</a></li>
+            <li><a href="contact.html#map"><i class="fas fa-map-marker-alt me-2 text-warning"></i> Discovery Center Map</a></li>
+            <li><a href="resources.html"><i class="fas fa-file-pdf me-2 text-warning"></i> Downloadable Guides</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center text-center text-md-start gap-2">
+        <p class="small mb-0">&copy; 2026 DinoPrehistoric.com. Built for science & paleontology enthusiasts.</p>
+        <div class="d-flex gap-3 small">
+          <a href="sitemap.html" class="text-muted">Sitemap</a>
+          <span class="text-secondary">•</span>
+          <a href="about.html" class="text-muted">About Us</a>
+          <span class="text-secondary">•</span>
+          <a href="#top" class="text-muted"><i class="fas fa-arrow-up"></i> Top</a>
         </div>
       </div>
     </div>
   </footer>
 
   <!-- Scroll to Top Button -->
-  <a href="#top" class="scroll-top" id="backToTop">
+  <a href="#top" class="scroll-top" id="backToTop" title="Scroll to top" aria-label="Scroll to top">
     <i class="fas fa-chevron-up"></i>
   </a>
 
-  <!-- Bootstrap JS -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+  <!-- Bootstrap 5 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom Modern JS -->
   <script src="js/main.js"></script>
 </body>
 </html>

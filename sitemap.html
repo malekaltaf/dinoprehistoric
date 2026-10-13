@@ -1,60 +1,268 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sitemap - DinoPrehistoric</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Website Directory & Sitemap - DinoPrehistoric</title>
+  <meta name="description" content="Complete directory map of all pages, media archives, educational research guides, and discovery resources on DinoPrehistoric.">
+  <link rel="icon" type="image/svg+xml" href="Images/favicon.svg">
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Custom Modern CSS -->
+  <link rel="stylesheet" href="css/style.css">
 </head>
-<body id="top">
-    <div id="site-navbar"></div>
-    
-    <main class="py-5">
-        <div class="container">
-            <h1 class="main-title text-center mb-5">Site Map</h1>
-            <div class="row">
-                <div class="col-md-8 mx-auto">
-                    <div class="card shadow-sm border-0">
-                        <div class="card-body">
-                            <ul class="list-group list-group-flush fs-5">
-                                <li class="list-group-item"><a href="index.html" class="text-decoration-none" style="color: var(--primary-teal);">Home</a></li>
-                                <li class="list-group-item"><a href="about.html" class="text-decoration-none" style="color: var(--primary-teal);">About Us</a></li>
-                                <li class="list-group-item"><a href="history.html" class="text-decoration-none" style="color: var(--primary-teal);">History</a></li>
-                                <li class="list-group-item"><a href="photo.html" class="text-decoration-none" style="color: var(--primary-teal);">Photo Gallery</a>
-                                    <ul class="list-group list-group-flush mt-2">
-                                        <li class="list-group-item border-0 pt-1 pb-1"><a href="photo2018.html" class="text-decoration-none text-muted">Photo Gallery 2018</a></li>
-                                    </ul>
-                                </li>
-                                <li class="list-group-item"><a href="video.html" class="text-decoration-none" style="color: var(--primary-teal);">Video Gallery</a></li>
-                                <li class="list-group-item"><a href="resources.html" class="text-decoration-none" style="color: var(--primary-teal);">Resources</a></li>
-                                <li class="list-group-item"><a href="contact.html" class="text-decoration-none" style="color: var(--primary-teal);">Contact Us</a></li>
-                                <li class="list-group-item"><a href="sitemap.html" class="text-decoration-none" style="color: var(--primary-teal);">Sitemap</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </main>
+<body id="top" class="bg-dino-wrap">
 
-    <footer class="footer py-4 mt-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 text-center text-md-start">
-                    <p>&copy; 2025 DinoPrehistoric.com. All rights reserved.</p>
-                </div>
-                <div class="col-md-6 text-center text-md-end">
-                    <a href="sitemap.html" class="text-white me-3">Sitemap</a>
-                    <a href="#top" class="text-white me-3">Back to Top</a>
-                </div>
-            </div>
+  <!-- Header & Navigation -->
+  <header class="site-header sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="https://www.svgrepo.com/show/305218/dinosaur.svg" alt="DinoPrehistoric Logo" height="52">
+          <span class="logo-text">Dino<span class="logo-accent">Prehistoric</span></span>
+        </a>
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="history.html">History</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="photo.html">Photo Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="video.html">Video Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="resources.html">Resources</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="sitemap.html">Sitemap</a>
+            </li>
+          </ul>
         </div>
-    </footer>
+      </div>
+    </nav>
+  </header>
 
-    <a href="#top" class="scroll-top" id="backToTop">↑</a>
-    <script src="js/navbar.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Hero Section -->
+  <section class="hero-section text-center" style="background-image: url('Images/Backgrounds/2.png');">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <span class="hero-badge"><i class="fas fa-sitemap"></i> Site Architecture</span>
+      <h1 class="hero-title">Website Directory & Sitemap</h1>
+      <p class="hero-lead">
+        Easily navigate every exhibit, media gallery, academic publication, and visitor portal across DinoPrehistoric.
+      </p>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <main class="py-5">
+    <div class="container">
+
+      <div class="row g-4 mb-5">
+        
+        <!-- Category 1: Main Portals -->
+        <div class="col-md-6 col-lg-4">
+          <div class="modern-card p-4 h-100">
+            <div class="d-flex align-items-center gap-2 mb-3">
+              <div class="rounded-circle p-2 text-white" style="background: var(--primary-teal); width: 36px; height: 36px; display: flex; align-items: center; justify-content: center;">
+                <i class="fas fa-home"></i>
+              </div>
+              <h4 class="fw-bold mb-0" style="color: var(--primary-teal);">Core Portals</h4>
+            </div>
+            <ul class="list-group list-group-flush small">
+              <li class="list-group-item px-0 py-2 border-bottom">
+                <a href="index.html" class="fw-bold text-decoration-none" style="color: var(--primary-teal);">
+                  <i class="fas fa-chevron-right me-1 text-warning"></i> Home Page
+                </a>
+                <p class="text-secondary mb-0 small">Overview of dinosaur clades, Mesozoic statistics, and featured highlights.</p>
+              </li>
+              <li class="list-group-item px-0 py-2 border-bottom">
+                <a href="history.html" class="fw-bold text-decoration-none" style="color: var(--primary-teal);">
+                  <i class="fas fa-chevron-right me-1 text-warning"></i> Evolutionary History & Eras
+                </a>
+                <p class="text-secondary mb-0 small">Detailed timeline from Permian extinction to Triassic, Jurassic, and Cretaceous epochs.</p>
+              </li>
+              <li class="list-group-item px-0 py-2 border-bottom">
+                <a href="about.html" class="fw-bold text-decoration-none" style="color: var(--primary-teal);">
+                  <i class="fas fa-chevron-right me-1 text-warning"></i> About Us & Discoveries
+                </a>
+                <p class="text-secondary mb-0 small">Origins of paleontology, William Buckland, Sir Richard Owen, and our mission.</p>
+              </li>
+              <li class="list-group-item px-0 py-2">
+                <a href="contact.html" class="fw-bold text-decoration-none" style="color: var(--primary-teal);">
+                  <i class="fas fa-chevron-right me-1 text-warning"></i> Contact Us
+                </a>
+                <p class="text-secondary mb-0 small">Inquiry form, Discovery Center directions, opening hours, and FAQs.</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Category 2: Media & Galleries -->
+        <div class="col-md-6 col-lg-4">
+          <div class="modern-card p-4 h-100">
+            <div class="d-flex align-items-center gap-2 mb-3">
+              <div class="rounded-circle p-2 text-white" style="background: var(--accent-orange); width: 36px; height: 36px; display: flex; align-items: center; justify-content: center;">
+                <i class="fas fa-images"></i>
+              </div>
+              <h4 class="fw-bold mb-0" style="color: var(--accent-orange-hover);">Media Vaults</h4>
+            </div>
+            <ul class="list-group list-group-flush small">
+              <li class="list-group-item px-0 py-2 border-bottom">
+                <a href="photo.html" class="fw-bold text-decoration-none" style="color: var(--accent-orange-hover);">
+                  <i class="fas fa-chevron-right me-1 text-primary"></i> Main Photo Gallery
+                </a>
+                <p class="text-secondary mb-0 small">Categorized high-definition images with interactive filter pills and lightbox preview.</p>
+              </li>
+              <li class="list-group-item px-0 py-2 border-bottom">
+                <a href="photo2018.html" class="fw-bold text-decoration-none" style="color: var(--accent-orange-hover);">
+                  <i class="fas fa-chevron-right me-1 text-primary"></i> 2018 Archive Collection
+                </a>
+                <p class="text-secondary mb-0 small">50 cataloged dinosaur plates and specimens with instant live search filter.</p>
+              </li>
+              <li class="list-group-item px-0 py-2">
+                <a href="video.html" class="fw-bold text-decoration-none" style="color: var(--accent-orange-hover);">
+                  <i class="fas fa-chevron-right me-1 text-primary"></i> Video Documentary Gallery
+                </a>
+                <p class="text-secondary mb-0 small">Rich video documentary cards with live search and embedded modal player.</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Category 3: Research & Lab -->
+        <div class="col-md-6 col-lg-4">
+          <div class="modern-card p-4 h-100">
+            <div class="d-flex align-items-center gap-2 mb-3">
+              <div class="rounded-circle p-2 text-white" style="background: #198754; width: 36px; height: 36px; display: flex; align-items: center; justify-content: center;">
+                <i class="fas fa-microscope"></i>
+              </div>
+              <h4 class="fw-bold mb-0" style="color: #198754;">Academic & Research</h4>
+            </div>
+            <ul class="list-group list-group-flush small">
+              <li class="list-group-item px-0 py-2 border-bottom">
+                <a href="resources.html#guides-section" class="fw-bold text-decoration-none" style="color: #198754;">
+                  <i class="fas fa-chevron-right me-1 text-warning"></i> Field Guides & Publications
+                </a>
+                <p class="text-secondary mb-0 small">Peer-reviewed monographs, Hindi language guides, and stratigraphy manuals.</p>
+              </li>
+              <li class="list-group-item px-0 py-2 border-bottom">
+                <a href="resources.html#audio-section" class="fw-bold text-decoration-none" style="color: #198754;">
+                  <i class="fas fa-chevron-right me-1 text-warning"></i> Bio-Acoustic Synthesizer
+                </a>
+                <p class="text-secondary mb-0 small">Web Audio simulations of T-Rex infrasound, raptor chirps, and crest resonance.</p>
+              </li>
+              <li class="list-group-item px-0 py-2">
+                <a href="resources.html#repositories-section" class="fw-bold text-decoration-none" style="color: #198754;">
+                  <i class="fas fa-chevron-right me-1 text-warning"></i> Scientific Repositories
+                </a>
+                <p class="text-secondary mb-0 small">Curated links to PBDB, London NHM Directory, and Smithsonian collections.</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Quick Exploration Banner -->
+      <div class="glass-panel p-4 p-md-5 text-center">
+        <h3 class="fw-bold mb-2" style="color: var(--primary-teal);">Explore All Eras of Prehistoric Earth</h3>
+        <p class="text-secondary max-w-700 mx-auto mb-4">
+          Begin your journey at our interactive homepage or dive straight into evolutionary paleobiology.
+        </p>
+        <a href="index.html" class="btn btn-dino-primary btn-lg">
+          <i class="fas fa-home me-2"></i> Return to Homepage
+        </a>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Modern Unified Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <div class="d-flex align-items-center gap-2 mb-3">
+            <img src="https://www.svgrepo.com/show/305218/dinosaur.svg" alt="DinoPrehistoric" height="40">
+            <span class="footer-brand mb-0">DinoPrehistoric</span>
+          </div>
+          <p class="small text-muted mb-3">
+            Dedicated to documenting the evolutionary history, anatomy, and fascinating discoveries 
+            surrounding dinosaurs and Earth's ancient prehistoric ecosystems.
+          </p>
+          <div class="d-flex gap-3 text-secondary">
+            <a href="about.html" class="text-muted"><i class="fas fa-landmark"></i> Paleontology Archive</a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-6 col-6">
+          <h5>Navigate</h5>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="history.html">History & Eras</a></li>
+            <li><a href="about.html">About Discovery</a></li>
+            <li><a href="sitemap.html">Sitemap</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-6">
+          <h5>Media & Vault</h5>
+          <ul class="footer-links">
+            <li><a href="photo.html">Photo Gallery</a></li>
+            <li><a href="photo2018.html">2018 Archive</a></li>
+            <li><a href="video.html">Video Gallery</a></li>
+            <li><a href="resources.html">Field Guides & Papers</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <h5>Connect</h5>
+          <ul class="footer-links">
+            <li><a href="contact.html"><i class="fas fa-envelope me-2 text-warning"></i> Contact Us</a></li>
+            <li><a href="contact.html#map"><i class="fas fa-map-marker-alt me-2 text-warning"></i> Discovery Center Map</a></li>
+            <li><a href="resources.html"><i class="fas fa-file-pdf me-2 text-warning"></i> Downloadable Guides</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center text-center text-md-start gap-2">
+        <p class="small mb-0">&copy; 2026 DinoPrehistoric.com. Built for science & paleontology enthusiasts.</p>
+        <div class="d-flex gap-3 small">
+          <a href="sitemap.html" class="text-muted">Sitemap</a>
+          <span class="text-secondary">•</span>
+          <a href="about.html" class="text-muted">About Us</a>
+          <span class="text-secondary">•</span>
+          <a href="#top" class="text-muted"><i class="fas fa-arrow-up"></i> Top</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top Button -->
+  <a href="#top" class="scroll-top" id="backToTop" title="Scroll to top" aria-label="Scroll to top">
+    <i class="fas fa-chevron-up"></i>
+  </a>
+
+  <!-- Bootstrap 5 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom Modern JS -->
+  <script src="js/main.js"></script>
 </body>
 </html>
