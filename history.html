@@ -3,46 +3,56 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Prehistoric Dinosaur History</title>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <title>Evolutionary History & Eras - DinoPrehistoric</title>
+  <meta name="description" content="Explore the evolutionary journey of dinosaurs from the Permian-Triassic extinction through the Mesozoic Era to modern avian descendants.">
+  <link rel="icon" type="image/svg+xml" href="Images/favicon.svg">
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Animate.css -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <!-- Custom Modern CSS -->
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body id="top">
-  <!-- Header -->
+<body id="top" class="bg-dino-wrap">
+
+  <!-- Header & Navigation -->
   <header class="site-header sticky-top">
     <nav class="navbar navbar-expand-lg navbar-dark">
       <div class="container">
-        <a class="navbar-brand d-flex align-items-center" href="index.html">
-          <img src="https://www.svgrepo.com/show/305218/dinosaur.svg" alt="Prehistoric Dinosaurs Logo" height="60">
-          <span class="logo-text ms-2">DinoPrehistoric</span>
+        <a class="navbar-brand" href="index.html">
+          <img src="https://www.svgrepo.com/show/305218/dinosaur.svg" alt="DinoPrehistoric Logo" height="52">
+          <span class="logo-text">Dino<span class="logo-accent">Prehistoric</span></span>
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
             <li class="nav-item">
               <a class="nav-link" href="index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="video.html">Video Gallery</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="photo.html">Photo Gallery</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="history.html">History</a>
+              <a class="nav-link active" aria-current="page" href="history.html">History</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="about.html">About Us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact Us</a>
+              <a class="nav-link" href="photo.html">Photo Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="video.html">Video Gallery</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="resources.html">Resources</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="sitemap.html">Sitemap</a>
             </li>
           </ul>
         </div>
@@ -51,276 +61,374 @@
   </header>
 
   <!-- Hero Section -->
-  <section class="hero-section animate__animated animate__fadeIn" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('Images/Backgrounds/1.png');">
-    <div class="container">
-      <h1 class="display-3 fw-bold mb-4 animate__animated animate__fadeInUp">Dinosaur History</h1>
-      <p class="lead mb-5 animate__animated animate__fadeInUp animate__delay-1s">Explore the fascinating evolutionary journey of dinosaurs from their origins to their classification</p>
-      <div class="animate__animated animate__fadeInUp animate__delay-2s">
-        <a href="#evolutionary-history" class="btn btn-lg btn-outline-light me-3">
-          <i class="fas fa-history"></i> Start Exploring
+  <section class="hero-section text-center" style="background-image: url('Images/Backgrounds/1.png');">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <span class="hero-badge"><i class="fas fa-history"></i> Paleontological Chronicles</span>
+      <h1 class="hero-title">The Evolutionary Odyssey</h1>
+      <p class="hero-lead">
+        From modest bipedal archosaurs in the Triassic arid basins to colossal sauropods and formidable theropods of the Cretaceous.
+      </p>
+      
+      <!-- In-Page Anchor Pills -->
+      <div class="d-flex flex-wrap justify-content-center gap-2 mt-4">
+        <a href="#evolutionary-history" class="btn btn-outline-light rounded-pill px-3 py-2 btn-sm">
+          <i class="fas fa-dna me-1 text-warning"></i> Origins & Extinction
+        </a>
+        <a href="#periods-gallery" class="btn btn-outline-light rounded-pill px-3 py-2 btn-sm">
+          <i class="fas fa-layer-group me-1 text-warning"></i> Mesozoic Epochs
+        </a>
+        <a href="#evolution-paleobiogeography" class="btn btn-outline-light rounded-pill px-3 py-2 btn-sm">
+          <i class="fas fa-globe-americas me-1 text-warning"></i> Paleobiogeography
+        </a>
+        <a href="#classification" class="btn btn-outline-light rounded-pill px-3 py-2 btn-sm">
+          <i class="fas fa-sitemap me-1 text-warning"></i> Cladistics & Anatomy
         </a>
       </div>
     </div>
   </section>
 
-  <!-- Quick Navigation -->
-  <section class="bg-light py-4">
+  <!-- Main Content -->
+  <main class="py-5">
     <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-md-10">
-          <nav class="nav nav-pills nav-justified flex-column flex-md-row">
-            <a class="nav-link bg-success text-white m-1" href="#evolutionary-history">
-              <i class="fas fa-dna"></i> Evolutionary History
-            </a>
-            <a class="nav-link bg-success text-white m-1" href="#evolution-paleobiogeography">
-              <i class="fas fa-globe-americas"></i> Evolution & Paleobiogeography
-            </a>
-            <a class="nav-link bg-success text-white m-1" href="#classification">
-              <i class="fas fa-sitemap"></i> Classification
-            </a>
-          </nav>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- Evolutionary History Section -->
-  <section id="evolutionary-history" class="py-5">
-    <div class="container">
-      <h2 class="section-title text-center">Evolutionary History</h2>
-      <h3 class="text-center mb-5">Origins and Early Evolution</h3>
-      
-      <div class="timeline">
-        <div class="container-timeline left">
-          <div class="content" data-aos="fade-right">
-            <h4>Permian-Triassic Extinction</h4>
-            <p>Dinosaurs diverged from their archosaur ancestors during the middle to late Triassic period, roughly 20 million years after the Permian–Triassic extinction event wiped out an estimated 95% of all life on Earth.</p>
-          </div>
+      <!-- Section 1: Evolutionary Origins -->
+      <section id="evolutionary-history" class="mb-5 pt-3">
+        <div class="text-center mb-5">
+          <h2 class="main-title">Origins and Early Radiation</h2>
+          <p class="section-subtitle">
+            Dinosaurs emerged approximately 20 million years after the catastrophic Permian–Triassic extinction, gradually conquering vacant ecological niches.
+          </p>
         </div>
-        <div class="container-timeline right">
-          <div class="content" data-aos="fade-left">
-            <h4>Earliest Evidence</h4>
-            <p>Radiometric dating of the rock formation that contained fossils from the early dinosaur genus Eoraptor at 231.4 million years old establishes its presence in the fossil record at this time.</p>
-          </div>
-        </div>
-        <div class="container-timeline left">
-          <div class="content" data-aos="fade-right">
-            <h4>Common Ancestor</h4>
-            <p>Paleontologists think that Eoraptor resembles the common ancestor of all dinosaurs; if this is true, its traits suggest that the first dinosaurs were small, bipedal predators.</p>
-          </div>
-        </div>
-        <div class="container-timeline right">
-          <div class="content" data-aos="fade-left">
-            <h4>Supporting Evidence</h4>
-            <p>The discovery of primitive, dinosaur-like ornithodirans such as Marasuchus and Lagerpeton in Argentinian Middle Triassic strata supports this view; analysis of recovered fossils suggests that these animals were indeed small, bipedal predators.</p>
-          </div>
-        </div>
-        <div class="container-timeline left">
-          <div class="content" data-aos="fade-right">
-            <h4>Earliest Appearance</h4>
-            <p>Dinosaurs may have appeared as early as 243 million years ago, as evidenced by remains of the genus Nyasasaurus from that period, though known fossils of these animals are too fragmentary to tell if they are dinosaurs or very close dinosaurian relatives.</p>
-          </div>
-        </div>
-        <div class="container-timeline right">
-          <div class="content" data-aos="fade-left">
-            <h4>Older Than Eoraptor</h4>
-            <p>Recently, it has been determined that Staurikosaurus from the Santa Maria Formation dates to 233.23 Ma, making it older in geologic age than Eoraptor.</p>
-          </div>
-        </div>
-      </div>
-      
-      <div class="mt-5">
-        <p class="lead">When dinosaurs appeared, they were not the dominant terrestrial animals. The terrestrial habitats were occupied by various types of archosauromorphs and therapsids, like cynodonts and rhynchosaurs. Their main competitors were the pseudosuchia, such as aetosaurs, ornithosuchids and rauisuchians, which were more successful than the dinosaurs.</p>
-        
-        <p>Most of these other animals became extinct in the Triassic, in one of two events:</p>
-        <ul class="list-group list-group-flush mb-4">
-          <li class="list-group-item bg-light"><i class="fas fa-meteor text-danger me-2"></i> At about 215 million years ago, a variety of basal archosauromorphs, including the protorosaurs, became extinct.</li>
-          <li class="list-group-item bg-light"><i class="fas fa-meteor text-danger me-2"></i> This was followed by the Triassic–Jurassic extinction event (about 200 million years ago), that saw the end of most of the other groups of early archosaurs.</li>
-        </ul>
-        
-        <p>These losses left behind a land fauna of crocodylomorphs, dinosaurs, mammals, pterosaurians, and turtles. The first few lines of early dinosaurs diversified through the Carnian and Norian stages of the Triassic, possibly by occupying the niches of the groups that became extinct.</p>
-      </div>
-    </div>
-  </section>
 
-  <!-- Image Gallery Section -->
-  <section class="py-5 bg-dark text-white">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4 mb-4">
-          <div class="dino-card animate__animated animate__fadeInUp">
-            <img src="Images/Big Size/dinosaur-1310676_960_720.jpg" alt="Dinosaur" class="img-fluid" width="400" height="300">
-            <div class="p-3 bg-white text-dark">
-              <h5>Early Triassic Period</h5>
-              <p class="mb-0">The beginning of dinosaur evolution</p>
+        <div class="row g-4">
+          <!-- Timeline Card 1 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="timeline-card h-100">
+              <span class="timeline-badge"><i class="fas fa-skull-crossbones me-1"></i> 252 Mya</span>
+              <h4 class="fw-bold mb-2">Permian-Triassic Extinction</h4>
+              <p class="text-secondary small">
+                The greatest extinction in Earth's history wiped out over 95% of marine life and 70% of terrestrial vertebrates, clearing the stage for ancestral archosaurs to diversify.
+              </p>
             </div>
           </div>
-        </div>
-        <div class="col-md-4 mb-4">
-          <div class="dino-card animate__animated animate__fadeInUp animate__delay-1s">
-            <img src="Images/Big Size/dinosaur-2106811_960_720.jpg" alt="Dinosaur" class="img-fluid" width="400" height="300">
-            <div class="p-3 bg-white text-dark">
-              <h5>Middle Triassic Period</h5>
-              <p class="mb-0">Early dinosaur diversification</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 mb-4">
-          <div class="dino-card animate__animated animate__fadeInUp animate__delay-2s">
-            <img src="Images/Big Size/tyrannosaurus-855188_960_720.jpg" alt="Dinosaur" class="img-fluid" width="400" height="300">
-            <div class="p-3 bg-white text-dark">
-              <h5>Late Triassic Period</h5>
-              <p class="mb-0">Establishment of dinosaur dominance</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- Evolution and Paleobiogeography Section -->
-  <section id="evolution-paleobiogeography" class="py-5 bg-light">
-    <div class="container">
-      <h2 class="section-title text-center">Evolution and Paleobiogeography</h2>
-      
-      <div class="row align-items-center mb-5">
-        <div class="col-lg-6 mb-4 mb-lg-0">
-          <img src="Images/Maps/Dinosaur Land.png" alt="Pangaea Map" class="img-fluid rounded shadow-lg animate__animated animate__fadeInLeft" width="600" height="400">
-        </div>
-        <div class="col-lg-6 animate__animated animate__fadeInRight">
-          <div class="card border-0 shadow-sm">
-            <div class="card-body">
-              <h4 class="card-title">Continental Evolution</h4>
-              <p>Dinosaur evolution after the Triassic follows changes in vegetation and the location of continents. In the late Triassic and early Jurassic, the continents were connected as the single landmass Pangaea, and there was a worldwide dinosaur fauna mostly composed of coelophysoid carnivores and early sauropodomorph herbivores.</p>
-              <p>Gymnosperm plants (particularly conifers), a potential food source, radiated in the late Triassic. Early sauropodomorphs did not have sophisticated mechanisms for processing food in the mouth, and so must have employed other means of breaking down food farther along the digestive tract.</p>
+          <!-- Timeline Card 2 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="timeline-card h-100">
+              <span class="timeline-badge"><i class="fas fa-bone me-1"></i> 233.2 Mya</span>
+              <h4 class="fw-bold mb-2">Earliest Fossil Traces</h4>
+              <p class="text-secondary small">
+                *Staurikosaurus* from Brazil and *Eoraptor* from Argentina reveal that the earliest true dinosaurs were nimble, bipedal omnivores and predators measuring less than 2 meters long.
+              </p>
             </div>
           </div>
-        </div>
-      </div>
-      
-      <div class="row align-items-center">
-        <div class="col-lg-6 order-lg-2 mb-4 mb-lg-0">
-          <img src="Images/Big Size/island-1581872_960_720.jpg" alt="Jurassic Landscape" class="img-fluid rounded shadow-lg animate__animated animate__fadeInRight" width="600" height="400">
-        </div>
-        <div class="col-lg-6 order-lg-1 animate__animated animate__fadeInLeft">
-          <div class="card border-0 shadow-sm">
-            <div class="card-body">
-              <h4 class="card-title">Jurassic Period</h4>
-              <p>The general homogeneity of dinosaurian faunas continued into the middle and late Jurassic, where most localities had predators consisting of ceratosaurians, spinosauroids, and carnosaurians, and herbivores consisting of stegosaurian ornithischians and large sauropods.</p>
-              <p>Examples of this include the Morrison Formation of North America and Tendaguru Beds of Tanzania. Dinosaurs in China show some differences, with specialized sinraptorid theropods and unusual, long-necked sauropods like Mamenchisaurus.</p>
-              <p>Another notable evolutionary event of the Jurassic was the appearance of true birds, descended from maniraptoran coelurosaurians.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- Classification Section -->
-  <section id="classification" class="classification-section">
-    <div class="container">
-      <h2 class="section-title text-center">Classification</h2>
-      
-      <div class="row justify-content-center mb-5">
-        <div class="col-lg-10">
-          <div class="card shadow-sm border-0">
-            <div class="card-body p-4">
-              <p class="lead">Dinosaurs belong to a group known as archosaurs, which also includes modern crocodilians. Within the archosaur group, dinosaurs are differentiated most noticeably by their gait. Dinosaur legs extend directly beneath the body, whereas the legs of lizards and crocodilians sprawl out to either side.</p>
-              <hr>
-              <h4 class="mb-4">Primary Branches</h4>
-              <div class="row">
-                <div class="col-md-6 mb-4">
-                  <div class="card h-100 border-primary">
-                    <div class="card-header bg-primary text-white">
-                      <h5 class="mb-0">Saurischia</h5>
-                    </div>
-                    <div class="card-body">
-                      <h6 class="card-subtitle mb-2 text-muted">"Lizard-Hipped"</h6>
-                      <p class="card-text">Includes those taxa sharing a more recent common ancestor with birds than with Ornithischia. These dinosaurs retained the hip structure of their ancestors, with a pubis bone directed cranially, or forward.</p>
-                      <p class="card-text">Includes theropods (exclusively bipedal with varied diets) and sauropodomorphs (long-necked herbivores).</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-6 mb-4">
-                  <div class="card h-100 border-success">
-                    <div class="card-header bg-success text-white">
-                      <h5 class="mb-0">Ornithischia</h5>
-                    </div>
-                    <div class="card-body">
-                      <h6 class="card-subtitle mb-2 text-muted">"Bird-Hipped"</h6>
-                      <p class="card-text">Includes all taxa sharing a more recent common ancestor with Triceratops than with Saurischia. These dinosaurs had a pelvis that superficially resembled a bird's pelvis with the pubic bone oriented caudally (rear-pointing).</p>
-                      <p class="card-text">Includes a variety of species which were primarily herbivores.</p>
-                    </div>
-                  </div>
+          <!-- Timeline Card 3 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="timeline-card h-100">
+              <span class="timeline-badge"><i class="fas fa-code-branch me-1"></i> 243 Mya</span>
+              <h4 class="fw-bold mb-2">The Common Ancestor</h4>
+              <p class="text-secondary small">
+                Remains of primitive archosaurian forms like *Nyasasaurus* and *Marasuchus* illustrate the evolutionary transition from sprawling reptiles to erect, upright-walking dinosauromorphs.
+              </p>
+            </div>
+          </div>
+
+          <!-- Timeline Card 4 -->
+          <div class="col-md-6 col-lg-6">
+            <div class="timeline-card h-100 border-start border-4 border-warning">
+              <span class="timeline-badge"><i class="fas fa-fire me-1"></i> 215 Mya</span>
+              <h4 class="fw-bold mb-2">Carnian Pluvial & Mid-Triassic Turnover</h4>
+              <p class="text-secondary small">
+                Prolonged rainfall episodes and ecological shifts led to the decline of basal archosauromorphs and large dicynodonts, giving early sauropodomorphs and theropods an evolutionary foothold.
+              </p>
+            </div>
+          </div>
+
+          <!-- Timeline Card 5 -->
+          <div class="col-md-6 col-lg-6">
+            <div class="timeline-card h-100 border-start border-4 border-danger">
+              <span class="timeline-badge"><i class="fas fa-meteor me-1"></i> 201.3 Mya</span>
+              <h4 class="fw-bold mb-2">Triassic–Jurassic Extinction Event</h4>
+              <p class="text-secondary small">
+                Massive volcanic eruptions in the Central Atlantic Magmatic Province eliminated pseudosuchian rivals (aetosaurs, rauisuchians), leaving dinosaurs virtually unchallenged on land.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 2: Three Epochs Visual Showcase -->
+      <section id="periods-gallery" class="mb-5 pt-3">
+        <div class="text-center mb-5">
+          <h2 class="main-title">The Three Mesozoic Periods</h2>
+          <p class="section-subtitle">Visualizing the distinct faunas across 160 million years of evolutionary dominance.</p>
+        </div>
+
+        <div class="row g-4">
+          <!-- Triassic Showcase -->
+          <div class="col-lg-4 col-md-6">
+            <div class="modern-card h-100">
+              <div class="gallery-card lightbox-trigger" title="Click to enlarge">
+                <img src="Images/Big Size/dinosaur-1310676_960_720.jpg" alt="Early Triassic Period Dinosaur" class="img-fluid" style="height: 220px; object-fit: cover;">
+                <div class="gallery-overlay">
+                  <span class="gallery-overlay-title">Triassic Dawn</span>
+                  <span class="gallery-overlay-btn"><i class="fas fa-search-plus"></i> Enlarge Image</span>
                 </div>
               </div>
-              <div class="alert alert-info mt-3">
-                <i class="fas fa-info-circle me-2"></i> Note: The terms "lizard hip" and "bird hip" are misnomers – birds evolved from dinosaurs with "lizard hips".
+              <div class="p-4">
+                <span class="badge bg-warning-subtle text-warning-emphasis mb-2">252 – 201 Mya</span>
+                <h4 class="fw-bold mb-2">Triassic Period</h4>
+                <p class="text-secondary small mb-0">
+                  Dinosaurs emerged as small, swift predators living in the shadow of armored pseudosuchians across the arid inland regions of Pangaea.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Jurassic Showcase -->
+          <div class="col-lg-4 col-md-6">
+            <div class="modern-card h-100">
+              <div class="gallery-card lightbox-trigger" title="Click to enlarge">
+                <img src="Images/Big Size/dinosaur-2106811_960_720.jpg" alt="Middle Jurassic Period Dinosaur" class="img-fluid" style="height: 220px; object-fit: cover;">
+                <div class="gallery-overlay">
+                  <span class="gallery-overlay-title">Jurassic Flourishing</span>
+                  <span class="gallery-overlay-btn"><i class="fas fa-search-plus"></i> Enlarge Image</span>
+                </div>
+              </div>
+              <div class="p-4">
+                <span class="badge bg-success-subtle text-success mb-2">201 – 145 Mya</span>
+                <h4 class="fw-bold mb-2">Jurassic Period</h4>
+                <p class="text-secondary small mb-0">
+                  Global warm greenhouse climates supported sprawling conifer forests. Gigantic sauropods, stegosaurs, and allosauroid predators achieved immense body mass.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cretaceous Showcase -->
+          <div class="col-lg-4 col-md-12">
+            <div class="modern-card h-100">
+              <div class="gallery-card lightbox-trigger" title="Click to enlarge">
+                <img src="Images/Big Size/tyrannosaurus-855188_960_720.jpg" alt="Late Cretaceous Period Tyrannosaurus" class="img-fluid" style="height: 220px; object-fit: cover;">
+                <div class="gallery-overlay">
+                  <span class="gallery-overlay-title">Cretaceous Apex</span>
+                  <span class="gallery-overlay-btn"><i class="fas fa-search-plus"></i> Enlarge Image</span>
+                </div>
+              </div>
+              <div class="p-4">
+                <span class="badge bg-danger-subtle text-danger mb-2">145 – 66 Mya</span>
+                <h4 class="fw-bold mb-2">Cretaceous Period</h4>
+                <p class="text-secondary small mb-0">
+                  Continental drift isolated landmasses, spurring explosive regional speciation—horned ceratopsians, duck-billed hadrosaurs, giant theropods, and flowering plants (*Angiosperms*).
+                </p>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      
-      <div class="row">
-        <div class="col-12">
-          <div class="card shadow-sm border-0">
-            <div class="card-body p-4">
-              <h4 class="mb-3">Overview of Dinosaurs</h4>
-              <p>Dinosaurs are a diverse group of reptiles of the clade Dinosauria. They first appeared during the Triassic period, between 243 and 233.23 million years ago, although the exact origin and timing of the evolution of dinosaurs is the subject of active research.</p>
-              <p>They became the dominant terrestrial vertebrates after the Triassic–Jurassic extinction event 201 million years ago; their dominance continued through the Jurassic and Cretaceous periods. Reverse genetic engineering and the fossil record both demonstrate that birds are modern feathered dinosaurs, having evolved from earlier theropods during the late Jurassic Period.</p>
-              <p>As such, birds were the only dinosaur lineage to survive the Cretaceous–Paleogene extinction event 66 million years ago. Dinosaurs can therefore be divided into avian dinosaurs, or birds; and non-avian dinosaurs, which are all dinosaurs other than birds.</p>
+      </section>
+
+      <!-- Section 3: Paleobiogeography & Continental Drift -->
+      <section id="evolution-paleobiogeography" class="mb-5 pt-3">
+        <div class="text-center mb-5">
+          <h2 class="main-title">Evolution & Paleobiogeography</h2>
+          <p class="section-subtitle">How shifting tectonic plates and floral revolutions molded dinosaur anatomy.</p>
+        </div>
+
+        <div class="row align-items-center g-4 mb-5">
+          <div class="col-lg-6">
+            <div class="modern-card overflow-hidden">
+              <img src="Images/Maps/Dinosaur Land.png" alt="Prehistoric Continental Geography Map" class="img-fluid w-100" style="max-height: 380px; object-fit: cover;">
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="p-lg-3">
+              <span class="badge bg-primary-subtle text-primary mb-2">Plate Tectonics & Migration</span>
+              <h3 class="fw-bold mb-3" style="color: var(--primary-teal);">The Breakup of Pangaea</h3>
+              <p class="text-secondary">
+                During the late Triassic and early Jurassic, the unified supercontinent of Pangaea permitted cosmopolitan dinosaur populations. Similar coelophysoids and primitive prosauropods spread across modern North America, Europe, Africa, and Antarctica.
+              </p>
+              <p class="text-secondary mb-0">
+                As the Tethys Ocean widened and split Pangaea into Laurasia and Gondwana, dinosaur families diversified into isolated lineages, developing unique regional anatomical adaptations.
+              </p>
             </div>
           </div>
         </div>
+
+        <div class="row align-items-center g-4 flex-lg-row-reverse">
+          <div class="col-lg-6">
+            <div class="modern-card overflow-hidden">
+              <img src="Images/Big Size/island-1581872_960_720.jpg" alt="Jurassic Island Landscape" class="img-fluid w-100" style="max-height: 380px; object-fit: cover;">
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="p-lg-3">
+              <span class="badge bg-success-subtle text-success mb-2">Ecosystem Ecology</span>
+              <h3 class="fw-bold mb-3" style="color: var(--primary-teal);">Jurassic Environments & Flora</h3>
+              <p class="text-secondary">
+                The expansion of gymnosperms, particularly tall conifers, cycads, and ginkgoes, catalyzed the gigantism of long-necked sauropods like *Apatosaurus* and *Mamenchisaurus*.
+              </p>
+              <p class="text-secondary mb-0">
+                Simultaneously, within the feather-bearing coelurosaurian theropods, advanced flight feathers and wishbones evolved, culminating in *Archaeopteryx* and the dawn of modern avian dinosaurs.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 4: Classification & Hip Morphology -->
+      <section id="classification" class="mb-5 pt-3">
+        <div class="text-center mb-5">
+          <h2 class="main-title">Taxonomy & Pelvic Morphology</h2>
+          <p class="section-subtitle">
+            The fundamental split established by Harry Govier Seeley in 1887 based on the structure of the pelvic girdle.
+          </p>
+        </div>
+
+        <div class="row g-4 mb-4">
+          <!-- Saurischia -->
+          <div class="col-md-6">
+            <div class="modern-card h-100">
+              <div class="card-header-styled">
+                <div class="d-flex justify-content-between align-items-center">
+                  <h4 class="mb-0 fw-bold">Saurischia</h4>
+                  <span class="badge bg-light text-dark">"Lizard-Hipped"</span>
+                </div>
+              </div>
+              <div class="p-4">
+                <p class="text-secondary">
+                  Retained the ancestral reptile hip orientation, where the <strong>pubis bone points forward and downward</strong> (cranially), separated from the rearward-pointing ischium.
+                </p>
+                <div class="bg-light p-3 rounded mb-3">
+                  <h6 class="fw-bold mb-2" style="color: var(--primary-teal);"><i class="fas fa-check-circle me-1"></i> Core Subgroups:</h6>
+                  <ul class="mb-0 small text-secondary">
+                    <li><strong>Theropoda:</strong> Bipedal carnivores, omnivores, and birds (*T. rex, Spinosaurus, Velociraptor*)</li>
+                    <li><strong>Sauropodomorpha:</strong> Quadrupedal long-necked giants (*Brachiosaurus, Diplodocus*)</li>
+                  </ul>
+                </div>
+                <div class="alert alert-warning small mb-0">
+                  <i class="fas fa-feather-alt me-1"></i> <strong>Evolutionary Paradox:</strong> Birds (*Aves*) evolved from lizard-hipped theropods, not ornithischians!
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Ornithischia -->
+          <div class="col-md-6">
+            <div class="modern-card h-100">
+              <div class="card-header-accent">
+                <div class="d-flex justify-content-between align-items-center">
+                  <h4 class="mb-0 fw-bold">Ornithischia</h4>
+                  <span class="badge bg-light text-dark">"Bird-Hipped"</span>
+                </div>
+              </div>
+              <div class="p-4">
+                <p class="text-secondary">
+                  Developed an inverted pelvis where the <strong>pubis points backward and parallel to the ischium</strong> (caudally), creating expansive internal room for massive herbivorous gut fermenters.
+                </p>
+                <div class="bg-light p-3 rounded mb-3">
+                  <h6 class="fw-bold mb-2" style="color: var(--accent-orange-hover);"><i class="fas fa-check-circle me-1"></i> Core Subgroups:</h6>
+                  <ul class="mb-0 small text-secondary">
+                    <li><strong>Thyreophora:</strong> Armored and plated forms (*Stegosaurus, Ankylosaurus*)</li>
+                    <li><strong>Marginocephalia:</strong> Horned frills and thick skulls (*Triceratops, Pachycephalosaurus*)</li>
+                    <li><strong>Ornithopoda:</strong> Duck-billed chewers (*Iguanodon, Parasaurolophus*)</li>
+                  </ul>
+                </div>
+                <div class="alert alert-secondary small mb-0">
+                  <i class="fas fa-seedling me-1"></i> Exclusively herbivorous with predatory beak structures.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Lightbox Modal -->
+  <div class="modal fade lightbox-modal" id="lightboxModal" tabindex="-1" aria-labelledby="lightboxCaption" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-body">
+          <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 m-3 z-3" data-bs-dismiss="modal" aria-label="Close"></button>
+          <img src="" id="lightboxImage" class="img-fluid" alt="History Image Preview">
+          <div id="lightboxCaption" class="lightbox-caption"></div>
+        </div>
       </div>
     </div>
-  </section>
+  </div>
 
-  <!-- Footer -->
+  <!-- Modern Unified Footer -->
   <footer class="footer">
     <div class="container">
-      <div class="row">
-        <div class="col-md-4 mb-4">
-          <h5 class="mb-3">DinoPrehistoric</h5>
-          <p>Exploring and educating about the fascinating world of dinosaurs and prehistoric life.</p>
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <div class="d-flex align-items-center gap-2 mb-3">
+            <img src="https://www.svgrepo.com/show/305218/dinosaur.svg" alt="DinoPrehistoric" height="40">
+            <span class="footer-brand mb-0">DinoPrehistoric</span>
+          </div>
+          <p class="small text-muted mb-3">
+            Dedicated to documenting the evolutionary history, anatomy, and fascinating discoveries 
+            surrounding dinosaurs and Earth's ancient prehistoric ecosystems.
+          </p>
+          <div class="d-flex gap-3 text-secondary">
+            <a href="about.html" class="text-muted"><i class="fas fa-landmark"></i> Paleontology Archive</a>
+          </div>
         </div>
-        <div class="col-md-4 mb-4">
-          <h5 class="mb-3">Quick Links</h5>
-          <ul class="list-unstyled">
-            <li><a href="index.html" class="text-white text-decoration-none mb-2 d-inline-block">Home</a></li>
-            <li><a href="photo.html" class="text-white text-decoration-none mb-2 d-inline-block">Photo Gallery</a></li>
-            <li><a href="video.html" class="text-white text-decoration-none mb-2 d-inline-block">Video Gallery</a></li>
-            <li><a href="history.html" class="text-white text-decoration-none mb-2 d-inline-block">History</a></li>
-            <li><a href="about.html" class="text-white text-decoration-none mb-2 d-inline-block">About</a></li>
-            <li><a href="contact.html" class="text-white text-decoration-none mb-2 d-inline-block">Contact</a></li>
+
+        <div class="col-lg-2 col-md-6 col-6">
+          <h5>Navigate</h5>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="history.html">History & Eras</a></li>
+            <li><a href="about.html">About Discovery</a></li>
+            <li><a href="sitemap.html">Sitemap</a></li>
           </ul>
         </div>
-        <div class="col-md-4 mb-4">
-          <h5 class="mb-3">Connect With Us</h5>
-          <div class="d-flex gap-3 mb-3">
-            <a href="#" class="text-white fs-4"><i class="fab fa-facebook-square"></i></a>
-            <a href="#" class="text-white fs-4"><i class="fab fa-twitter-square"></i></a>
-            <a href="#" class="text-white fs-4"><i class="fab fa-instagram"></i></a>
-            <a href="#" class="text-white fs-4"><i class="fab fa-youtube-square"></i></a>
-          </div>
-          <p>Stay updated with the latest discoveries and news in dinosaur paleontology.</p>
+
+        <div class="col-lg-3 col-md-6 col-6">
+          <h5>Media & Vault</h5>
+          <ul class="footer-links">
+            <li><a href="photo.html">Photo Gallery</a></li>
+            <li><a href="photo2018.html">2018 Archive</a></li>
+            <li><a href="video.html">Video Gallery</a></li>
+            <li><a href="resources.html">Field Guides & Papers</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <h5>Connect</h5>
+          <ul class="footer-links">
+            <li><a href="contact.html"><i class="fas fa-envelope me-2 text-warning"></i> Contact Us</a></li>
+            <li><a href="contact.html#map"><i class="fas fa-map-marker-alt me-2 text-warning"></i> Discovery Center Map</a></li>
+            <li><a href="resources.html"><i class="fas fa-file-pdf me-2 text-warning"></i> Downloadable Guides</a></li>
+          </ul>
         </div>
       </div>
-      <hr class="my-4 bg-light">
-      <div class="text-center">
-        <p class="mb-0">&copy; 2025 DinoPrehistoric. All rights reserved.</p>
+
+      <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center text-center text-md-start gap-2">
+        <p class="small mb-0">&copy; 2026 DinoPrehistoric.com. Built for science & paleontology enthusiasts.</p>
+        <div class="d-flex gap-3 small">
+          <a href="sitemap.html" class="text-muted">Sitemap</a>
+          <span class="text-secondary">•</span>
+          <a href="about.html" class="text-muted">About Us</a>
+          <span class="text-secondary">•</span>
+          <a href="#top" class="text-muted"><i class="fas fa-arrow-up"></i> Top</a>
+        </div>
       </div>
     </div>
   </footer>
 
   <!-- Scroll to Top Button -->
-  <div class="scroll-top" id="backToTop">
-    <i class="fas fa-arrow-up"></i>
-  </div>
+  <a href="#top" class="scroll-top" id="backToTop" title="Scroll to top" aria-label="Scroll to top">
+    <i class="fas fa-chevron-up"></i>
+  </a>
 
-  <!-- Scripts -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+  <!-- Bootstrap 5 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom Modern JS -->
   <script src="js/main.js"></script>
 </body>
 </html>
