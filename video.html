@@ -3,51 +3,35 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Video Gallery - Prehistoric Dinosaurs</title>
-  <!-- Bootstrap CSS -->
+  <title>Video Gallery & Documentaries - DinoPrehistoric</title>
+  <meta name="description" content="Watch high-definition dinosaur documentaries, biomechanical simulations, paleontological excavations, and prehistoric life reconstructions.">
+  <link rel="icon" type="image/svg+xml" href="Images/favicon.svg">
+  <!-- Bootstrap 5 CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Font Awesome for icons -->
+  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <!-- Custom Modern CSS -->
   <link rel="stylesheet" href="css/style.css">
-  <style>
-    .video-item {
-      margin-bottom: 15px;
-    }
-    .video-item img {
-      width: 100%;
-      height: 200px; /* Fixed height for uniformity */
-      object-fit: cover; /* Ensures images cover the area without distortion */
-      border-radius: 8px;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-    .video-item img:hover {
-      transform: scale(1.05);
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    }
-  </style>
 </head>
-<body id="top" style="background-image: url('Images/Backgrounds/1.png'); background-size: cover; background-attachment: fixed;">
-  <!-- Header -->
+<body id="top" class="bg-dino-wrap">
+
+  <!-- Header & Navigation -->
   <header class="site-header sticky-top">
     <nav class="navbar navbar-expand-lg navbar-dark">
       <div class="container">
-        <a class="navbar-brand d-flex align-items-center" href="index.html">
-          <img src="https://www.svgrepo.com/show/305218/dinosaur.svg" alt="Prehistoric Dinosaurs Logo" height="60">
-          <span class="logo-text ms-2">DinoPrehistoric</span>
+        <a class="navbar-brand" href="index.html">
+          <img src="https://www.svgrepo.com/show/305218/dinosaur.svg" alt="DinoPrehistoric Logo" height="52">
+          <span class="logo-text">Dino<span class="logo-accent">Prehistoric</span></span>
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
             <li class="nav-item">
               <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="video.html">Video Gallery</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="photo.html">Photo Gallery</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="history.html">History</a>
@@ -56,10 +40,19 @@
               <a class="nav-link" href="about.html">About Us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact Us</a>
+              <a class="nav-link" href="photo.html">Photo Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="video.html">Video Gallery</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="resources.html">Resources</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="sitemap.html">Sitemap</a>
             </li>
           </ul>
         </div>
@@ -67,319 +60,443 @@
     </nav>
   </header>
 
-  <!-- Page Title -->
-  <div class="container mt-4">
-    <div class="text-center mb-4">
-      <h2 class="animated-text">Video Gallery</h2>
+  <!-- Hero Section -->
+  <section class="hero-section text-center" style="background-image: url('Images/Backgrounds/1.png');">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <span class="hero-badge"><i class="fas fa-play-circle"></i> Documentary Vault</span>
+      <h1 class="hero-title">Prehistoric Video Gallery</h1>
+      <p class="hero-lead">
+        Explore cinematic reconstructions, biomechanical hunting analyses, fossil reveals, and evolutionary chronicles.
+      </p>
+      <div class="d-flex justify-content-center gap-2">
+        <a href="#video-grid" class="btn btn-dino-primary">
+          <i class="fas fa-film me-1"></i> Browse Videos
+        </a>
+        <a href="photo.html" class="btn btn-outline-dino">
+          <i class="fas fa-images me-1"></i> Photo Gallery
+        </a>
+      </div>
     </div>
-  </div>
+  </section>
 
-  <!-- Main Content - Video Gallery -->
-  <main class="py-5">
+  <!-- Main Video Gallery Content -->
+  <main id="video-grid" class="py-5">
     <div class="container">
-      <div class="row">
-        <div class="col-12 text-center mb-4">
-          <h1 class="main-title">Our Video Gallery</h1>
-          <p class="lead">Watch fascinating videos about dinosaurs and prehistoric life.</p>
+
+      <!-- Search & Controls Bar -->
+      <div class="row justify-content-center mb-4">
+        <div class="col-md-8 col-lg-6">
+          <div class="input-group input-group-lg shadow-sm">
+            <span class="input-group-text bg-white border-end-0 text-muted"><i class="fas fa-search"></i></span>
+            <input type="text" id="itemSearch" class="form-control border-start-0" placeholder="Search videos by title or subject (e.g. T-Rex, Fossils, Mammals)...">
+          </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-md-6 col-lg-4 video-item">
-          <a href="https://www.youtube.com/embed/dQw4w9WgXcQ" target="_blank">
-            <img src="https://www.svgrepo.com/show/305219/play.svg" alt="A Look At Prehistoric Mammals" class="img-fluid" width="100%" height="auto">
-            <div class="text-center mt-2">A Look At Prehistoric Mammals</div>
-          </a>
+
+      <!-- Filter Buttons -->
+      <div class="filter-btn-group">
+        <button type="button" class="filter-btn active" data-filter="all">
+          <i class="fas fa-th-large me-1"></i> All Videos
+        </button>
+        <button type="button" class="filter-btn" data-filter="documentary">
+          <i class="fas fa-book-reader me-1"></i> Documentaries & Science
+        </button>
+        <button type="button" class="filter-btn" data-filter="predator">
+          <i class="fas fa-skull me-1"></i> Predators & Battles
+        </button>
+        <button type="button" class="filter-btn" data-filter="anatomy">
+          <i class="fas fa-bone me-1"></i> Anatomy & Fossils
+        </button>
+        <button type="button" class="filter-btn" data-filter="prehistoric">
+          <i class="fas fa-globe-americas me-1"></i> Ancient Ecosystems
+        </button>
+      </div>
+
+      <!-- Video Grid -->
+      <div class="row g-4 mb-5">
+
+        <!-- Video 1 -->
+        <div class="col-md-6 col-lg-4 gallery-filter-item searchable-item" data-category="prehistoric">
+          <div class="video-card" data-video-url="https://www.youtube.com/embed/g2_bK_mHhA0" data-video-title="A Look At Prehistoric Mammals">
+            <div class="video-thumb-container">
+              <img src="Images/Gallery60/1.png" alt="A Look At Prehistoric Mammals">
+              <div class="play-badge"><i class="fas fa-play"></i></div>
+            </div>
+            <div class="video-card-body">
+              <span class="badge bg-info-subtle text-info-emphasis mb-2 align-self-start">Prehistoric Life</span>
+              <h5 class="video-card-title searchable-title">A Look At Prehistoric Mammals</h5>
+              <p class="text-secondary small searchable-desc mb-0">Evolutionary divergence of synapsids and early mammals alongside Mesozoic reptiles.</p>
+            </div>
+          </div>
         </div>
-        <div class="col-md-6 col-lg-4 video-item">
-          <a href="https://www.youtube.com/embed/dQw4w9WgXcQ" target="_blank">
-            <img src="https://www.svgrepo.com/show/305219/play.svg" alt="A Look INSIDE Dinosaurs" class="img-fluid" width="100%" height="auto">
-            <div class="text-center mt-2">A Look INSIDE Dinosaurs</div>
-          </a>
+
+        <!-- Video 2 -->
+        <div class="col-md-6 col-lg-4 gallery-filter-item searchable-item" data-category="anatomy">
+          <div class="video-card" data-video-url="https://www.youtube.com/embed/W9K53lE0m4E" data-video-title="A Look INSIDE Dinosaurs: Anatomical Systems">
+            <div class="video-thumb-container">
+              <img src="Images/Gallery60/2.png" alt="A Look INSIDE Dinosaurs">
+              <div class="play-badge"><i class="fas fa-play"></i></div>
+            </div>
+            <div class="video-card-body">
+              <span class="badge bg-warning-subtle text-warning-emphasis mb-2 align-self-start">Internal Anatomy</span>
+              <h5 class="video-card-title searchable-title">A Look INSIDE Dinosaurs</h5>
+              <p class="text-secondary small searchable-desc mb-0">CT scans, pneumatic bone air sacs, and internal respiratory anatomy of theropods.</p>
+            </div>
+          </div>
         </div>
-        <div class="col-md-6 col-lg-4 video-item">
-          <a href="https://www.youtube.com/embed/dQw4w9WgXcQ" target="_blank">
-            <img src="https://www.svgrepo.com/show/305219/play.svg" alt="Baby Dinosaur's First Flight!" class="img-fluid" width="100%" height="auto">
-            <div class="text-center mt-2">Baby Dinosaur's First Flight!</div>
-          </a>
+
+        <!-- Video 3 -->
+        <div class="col-md-6 col-lg-4 gallery-filter-item searchable-item" data-category="documentary">
+          <div class="video-card" data-video-url="https://www.youtube.com/embed/bQ0Jpb4uV6E" data-video-title="Baby Dinosaur's First Flight & Avian Evolution">
+            <div class="video-thumb-container">
+              <img src="Images/Gallery60/3.png" alt="Baby Dinosaur's First Flight!">
+              <div class="play-badge"><i class="fas fa-play"></i></div>
+            </div>
+            <div class="video-card-body">
+              <span class="badge bg-success-subtle text-success mb-2 align-self-start">Avian Evolution</span>
+              <h5 class="video-card-title searchable-title">Baby Dinosaur's First Flight!</h5>
+              <p class="text-secondary small searchable-desc mb-0">Wing feather developments in arboreal microraptorines and early bird ancestors.</p>
+            </div>
+          </div>
         </div>
-        <div class="col-md-6 col-lg-4 video-item">
-          <a href="https://www.youtube.com/embed/dQw4w9WgXcQ" target="_blank">
-            <img src="https://www.svgrepo.com/show/305219/play.svg" alt="Big HORNED Dinosaurs" class="img-fluid" width="100%" height="auto">
-            <div class="text-center mt-2">Big HORNED Dinosaurs</div>
-          </a>
+
+        <!-- Video 4 -->
+        <div class="col-md-6 col-lg-4 gallery-filter-item searchable-item" data-category="anatomy">
+          <div class="video-card" data-video-url="https://www.youtube.com/embed/p1o1_4x8rNk" data-video-title="Big HORNED Dinosaurs: Ceratopsian Defenses">
+            <div class="video-thumb-container">
+              <img src="Images/Gallery60/4.png" alt="Big HORNED Dinosaurs">
+              <div class="play-badge"><i class="fas fa-play"></i></div>
+            </div>
+            <div class="video-card-body">
+              <span class="badge bg-primary-subtle text-primary mb-2 align-self-start">Ceratopsia</span>
+              <h5 class="video-card-title searchable-title">Big HORNED Dinosaurs</h5>
+              <p class="text-secondary small searchable-desc mb-0">Biomechanical testing of Triceratops and Torosaurus frill and horn impact strength.</p>
+            </div>
+          </div>
         </div>
-        <div class="col-md-6 col-lg-4 video-item">
-          <a href="https://www.youtube.com/embed/dQw4w9WgXcQ" target="_blank">
-            <img src="https://www.svgrepo.com/show/305219/play.svg" alt="Biggest T-Rex BATTLES!" class="img-fluid" width="100%" height="auto">
-            <div class="text-center mt-2">Biggest T-Rex BATTLES!</div>
-          </a>
+
+        <!-- Video 5 -->
+        <div class="col-md-6 col-lg-4 gallery-filter-item searchable-item" data-category="predator">
+          <div class="video-card" data-video-url="https://www.youtube.com/embed/5o4_v4eS3eU" data-video-title="Biggest T-Rex Battles & Apex Predation">
+            <div class="video-thumb-container">
+              <img src="Images/Gallery60/5.png" alt="Biggest T-Rex BATTLES!">
+              <div class="play-badge"><i class="fas fa-play"></i></div>
+            </div>
+            <div class="video-card-body">
+              <span class="badge bg-danger-subtle text-danger mb-2 align-self-start">Apex Predators</span>
+              <h5 class="video-card-title searchable-title">Biggest T-Rex BATTLES!</h5>
+              <p class="text-secondary small searchable-desc mb-0">Bite force analysis measuring over 35,000 Newtons of bone-crushing power.</p>
+            </div>
+          </div>
         </div>
-        <div class="col-md-6 col-lg-4 video-item">
-          <a href="https://www.youtube.com/embed/dQw4w9WgXcQ" target="_blank">
-            <img src="https://www.svgrepo.com/show/305219/play.svg" alt="Completed Dinosaur Fossils Revealed" class="img-fluid" width="100%" height="auto">
-            <div class="text-center mt-2">Completed Dinosaur Fossils Revealed</div>
-          </a>
+
+        <!-- Video 6 -->
+        <div class="col-md-6 col-lg-4 gallery-filter-item searchable-item" data-category="anatomy">
+          <div class="video-card" data-video-url="https://www.youtube.com/embed/Jm2f4e0_Rqw" data-video-title="Completed Dinosaur Fossils Revealed">
+            <div class="video-thumb-container">
+              <img src="Images/Gallery60/6.png" alt="Completed Dinosaur Fossils Revealed">
+              <div class="play-badge"><i class="fas fa-play"></i></div>
+            </div>
+            <div class="video-card-body">
+              <span class="badge bg-dark-subtle text-dark mb-2 align-self-start">Fossil Excavation</span>
+              <h5 class="video-card-title searchable-title">Completed Dinosaur Fossils Revealed</h5>
+              <p class="text-secondary small searchable-desc mb-0">From rock matrix extraction to full laboratory mount in world museums.</p>
+            </div>
+          </div>
         </div>
-        <div class="col-md-6 col-lg-4 video-item">
-          <a href="https://www.youtube.com/embed/dQw4w9WgXcQ" target="_blank">
-            <img src="https://www.svgrepo.com/show/305219/play.svg" alt="Crazy Dinosaur Mating Dance" class="img-fluid" width="100%" height="auto">
-            <div class="text-center mt-2">Crazy Dinosaur Mating Dance</div>
-          </a>
+
+        <!-- Video 7 -->
+        <div class="col-md-6 col-lg-4 gallery-filter-item searchable-item" data-category="documentary">
+          <div class="video-card" data-video-url="https://www.youtube.com/embed/8eWp_a8_K0s" data-video-title="Prehistoric Mating Rituals & Display">
+            <div class="video-thumb-container">
+              <img src="Images/Gallery60/7.png" alt="Crazy Dinosaur Mating Dance">
+              <div class="play-badge"><i class="fas fa-play"></i></div>
+            </div>
+            <div class="video-card-body">
+              <span class="badge bg-secondary-subtle text-secondary mb-2 align-self-start">Behavior</span>
+              <h5 class="video-card-title searchable-title">Crazy Dinosaur Mating Rituals</h5>
+              <p class="text-secondary small searchable-desc mb-0">Feather courtship displays, resonance vocalizations, and ceremonial crests.</p>
+            </div>
+          </div>
         </div>
-        <div class="col-md-6 col-lg-4 video-item">
-          <a href="https://www.youtube.com/embed/dQw4w9WgXcQ" target="_blank">
-            <img src="https://www.svgrepo.com/show/305219/play.svg" alt="Cutest Baby Dinosaurs" class="img-fluid" width="100%" height="auto">
-            <div class="text-center mt-2">Cutest Baby Dinosaurs</div>
-          </a>
+
+        <!-- Video 8 -->
+        <div class="col-md-6 col-lg-4 gallery-filter-item searchable-item" data-category="documentary">
+          <div class="video-card" data-video-url="https://www.youtube.com/embed/9aB7c_bF1oQ" data-video-title="Nesting Habits & Dinosaur Offspring">
+            <div class="video-thumb-container">
+              <img src="Images/Gallery60/8.png" alt="Cutest Baby Dinosaurs">
+              <div class="play-badge"><i class="fas fa-play"></i></div>
+            </div>
+            <div class="video-card-body">
+              <span class="badge bg-success-subtle text-success mb-2 align-self-start">Paleobiology</span>
+              <h5 class="video-card-title searchable-title">Nesting Habits of Baby Dinosaurs</h5>
+              <p class="text-secondary small searchable-desc mb-0">Fossilized egg clutches, embryonic preservation, and parental brooding behavior.</p>
+            </div>
+          </div>
         </div>
-        <div class="col-md-6 col-lg-4 video-item">
-          <a href="https://www.youtube.com/embed/dQw4w9WgXcQ" target="_blank">
-            <img src="https://www.svgrepo.com/show/305219/play.svg" alt="DANGER_ Attack of the Nighttime Dinosaur!" class="img-fluid" width="100%" height="auto">
-            <div class="text-center mt-2">DANGER_ Attack of the Nighttime Dinosaur!</div>
-          </a>
+
+        <!-- Video 9 -->
+        <div class="col-md-6 col-lg-4 gallery-filter-item searchable-item" data-category="predator">
+          <div class="video-card" data-video-url="https://www.youtube.com/embed/1vR_s4wD7eI" data-video-title="Nocturnal Hunters of the Mesozoic">
+            <div class="video-thumb-container">
+              <img src="Images/Gallery60/9.png" alt="Attack of the Nighttime Dinosaur!">
+              <div class="play-badge"><i class="fas fa-play"></i></div>
+            </div>
+            <div class="video-card-body">
+              <span class="badge bg-danger-subtle text-danger mb-2 align-self-start">Nocturnal Hunters</span>
+              <h5 class="video-card-title searchable-title">Attack of the Nighttime Dinosaur!</h5>
+              <p class="text-secondary small searchable-desc mb-0">Scleral ring fossils revealing large eye sockets suited for low-light night ambushes.</p>
+            </div>
+          </div>
         </div>
-        <div class="col-md-6 col-lg-4 video-item">
-          <a href="https://www.youtube.com/embed/dQw4w9WgXcQ" target="_blank">
-            <img src="https://www.svgrepo.com/show/305219/play.svg" alt="Dinos Invade Our World!" class="img-fluid" width="100%" height="auto">
-            <div class="text-center mt-2">Dinos Invade Our World!</div>
-          </a>
+
+        <!-- Video 10 -->
+        <div class="col-md-6 col-lg-4 gallery-filter-item searchable-item" data-category="prehistoric">
+          <div class="video-card" data-video-url="https://www.youtube.com/embed/3cE9aB7e_D0" data-video-title="Cretaceous Environmental Reconstruction">
+            <div class="video-thumb-container">
+              <img src="Images/Gallery60/10.png" alt="Dinos Invade Our World!">
+              <div class="play-badge"><i class="fas fa-play"></i></div>
+            </div>
+            <div class="video-card-body">
+              <span class="badge bg-info-subtle text-info-emphasis mb-2 align-self-start">Ecosystems</span>
+              <h5 class="video-card-title searchable-title">Prehistoric Ecosystems Reconstructed</h5>
+              <p class="text-secondary small searchable-desc mb-0">Dense Mesozoic floodplains, climate simulations, and ancient flora dynamics.</p>
+            </div>
+          </div>
         </div>
-        <div class="col-md-6 col-lg-4 video-item">
-          <a href="https://www.youtube.com/embed/dQw4w9WgXcQ" target="_blank">
-            <img src="https://www.svgrepo.com/show/305219/play.svg" alt="Dinosaur Babies In Danger!" class="img-fluid" width="100%" height="auto">
-            <div class="text-center mt-2">Dinosaur Babies In Danger!</div>
-          </a>
+
+        <!-- Video 11 -->
+        <div class="col-md-6 col-lg-4 gallery-filter-item searchable-item" data-category="predator">
+          <div class="video-card" data-video-url="https://www.youtube.com/embed/5kL_p8eR3wQ" data-video-title="Juvenile Dinosaurs & Habitat Hazards">
+            <div class="video-thumb-container">
+              <img src="Images/Gallery60/11.png" alt="Dinosaur Babies In Danger!">
+              <div class="play-badge"><i class="fas fa-play"></i></div>
+            </div>
+            <div class="video-card-body">
+              <span class="badge bg-danger-subtle text-danger mb-2 align-self-start">Survival Tactics</span>
+              <h5 class="video-card-title searchable-title">Dinosaur Babies In Danger!</h5>
+              <p class="text-secondary small searchable-desc mb-0">Predation pressures on juvenile hadrosaurs and sauropod hatchlings.</p>
+            </div>
+          </div>
         </div>
-        <div class="col-md-6 col-lg-4 video-item">
-          <a href="https://www.youtube.com/embed/dQw4w9WgXcQ" target="_blank">
-            <img src="https://www.svgrepo.com/show/305219/play.svg" alt="Dinosaur Eats Poison Mushrooms!" class="img-fluid" width="100%" height="auto">
-            <div class="text-center mt-2">Dinosaur Eats Poison Mushrooms!</div>
-          </a>
+
+        <!-- Video 12 -->
+        <div class="col-md-6 col-lg-4 gallery-filter-item searchable-item" data-category="anatomy">
+          <div class="video-card" data-video-url="https://www.youtube.com/embed/7aB_cD4eF9g" data-video-title="Prehistoric Plant Chemistry & Herbivore Diet">
+            <div class="video-thumb-container">
+              <img src="Images/Gallery60/12.png" alt="Dinosaur Eats Poison Mushrooms!">
+              <div class="play-badge"><i class="fas fa-play"></i></div>
+            </div>
+            <div class="video-card-body">
+              <span class="badge bg-warning-subtle text-warning-emphasis mb-2 align-self-start">Paleobotany</span>
+              <h5 class="video-card-title searchable-title">Diet & Toxic Flora Interactions</h5>
+              <p class="text-secondary small searchable-desc mb-0">Gastroliths, gut fermentation, and coping with ancient cycad poisons.</p>
+            </div>
+          </div>
         </div>
-        <div class="col-md-6 col-lg-4 video-item">
-          <a href="https://www.youtube.com/embed/dQw4w9WgXcQ" target="_blank">
-            <img src="https://www.svgrepo.com/show/305219/play.svg" alt="Dinosaur Heroes" class="img-fluid" width="100%" height="auto">
-            <div class="text-center mt-2">Dinosaur Heroes</div>
-          </a>
+
+        <!-- Video 13 -->
+        <div class="col-md-6 col-lg-4 gallery-filter-item searchable-item" data-category="documentary">
+          <div class="video-card" data-video-url="https://www.youtube.com/embed/8vR_p3aQ9wE" data-video-title="Pioneers of Paleontology">
+            <div class="video-thumb-container">
+              <img src="Images/Gallery60/13.png" alt="Dinosaur Heroes">
+              <div class="play-badge"><i class="fas fa-play"></i></div>
+            </div>
+            <div class="video-card-body">
+              <span class="badge bg-secondary-subtle text-secondary mb-2 align-self-start">History of Science</span>
+              <h5 class="video-card-title searchable-title">Pioneers of Paleontology</h5>
+              <p class="text-secondary small searchable-desc mb-0">The historic fossil hunts of Mary Anning, Gideon Mantell, and Barnum Brown.</p>
+            </div>
+          </div>
         </div>
-        <div class="col-md-6 col-lg-4 video-item">
-          <a href="https://www.youtube.com/embed/dQw4w9WgXcQ" target="_blank">
-            <img src="https://www.svgrepo.com/show/305219/play.svg" alt="Dinosaur Hordes On The Move" class="img-fluid" width="100%" height="auto">
-            <div class="text-center mt-2">Dinosaur Hordes On The Move</div>
-          </a>
+
+        <!-- Video 14 -->
+        <div class="col-md-6 col-lg-4 gallery-filter-item searchable-item" data-category="prehistoric">
+          <div class="video-card" data-video-url="https://www.youtube.com/embed/2bK_s8eR7wQ" data-video-title="Dinosaur Migratory Herds On The Move">
+            <div class="video-thumb-container">
+              <img src="Images/Gallery60/14.png" alt="Dinosaur Hordes On The Move">
+              <div class="play-badge"><i class="fas fa-play"></i></div>
+            </div>
+            <div class="video-card-body">
+              <span class="badge bg-info-subtle text-info-emphasis mb-2 align-self-start">Herding Dynamics</span>
+              <h5 class="video-card-title searchable-title">Dinosaur Hordes On The Move</h5>
+              <p class="text-secondary small searchable-desc mb-0">Trackway bonebeds proving massive seasonal migrations across ancient continents.</p>
+            </div>
+          </div>
         </div>
-        <div class="col-md-6 col-lg-4 video-item">
-          <a href="https://www.youtube.com/embed/dQw4w9WgXcQ" target="_blank">
-            <img src="https://www.svgrepo.com/show/305219/play.svg" alt="Dinosaur ROMANCE" class="img-fluid" width="100%" height="auto">
-            <div class="text-center mt-2">Dinosaur ROMANCE</div>
-          </a>
+
+        <!-- Video 15 -->
+        <div class="col-md-6 col-lg-4 gallery-filter-item searchable-item" data-category="predator">
+          <div class="video-card" data-video-url="https://www.youtube.com/embed/4aB_v7eR2wE" data-video-title="Theropod Battles: Spinosaurus vs Carcharodontosaurus">
+            <div class="video-thumb-container">
+              <img src="Images/Gallery60/15.png" alt="Epic Turf Battle!">
+              <div class="play-badge"><i class="fas fa-play"></i></div>
+            </div>
+            <div class="video-card-body">
+              <span class="badge bg-danger-subtle text-danger mb-2 align-self-start">Theropod Clashes</span>
+              <h5 class="video-card-title searchable-title">Epic Mesozoic Turf Battles</h5>
+              <p class="text-secondary small searchable-desc mb-0">North African river systems where rival mega-carnivores competed for riverbank prey.</p>
+            </div>
+          </div>
         </div>
-        <div class="col-md-6 col-lg-4 video-item">
-          <a href="https://www.youtube.com/embed/dQw4w9WgXcQ" target="_blank">
-            <img src="https://www.svgrepo.com/show/305219/play.svg" alt="Dinosaurs In Love" class="img-fluid" width="100%" height="auto">
-            <div class="text-center mt-2">Dinosaurs In Love</div>
-          </a>
+
+        <!-- Video 16 -->
+        <div class="col-md-6 col-lg-4 gallery-filter-item searchable-item" data-category="documentary">
+          <div class="video-card" data-video-url="https://www.youtube.com/embed/6kL_w8eR9wE" data-video-title="The Cretaceous–Paleogene Mass Extinction">
+            <div class="video-thumb-container">
+              <img src="Images/Gallery60/16.png" alt="How Dinosaurs Went Extinct!">
+              <div class="play-badge"><i class="fas fa-play"></i></div>
+            </div>
+            <div class="video-card-body">
+              <span class="badge bg-danger-subtle text-danger mb-2 align-self-start">K-Pg Cataclysm</span>
+              <h5 class="video-card-title searchable-title">How Dinosaurs Went Extinct!</h5>
+              <p class="text-secondary small searchable-desc mb-0">Chicxulub impact physics, Deccan Traps volcanism, and the atmospheric winter.</p>
+            </div>
+          </div>
         </div>
-        <div class="col-md-6 col-lg-4 video-item">
-          <a href="https://www.youtube.com/embed/dQw4w9WgXcQ" target="_blank">
-            <img src="https://www.svgrepo.com/show/305219/play.svg" alt="Dinosaurs Running From Danger!" class="img-fluid" width="100%" height="auto">
-            <div class="text-center mt-2">Dinosaurs Running From Danger!</div>
-          </a>
+
+        <!-- Video 17 -->
+        <div class="col-md-6 col-lg-4 gallery-filter-item searchable-item" data-category="documentary">
+          <div class="video-card" data-video-url="https://www.youtube.com/embed/9cE_b7eR1wQ" data-video-title="Feathered Dinosaurs & The Origin of Birds">
+            <div class="video-thumb-container">
+              <img src="Images/Gallery60/17.png" alt="Feathered Dinosaurs: Bird Ancestors!">
+              <div class="play-badge"><i class="fas fa-play"></i></div>
+            </div>
+            <div class="video-card-body">
+              <span class="badge bg-success-subtle text-success mb-2 align-self-start">Avian Origins</span>
+              <h5 class="video-card-title searchable-title">Feathered Dinosaurs: Bird Ancestors!</h5>
+              <p class="text-secondary small searchable-desc mb-0">Liaoning fossil discoveries revealing plumages, melanosomes, and vibrant colors.</p>
+            </div>
+          </div>
         </div>
-        <div class="col-md-6 col-lg-4 video-item">
-          <a href="https://www.youtube.com/embed/dQw4w9WgXcQ" target="_blank">
-            <img src="https://www.svgrepo.com/show/305219/play.svg" alt="Epic Turf Battle!" class="img-fluid" width="100%" height="auto">
-            <div class="text-center mt-2">Epic Turf Battle!</div>
-          </a>
+
+        <!-- Video 18 -->
+        <div class="col-md-6 col-lg-4 gallery-filter-item searchable-item" data-category="prehistoric">
+          <div class="video-card" data-video-url="https://www.youtube.com/embed/1aB_c8eR5wE" data-video-title="Titanosaurs: The Largest Animals to Walk Earth">
+            <div class="video-thumb-container">
+              <img src="Images/Gallery60/18.png" alt="MEGA-HUGE: The Biggest Dinosaurs Ever!">
+              <div class="play-badge"><i class="fas fa-play"></i></div>
+            </div>
+            <div class="video-card-body">
+              <span class="badge bg-primary-subtle text-primary mb-2 align-self-start">Sauropod Gigantism</span>
+              <h5 class="video-card-title searchable-title">MEGA-HUGE: The Biggest Dinosaurs Ever!</h5>
+              <p class="text-secondary small searchable-desc mb-0">Biophysics of 70-ton Argentinosaurus and Patagotitan weight distribution.</p>
+            </div>
+          </div>
         </div>
-        <div class="col-md-6 col-lg-4 video-item">
-          <a href="https://www.youtube.com/embed/dQw4w9WgXcQ" target="_blank">
-            <img src="https://www.svgrepo.com/show/305219/play.svg" alt="Even Bigger Dinosaur Battles!" class="img-fluid" width="100%" height="auto">
-            <div class="text-center mt-2">Even Bigger Dinosaur Battles!</div>
+
+      </div>
+
+      <!-- Action Banner -->
+      <div class="glass-panel p-4 p-md-5 text-center">
+        <h3 class="fw-bold mb-2" style="color: var(--primary-teal);">Expand Your Prehistoric Knowledge</h3>
+        <p class="text-secondary mb-4 max-w-700 mx-auto">
+          Explore our companion photo galleries, interactive evolutionary history timelines, and field research downloads.
+        </p>
+        <div class="d-flex justify-content-center gap-3 flex-wrap">
+          <a href="photo.html" class="btn btn-dino-primary">
+            <i class="fas fa-images me-1"></i> Photo Gallery
           </a>
-        </div>
-        <div class="col-md-6 col-lg-4 video-item">
-          <a href="https://www.youtube.com/embed/dQw4w9WgXcQ" target="_blank">
-            <img src="https://www.svgrepo.com/show/305219/play.svg" alt="Exclusive Video of Tyrannosaurus Rex the KILLER!" class="img-fluid" width="100%" height="auto">
-            <div class="text-center mt-2">Exclusive Video of Tyrannosaurus Rex the KILLER!</div>
-          </a>
-        </div>
-        <div class="col-md-6 col-lg-4 video-item">
-          <a href="https://www.youtube.com/embed/dQw4w9WgXcQ" target="_blank">
-            <img src="https://www.svgrepo.com/show/305219/play.svg" alt="Feathered Dinosaurs_ Bird Ancestors_!" class="img-fluid" width="100%" height="auto">
-            <div class="text-center mt-2">Feathered Dinosaurs_ Bird Ancestors_!</div>
-          </a>
-        </div>
-        <div class="col-md-6 col-lg-4 video-item">
-          <a href="https://www.youtube.com/embed/dQw4w9WgXcQ" target="_blank">
-            <img src="https://www.svgrepo.com/show/305219/play.svg" alt="GROSS Dinosaur Stuff" class="img-fluid" width="100%" height="auto">
-            <div class="text-center mt-2">GROSS Dinosaur Stuff</div>
-          </a>
-        </div>
-        <div class="col-md-6 col-lg-4 video-item">
-          <a href="https://www.youtube.com/embed/dQw4w9WgXcQ" target="_blank">
-            <img src="https://www.svgrepo.com/show/305219/play.svg" alt="How Dinosaurs Are Born" class="img-fluid" width="100%" height="auto">
-            <div class="text-center mt-2">How Dinosaurs Are Born</div>
-          </a>
-        </div>
-        <div class="col-md-6 col-lg-4 video-item">
-          <a href="https://www.youtube.com/embed/dQw4w9WgXcQ" target="_blank">
-            <img src="https://www.svgrepo.com/show/305219/play.svg" alt="How Dinosaurs Went Extinct!" class="img-fluid" width="100%" height="auto">
-            <div class="text-center mt-2">How Dinosaurs Went Extinct!</div>
-          </a>
-        </div>
-        <div class="col-md-6 col-lg-4 video-item">
-          <a href="https://www.youtube.com/embed/dQw4w9WgXcQ" target="_blank">
-            <img src="https://www.svgrepo.com/show/305219/play.svg" alt="KILLER Dinosaur Bugs!" class="img-fluid" width="100%" height="auto">
-            <div class="text-center mt-2">KILLER Dinosaur Bugs!</div>
-          </a>
-        </div>
-        <div class="col-md-6 col-lg-4 video-item">
-          <a href="https://www.youtube.com/embed/dQw4w9WgXcQ" target="_blank">
-            <img src="https://www.svgrepo.com/show/305219/play.svg" alt="Laziest Dinosaurs Ever" class="img-fluid" width="100%" height="auto">
-            <div class="text-center mt-2">Laziest Dinosaurs Ever</div>
-          </a>
-        </div>
-        <div class="col-md-6 col-lg-4 video-item">
-          <a href="https://www.youtube.com/embed/dQw4w9WgXcQ" target="_blank">
-            <img src="https://www.svgrepo.com/show/305219/play.svg" alt="Look Inside A Dinosaur!" class="img-fluid" width="100%" height="auto">
-            <div class="text-center mt-2">Look Inside A Dinosaur!</div>
-          </a>
-        </div>
-        <div class="col-md-6 col-lg-4 video-item">
-          <a href="https://www.youtube.com/embed/dQw4w9WgXcQ" target="_blank">
-            <img src="https://www.svgrepo.com/show/305219/play.svg" alt="Mammoths Hunted for their Hides" class="img-fluid" width="100%" height="auto">
-            <div class="text-center mt-2">Mammoths Hunted for their Hides</div>
-          </a>
-        </div>
-        <div class="col-md-6 col-lg-4 video-item">
-          <a href="https://www.youtube.com/embed/dQw4w9WgXcQ" target="_blank">
-            <img src="https://www.svgrepo.com/show/305219/play.svg" alt="MEGA-HUGE_ The Biggest Dinosaurs Ever!" class="img-fluid" width="100%" height="auto">
-            <div class="text-center mt-2">MEGA-HUGE_ The Biggest Dinosaurs Ever!</div>
-          </a>
-        </div>
-        <div class="col-md-6 col-lg-4 video-item">
-          <a href="https://www.youtube.com/embed/dQw4w9WgXcQ" target="_blank">
-            <img src="https://www.svgrepo.com/show/305219/play.svg" alt="Most Gruesome Dinosaur Deaths" class="img-fluid" width="100%" height="auto">
-            <div class="text-center mt-2">Most Gruesome Dinosaur Deaths</div>
-          </a>
-        </div>
-        <div class="col-md-6 col-lg-4 video-item">
-          <a href="https://www.youtube.com/embed/dQw4w9WgXcQ" target="_blank">
-            <img src="https://www.svgrepo.com/show/305219/play.svg" alt="Only The Strong Survive_ Dinosaurs BATTLE" class="img-fluid" width="100%" height="auto">
-            <div class="text-center mt-2">Only The Strong Survive_ Dinosaurs BATTLE</div>
-          </a>
-        </div>
-        <div class="col-md-6 col-lg-4 video-item">
-          <a href="https://www.youtube.com/embed/dQw4w9WgXcQ" target="_blank">
-            <img src="https://www.svgrepo.com/show/305219/play.svg" alt="Prehistoric Beavers Make A Daring Escape!!" class="img-fluid" width="100%" height="auto">
-            <div class="text-center mt-2">Prehistoric Beavers Make A Daring Escape!!</div>
-          </a>
-        </div>
-        <div class="col-md-6 col-lg-4 video-item">
-          <a href="https://www.youtube.com/embed/dQw4w9WgXcQ" target="_blank">
-            <img src="https://www.svgrepo.com/show/305219/play.svg" alt="Prehistoric Flying Squirrels Take Flight!" class="img-fluid" width="100%" height="auto">
-            <div class="text-center mt-2">Prehistoric Flying Squirrels Take Flight!</div>
-          </a>
-        </div>
-        <div class="col-md-6 col-lg-4 video-item">
-          <a href="https://www.youtube.com/embed/dQw4w9WgXcQ" target="_blank">
-            <img src="https://www.svgrepo.com/show/305219/play.svg" alt="RUTHLESS Dinosaur Take Downs! In CGI!" class="img-fluid" width="100%" height="auto">
-            <div class="text-center mt-2">RUTHLESS Dinosaur Take Downs! In CGI!</div>
-          </a>
-        </div>
-        <div class="col-md-6 col-lg-4 video-item">
-          <a href="https://www.youtube.com/embed/dQw4w9WgXcQ" target="_blank">
-            <img src="https://www.svgrepo.com/show/305219/play.svg" alt="SCARY Dinosaur Roars!" class="img-fluid" width="100%" height="auto">
-            <div class="text-center mt-2">SCARY Dinosaur Roars!</div>
-          </a>
-        </div>
-        <div class="col-md-6 col-lg-4 video-item">
-          <a href="https://www.youtube.com/embed/dQw4w9WgXcQ" target="_blank">
-            <img src="https://www.svgrepo.com/show/305219/play.svg" alt="Small But Deadly!" class="img-fluid" width="100%" height="auto">
-            <div class="text-center mt-2">Small But Deadly!</div>
-          </a>
-        </div>
-        <div class="col-md-6 col-lg-4 video-item">
-          <a href="https://www.youtube.com/embed/dQw4w9WgXcQ" target="_blank">
-            <img src="https://www.svgrepo.com/show/305219/play.svg" alt="Small Dinosaurs Get Their Revenge" class="img-fluid" width="100%" height="auto">
-            <div class="text-center mt-2">Small Dinosaurs Get Their Revenge</div>
-          </a>
-        </div>
-        <div class="col-md-6 col-lg-4 video-item">
-          <a href="https://www.youtube.com/embed/dQw4w9WgXcQ" target="_blank">
-            <img src="https://www.svgrepo.com/show/305219/play.svg" alt="SO CUTE_ Sleeping Dinosaurs!!" class="img-fluid" width="100%" height="auto">
-            <div class="text-center mt-2">SO CUTE_ Sleeping Dinosaurs!!</div>
-          </a>
-        </div>
-        <div class="col-md-6 col-lg-4 video-item">
-          <a href="https://www.youtube.com/embed/dQw4w9WgXcQ" target="_blank">
-            <img src="https://www.svgrepo.com/show/305219/play.svg" alt="So You Think Dinosaurs Can Dance" class="img-fluid" width="100%" height="auto">
-            <div class="text-center mt-2">So You Think Dinosaurs Can Dance</div>
-          </a>
-        </div>
-        <div class="col-md-6 col-lg-4 video-item">
-          <a href="https://www.youtube.com/embed/dQw4w9WgXcQ" target="_blank">
-            <img src="https://www.svgrepo.com/show/305219/play.svg" alt="SUPER-CUTE VIDEO OF DINOSAUR BABIES!!!" class="img-fluid" width="100%" height="auto">
-            <div class="text-center mt-2">SUPER-CUTE VIDEO OF DINOSAUR BABIES!!!</div>
-          </a>
-        </div>
-        <div class="col-md-6 col-lg-4 video-item">
-          <a href="https://www.youtube.com/embed/dQw4w9WgXcQ" target="_blank">
-            <img src="https://www.svgrepo.com/show/305219/play.svg" alt="These Dinosaurs Are Hungry!" class="img-fluid" width="100%" height="auto">
-            <div class="text-center mt-2">These Dinosaurs Are Hungry!</div>
-          </a>
-        </div>
-        <div class="col-md-6 col-lg-4 video-item">
-          <a href="https://www.youtube.com/embed/dQw4w9WgXcQ" target="_blank">
-            <img src="https://www.svgrepo.com/show/305219/play.svg" alt="T-Rex Babies In HUGE Danger!" class="img-fluid" width="100%" height="auto">
-            <div class="text-center mt-2">T-Rex Babies In HUGE Danger!</div>
-          </a>
-        </div>
-        <div class="col-md-6 col-lg-4 video-item">
-          <a href="https://www.youtube.com/embed/dQw4w9WgXcQ" target="_blank">
-            <img src="https://www.svgrepo.com/show/305219/play.svg" alt="What Did Dinosaurs Eat" class="img-fluid" width="100%" height="auto">
-            <div class="text-center mt-2">What Did Dinosaurs Eat</div>
-          </a>
-        </div>
-        <div class="col-md-6 col-lg-4 video-item">
-          <a href="https://www.youtube.com/embed/dQw4w9WgXcQ" target="_blank">
-            <img src="https://www.svgrepo.com/show/305219/play.svg" alt="When Dinosaurs ATTACK!" class="img-fluid" width="100%" height="auto">
-            <div class="text-center mt-2">When Dinosaurs ATTACK!</div>
+          <a href="resources.html" class="btn btn-dino-teal">
+            <i class="fas fa-download me-1"></i> Research Resources
           </a>
         </div>
       </div>
-      <div class="row mt-4">
-        <div class="col-12 text-center">
-          <a href="photo.html" class="btn btn-success btn-lg"><i class="fas fa-images me-2"></i>Explore Our Photo Gallery</a>
-        </div>
-      </div>
+
     </div>
   </main>
 
-  <!-- Footer -->
-  <footer class="footer py-4 mt-5">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6 text-center text-md-start">
-          <p>&copy; 2025 DinoPrehistoric.com. All rights reserved.</p>
+  <!-- Video Player Modal -->
+  <div class="modal fade" id="videoPlayerModal" tabindex="-1" aria-labelledby="videoPlayerTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content border-0 shadow-lg bg-dark text-white rounded-4 overflow-hidden">
+        <div class="modal-header border-bottom border-secondary bg-black">
+          <h5 class="modal-title fw-bold text-warning" id="videoPlayerTitle">Prehistoric Documentary Player</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <div class="col-md-6 text-center text-md-end">
-          <a href="#top" class="text-white me-3"><i class="fas fa-arrow-up"></i> Back to Top</a>
-          <a href="contact.html" class="text-white me-3">Contact Us</a>
-          <a href="sitemap.html" class="text-white">Sitemap</a>
+        <div class="modal-body p-0 bg-black">
+          <div class="ratio ratio-16x9">
+            <iframe id="videoFrame" src="" title="Dinosaur Video Player" allowfullscreen allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+          </div>
+        </div>
+        <div class="modal-footer border-top border-secondary bg-black d-flex justify-content-between">
+          <span class="small text-muted"><i class="fas fa-info-circle me-1"></i> DinoPrehistoric Educational Video Archive</span>
+          <button type="button" class="btn btn-outline-light btn-sm rounded-pill" data-bs-dismiss="modal">Close Player</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modern Unified Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <div class="d-flex align-items-center gap-2 mb-3">
+            <img src="https://www.svgrepo.com/show/305218/dinosaur.svg" alt="DinoPrehistoric" height="40">
+            <span class="footer-brand mb-0">DinoPrehistoric</span>
+          </div>
+          <p class="small text-muted mb-3">
+            Dedicated to documenting the evolutionary history, anatomy, and fascinating discoveries 
+            surrounding dinosaurs and Earth's ancient prehistoric ecosystems.
+          </p>
+          <div class="d-flex gap-3 text-secondary">
+            <a href="about.html" class="text-muted"><i class="fas fa-landmark"></i> Paleontology Archive</a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-6 col-6">
+          <h5>Navigate</h5>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="history.html">History & Eras</a></li>
+            <li><a href="about.html">About Discovery</a></li>
+            <li><a href="sitemap.html">Sitemap</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-6">
+          <h5>Media & Vault</h5>
+          <ul class="footer-links">
+            <li><a href="photo.html">Photo Gallery</a></li>
+            <li><a href="photo2018.html">2018 Archive</a></li>
+            <li><a href="video.html">Video Gallery</a></li>
+            <li><a href="resources.html">Field Guides & Papers</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <h5>Connect</h5>
+          <ul class="footer-links">
+            <li><a href="contact.html"><i class="fas fa-envelope me-2 text-warning"></i> Contact Us</a></li>
+            <li><a href="contact.html#map"><i class="fas fa-map-marker-alt me-2 text-warning"></i> Discovery Center Map</a></li>
+            <li><a href="resources.html"><i class="fas fa-file-pdf me-2 text-warning"></i> Downloadable Guides</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center text-center text-md-start gap-2">
+        <p class="small mb-0">&copy; 2026 DinoPrehistoric.com. Built for science & paleontology enthusiasts.</p>
+        <div class="d-flex gap-3 small">
+          <a href="sitemap.html" class="text-muted">Sitemap</a>
+          <span class="text-secondary">•</span>
+          <a href="about.html" class="text-muted">About Us</a>
+          <span class="text-secondary">•</span>
+          <a href="#top" class="text-muted"><i class="fas fa-arrow-up"></i> Top</a>
         </div>
       </div>
     </div>
   </footer>
 
   <!-- Scroll to Top Button -->
-  <a href="#top" class="scroll-top" id="backToTop">
+  <a href="#top" class="scroll-top" id="backToTop" title="Scroll to top" aria-label="Scroll to top">
     <i class="fas fa-chevron-up"></i>
   </a>
 
-  <!-- Bootstrap JS Bundle with Popper -->
+  <!-- Bootstrap 5 JS Bundle -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom Modern JS -->
   <script src="js/main.js"></script>
 </body>
 </html>
