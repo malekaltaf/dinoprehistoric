@@ -3,35 +3,35 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Prehistoric Dinosaurs</title>
-  <!-- Bootstrap CSS -->
+  <title>DinoPrehistoric | The Definitive Guide to Dinosaurs & Prehistoric Earth</title>
+  <meta name="description" content="Explore the prehistoric era of dinosaurs: scientific classification, evolutionary history, photo and video galleries, and educational resources.">
+  <link rel="icon" type="image/svg+xml" href="Images/favicon.svg">
+  <!-- Bootstrap 5 CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Font Awesome for icons -->
+  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <!-- Custom Modern CSS -->
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body id="top">
-  <!-- Header -->
+<body id="top" class="bg-dino-wrap">
+
+  <!-- Header & Navigation -->
   <header class="site-header sticky-top">
     <nav class="navbar navbar-expand-lg navbar-dark">
       <div class="container">
-        <a class="navbar-brand d-flex align-items-center" href="index.html">
-          <img src="https://www.svgrepo.com/show/305218/dinosaur.svg" alt="Prehistoric Dinosaurs Logo" height="60">
-          <span class="logo-text ms-2">DinoPrehistoric</span>
+        <a class="navbar-brand" href="index.html">
+          <img src="https://www.svgrepo.com/show/305218/dinosaur.svg" alt="DinoPrehistoric Logo" height="52">
+          <span class="logo-text">Dino<span class="logo-accent">Prehistoric</span></span>
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
             <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="video.html">Video Gallery</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="photo.html">Photo Gallery</a>
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="history.html">History</a>
@@ -40,10 +40,19 @@
               <a class="nav-link" href="about.html">About Us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact Us</a>
+              <a class="nav-link" href="photo.html">Photo Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="video.html">Video Gallery</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="resources.html">Resources</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="sitemap.html">Sitemap</a>
             </li>
           </ul>
         </div>
@@ -52,140 +61,411 @@
   </header>
 
   <!-- Hero Section -->
-  <section class="hero-section text-center" style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('Images/Backgrounds/6.png');">
-    <div class="container">
-      <h1 class="display-4 fw-bold mb-4">Welcome to the Prehistoric World</h1>
-      <p class="lead mb-4">Discover the fascinating world of dinosaurs that ruled the Earth millions of years ago</p>
-      <a href="#main-content" class="btn btn-success btn-lg">Explore Now</a>
-    </div>
-  </section>
+  <section class="hero-section text-center" style="background-image: url('Images/Backgrounds/6.png');">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <span class="hero-badge">
+            <i class="fas fa-meteor"></i> Journey Through Deep Time
+          </span>
+          <h1 class="hero-title">Masters of the Ancient Earth</h1>
+          <p class="hero-lead">
+            Step back hundreds of millions of years into the Mesozoic Era. Uncover the evolution, anatomy, 
+            and breathtaking diversity of the reptiles that dominated prehistoric continents.
+          </p>
+          <div class="d-flex flex-wrap justify-content-center gap-3 mb-5">
+            <a href="#overview" class="btn btn-dino-primary btn-lg">
+              <i class="fas fa-compass me-2"></i> Explore Dinosaurs
+            </a>
+            <a href="history.html" class="btn btn-outline-dino btn-lg">
+              <i class="fas fa-hourglass-half me-2"></i> The Mesozoic Timeline
+            </a>
+          </div>
 
-  <!-- Main Content -->
-  <main id="main-content" class="py-5">
-    <div class="container">
-      <div class="row">
-        <!-- Sidebar with Gallery -->
-        <div class="col-lg-3 mb-4">
-          <div class="dino-gallery">
-            <div class="row g-2">
-              <div class="col-6 col-lg-12">
-                <img src="Images/Gallery60/1.png" alt="Dinosaur Image" class="img-fluid rounded mb-2" width="100%" height="auto">
-              </div>
-              <div class="col-6 col-lg-12">
-                <img src="Images/Gallery60/10.png" alt="Dinosaur Image" class="img-fluid rounded mb-2" width="100%" height="auto">
-              </div>
-              <div class="col-6 col-lg-12">
-                <img src="Images/Gallery60/11.png" alt="Dinosaur Image" class="img-fluid rounded mb-2" width="100%" height="auto">
-              </div>
-              <div class="col-6 col-lg-12">
-                <img src="Images/Gallery60/21.png" alt="Dinosaur Image" class="img-fluid rounded mb-2" width="100%" height="auto">
-              </div>
-              <div class="col-6 col-lg-12">
-                <img src="Images/Gallery60/23.png" alt="Dinosaur Image" class="img-fluid rounded mb-2" width="100%" height="auto">
-              </div>
-              <div class="col-6 col-lg-12">
-                <img src="Images/Gallery60/9.png" alt="Dinosaur Image" class="img-fluid rounded mb-2" width="100%" height="auto">
-              </div>
-              <div class="col-6 col-lg-12">
-                <img src="Images/Gallery60/36.png" alt="Dinosaur Image" class="img-fluid rounded" width="100%" height="auto">
+          <!-- Quick Stats Pill Grid -->
+          <div class="row g-3 justify-content-center mt-2">
+            <div class="col-6 col-md-3">
+              <div class="stat-pill">
+                <div class="stat-number">233M</div>
+                <div class="stat-label">Years of Origin</div>
               </div>
             </div>
-          </div>
-        </div>
-        
-        <!-- Main Content -->
-        <div class="col-lg-9">
-          <div class="card mb-4 border-0 shadow-sm">
-            <div class="card-body">
-              <h1 class="main-title text-center mb-4">Dinosaurs</h1>
-              
-              <!-- Temporal Range -->
-              <div class="text-center mb-4">
-                <h2 class="timeline-title h4 mb-2">Temporal Range</h2>
-                <p class="text-muted">Middle Triassic–Present, 233.23 – 0 Mya</p>
+            <div class="col-6 col-md-3">
+              <div class="stat-pill">
+                <div class="stat-number">1,000+</div>
+                <div class="stat-label">Species Discovered</div>
               </div>
-              
-              <!-- Fossil Collection Description -->
-              <div class="mb-4">
-                <p class="lead">
-                  A collection of fossil dinosaur skeletons. Clockwise from top left:
-                  Microraptor gui (a winged theropod), Apatosaurus louisae (a giant sauropod), 
-                  Edmontosaurus regalis (a duck-billed ornithopod), Triceratops horridus (a horned ceratopsian), 
-                  Stegosaurus stenops (a plated stegosaur), Pinacosaurus grangeri (an armored ankylosaur)
-                </p>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="stat-pill">
+                <div class="stat-number">3</div>
+                <div class="stat-label">Geological Periods</div>
               </div>
-              
-              <!-- Scientific Classification -->
-              <div class="classification-card p-4 rounded mb-4">
-                <h3 class="h4 mb-3 text-center">Scientific Classification</h3>
-                <div class="row">
-                  <div class="col-sm-4 text-sm-end fw-bold">Kingdom:</div>
-                  <div class="col-sm-8">Animalia</div>
-                </div>
-                <div class="row mt-2">
-                  <div class="col-sm-4 text-sm-end fw-bold">Phylum:</div>
-                  <div class="col-sm-8">Chordata</div>
-                </div>
-                <div class="row mt-2">
-                  <div class="col-sm-4 text-sm-end fw-bold">Clade:</div>
-                  <div class="col-sm-8">Dracohors</div>
-                </div>
-                <div class="row mt-2">
-                  <div class="col-sm-4 text-sm-end fw-bold">Clade:</div>
-                  <div class="col-sm-8">Dinosauria</div>
-                </div>
-                <div class="row mt-2">
-                  <div class="col-sm-4 text-sm-end fw-bold"></div>
-                  <div class="col-sm-8 text-muted">Owen, 1842</div>
-                </div>
-              </div>
-              
-              <!-- Major Groups -->
-              <div class="card mb-4 border-0 shadow-sm">
-                <div class="card-header bg-success text-white">
-                  <h3 class="h4 mb-0">Major Groups</h3>
-                </div>
-                <div class="card-body">
-                  <ul class="list-group list-group-flush">
-                    <li class="list-group-item">†Sauropodomorpha</li>
-                    <li class="list-group-item">Theropoda</li>
-                    <li class="list-group-item">†Ornithischia</li>
-                    <li class="list-group-item">†Ornithopoda</li>
-                    <li class="list-group-item">†Marginocephalia</li>
-                    <li class="list-group-item">†Thyreophora</li>
-                  </ul>
-                </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="stat-pill">
+                <div class="stat-number">165M</div>
+                <div class="stat-label">Years Dominant</div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+  </section>
+
+  <!-- Main Content Area -->
+  <main id="overview" class="py-5">
+    <div class="container">
+
+      <!-- Section Title -->
+      <div class="text-center mb-5">
+        <h2 class="main-title">The Age of Dinosaurs</h2>
+        <p class="section-subtitle">
+          Dinosaurs (*Dinosauria*) were the dominant terrestrial vertebrates for over 160 million years.
+          Discover their scientific classification, evolutionary branches, and ancient fossil records.
+        </p>
+      </div>
+
+      <!-- Feature Grid: Classification & Key Highlights -->
+      <div class="row g-4 mb-5">
+        
+        <!-- Left: Cladistics & Scientific Classification -->
+        <div class="col-lg-6">
+          <div class="modern-card h-100 p-4">
+            <div class="d-flex align-items-center mb-3">
+              <div class="rounded-circle bg-teal-subtle p-3 me-3 text-white" style="background: var(--primary-teal); width: 48px; height: 48px; display: flex; align-items: center; justify-content: center;">
+                <i class="fas fa-sitemap fa-lg"></i>
+              </div>
+              <div>
+                <h3 class="h4 mb-0 fw-bold" style="color: var(--primary-teal);">Scientific Classification</h3>
+                <span class="text-muted small">Taxonomic Hierarchy (Owen, 1842)</span>
+              </div>
+            </div>
+
+            <div class="classification-card my-3">
+              <div class="classification-row">
+                <div class="w-40 fw-bold" style="color: var(--primary-teal); width: 35%;">Kingdom:</div>
+                <div class="w-60">Animalia (Animals)</div>
+              </div>
+              <div class="classification-row">
+                <div class="w-40 fw-bold" style="color: var(--primary-teal); width: 35%;">Phylum:</div>
+                <div class="w-60">Chordata (Vertebrates)</div>
+              </div>
+              <div class="classification-row">
+                <div class="w-40 fw-bold" style="color: var(--primary-teal); width: 35%;">Clade:</div>
+                <div class="w-60">Dracohors & Archosauria</div>
+              </div>
+              <div class="classification-row">
+                <div class="w-40 fw-bold" style="color: var(--primary-teal); width: 35%;">Superorder:</div>
+                <div class="w-60">Dinosauria (Sir Richard Owen)</div>
+              </div>
+              <div class="classification-row">
+                <div class="w-40 fw-bold" style="color: var(--primary-teal); width: 35%;">Temporal Range:</div>
+                <div class="w-60 text-success fw-semibold">Middle Triassic – Present (Avian)</div>
+              </div>
+            </div>
+
+            <p class="text-secondary small mt-3 mb-0">
+              <i class="fas fa-info-circle text-primary me-1"></i> While non-avian dinosaurs became extinct 66 million years ago during the Cretaceous–Paleogene extinction event, modern birds (*Aves*) are surviving feathered theropod dinosaurs.
+            </p>
+          </div>
+        </div>
+
+        <!-- Right: Primary Lineages & Groups -->
+        <div class="col-lg-6">
+          <div class="modern-card h-100 p-4">
+            <div class="d-flex align-items-center mb-3">
+              <div class="rounded-circle p-3 me-3 text-white" style="background: var(--accent-orange); width: 48px; height: 48px; display: flex; align-items: center; justify-content: center;">
+                <i class="fas fa-dna fa-lg"></i>
+              </div>
+              <div>
+                <h3 class="h4 mb-0 fw-bold" style="color: var(--accent-orange-hover);">Major Dinosaur Lineages</h3>
+                <span class="text-muted small">Two Fundamental Clades: Saurischia & Ornithischia</span>
+              </div>
+            </div>
+
+            <div class="list-group list-group-flush mt-3">
+              <div class="list-group-item d-flex justify-content-between align-items-center px-0 py-2 border-bottom">
+                <div>
+                  <h6 class="mb-0 fw-bold">† Sauropodomorpha</h6>
+                  <small class="text-muted">Long-necked gigantic herbivores: *Brachiosaurus, Diplodocus*</small>
+                </div>
+                <span class="badge bg-secondary-subtle text-secondary rounded-pill">Herbivorous</span>
+              </div>
+              <div class="list-group-item d-flex justify-content-between align-items-center px-0 py-2 border-bottom">
+                <div>
+                  <h6 class="mb-0 fw-bold">Theropoda</h6>
+                  <small class="text-muted">Bipedal predators & birds: *Tyrannosaurus, Velociraptor, Spinosaurus*</small>
+                </div>
+                <span class="badge bg-danger-subtle text-danger rounded-pill">Carnivorous / Avian</span>
+              </div>
+              <div class="list-group-item d-flex justify-content-between align-items-center px-0 py-2 border-bottom">
+                <div>
+                  <h6 class="mb-0 fw-bold">† Thyreophora</h6>
+                  <small class="text-muted">Armored & plated quadrupeds: *Stegosaurus, Ankylosaurus*</small>
+                </div>
+                <span class="badge bg-success-subtle text-success rounded-pill">Armored</span>
+              </div>
+              <div class="list-group-item d-flex justify-content-between align-items-center px-0 py-2 border-bottom">
+                <div>
+                  <h6 class="mb-0 fw-bold">† Marginocephalia</h6>
+                  <small class="text-muted">Frilled & horned herbivores: *Triceratops, Pachycephalosaurus*</small>
+                </div>
+                <span class="badge bg-warning-subtle text-warning-emphasis rounded-pill">Ceratopsians</span>
+              </div>
+              <div class="list-group-item d-flex justify-content-between align-items-center px-0 py-2">
+                <div>
+                  <h6 class="mb-0 fw-bold">† Ornithopoda</h6>
+                  <small class="text-muted">Duck-billed and two-legged herbivores: *Iguanodon, Parasaurolophus*</small>
+                </div>
+                <span class="badge bg-info-subtle text-info-emphasis rounded-pill">Duck-billed</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Dinosaur Spotlight Gallery -->
+      <div class="mb-5">
+        <div class="d-flex justify-content-between align-items-end mb-4 flex-wrap gap-2">
+          <div>
+            <h3 class="h2 fw-bold mb-1" style="color: var(--primary-teal);">Prehistoric Spotlight</h3>
+            <p class="text-muted mb-0">Iconic specimens discovered across ancient fossil strata</p>
+          </div>
+          <a href="photo.html" class="btn btn-outline-dino btn-sm">
+            View All Photos <i class="fas fa-arrow-right ms-1"></i>
+          </a>
+        </div>
+
+        <div class="row g-3">
+          <div class="col-6 col-md-4 col-lg-2">
+            <div class="gallery-card" title="Click to enlarge">
+              <img src="Images/Gallery60/1.png" alt="Tyrannosaurus Rex illustration" class="img-fluid">
+              <div class="gallery-overlay">
+                <span class="gallery-overlay-title">T-Rex</span>
+                <span class="gallery-overlay-btn"><i class="fas fa-search-plus"></i> View</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2">
+            <div class="gallery-card" title="Click to enlarge">
+              <img src="Images/Gallery60/10.png" alt="Triceratops in prehistoric habitat" class="img-fluid">
+              <div class="gallery-overlay">
+                <span class="gallery-overlay-title">Triceratops</span>
+                <span class="gallery-overlay-btn"><i class="fas fa-search-plus"></i> View</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2">
+            <div class="gallery-card" title="Click to enlarge">
+              <img src="Images/Gallery60/11.png" alt="Brachiosaurus grazing ancient flora" class="img-fluid">
+              <div class="gallery-overlay">
+                <span class="gallery-overlay-title">Brachiosaurus</span>
+                <span class="gallery-overlay-btn"><i class="fas fa-search-plus"></i> View</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2">
+            <div class="gallery-card" title="Click to enlarge">
+              <img src="Images/Gallery60/21.png" alt="Stegosaurus defensive plates" class="img-fluid">
+              <div class="gallery-overlay">
+                <span class="gallery-overlay-title">Stegosaurus</span>
+                <span class="gallery-overlay-btn"><i class="fas fa-search-plus"></i> View</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2">
+            <div class="gallery-card" title="Click to enlarge">
+              <img src="Images/Gallery60/23.png" alt="Velociraptor hunting formation" class="img-fluid">
+              <div class="gallery-overlay">
+                <span class="gallery-overlay-title">Velociraptor</span>
+                <span class="gallery-overlay-btn"><i class="fas fa-search-plus"></i> View</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2">
+            <div class="gallery-card" title="Click to enlarge">
+              <img src="Images/Gallery60/36.png" alt="Spinosaurus aquatic predator" class="img-fluid">
+              <div class="gallery-overlay">
+                <span class="gallery-overlay-title">Spinosaurus</span>
+                <span class="gallery-overlay-btn"><i class="fas fa-search-plus"></i> View</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Interactive 3 Periods Cards -->
+      <div class="mb-5">
+        <div class="text-center mb-4">
+          <h3 class="h2 fw-bold" style="color: var(--primary-teal);">The Three Mesozoic Periods</h3>
+          <p class="text-muted">The tripartite division of the Mesozoic Era spanning 180 million years</p>
+        </div>
+
+        <div class="row g-4">
+          <!-- Triassic -->
+          <div class="col-md-4">
+            <div class="modern-card h-100">
+              <div class="p-4">
+                <span class="badge bg-warning-subtle text-warning-emphasis mb-2">252 – 201 MYA</span>
+                <h4 class="fw-bold mb-2">Triassic Period</h4>
+                <p class="text-secondary small mb-3">
+                  Emerging from the Permian mass extinction, the supercontinent of Pangaea gave birth to the earliest primitive dinosaurs like *Coelophysis* and *Herrerasaurus*.
+                </p>
+                <a href="history.html#evolutionary-history" class="btn btn-sm btn-outline-secondary rounded-pill">
+                  Read Era Details <i class="fas fa-chevron-right ms-1"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Jurassic -->
+          <div class="col-md-4">
+            <div class="modern-card h-100">
+              <div class="p-4">
+                <span class="badge bg-success-subtle text-success mb-2">201 – 145 MYA</span>
+                <h4 class="fw-bold mb-2">Jurassic Period</h4>
+                <p class="text-secondary small mb-3">
+                  Lush greenhouse jungles flourished. Gigantic sauropods shook the continents, plated stegosaurs roamed, and early feathered ancestors took to the skies.
+                </p>
+                <a href="history.html#evolutionary-history" class="btn btn-sm btn-outline-secondary rounded-pill">
+                  Read Era Details <i class="fas fa-chevron-right ms-1"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cretaceous -->
+          <div class="col-md-4">
+            <div class="modern-card h-100">
+              <div class="p-4">
+                <span class="badge bg-danger-subtle text-danger mb-2">145 – 66 MYA</span>
+                <h4 class="fw-bold mb-2">Cretaceous Period</h4>
+                <p class="text-secondary small mb-3">
+                  The pinnacle of dinosaur diversity and size, culminating with apex predators like *T. rex*, armored ankylosaurs, and the fateful Chicxulub asteroid impact.
+                </p>
+                <a href="history.html#evolutionary-history" class="btn btn-sm btn-outline-secondary rounded-pill">
+                  Read Era Details <i class="fas fa-chevron-right ms-1"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quick Exploration Hub Banner -->
+      <div class="glass-panel p-4 p-md-5 text-center mt-5">
+        <div class="row align-items-center">
+          <div class="col-lg-8 text-lg-start mb-3 mb-lg-0">
+            <h3 class="fw-bold mb-2" style="color: var(--primary-teal);">Ready to Deep Dive into Paleontology?</h3>
+            <p class="text-muted mb-0">
+              Access educational field notes, high-definition photo galleries, and video documentaries.
+            </p>
+          </div>
+          <div class="col-lg-4 text-lg-end">
+            <a href="resources.html" class="btn btn-dino-primary me-2 mb-2">
+              <i class="fas fa-book-open me-2"></i> Resources
+            </a>
+            <a href="video.html" class="btn btn-dino-teal mb-2">
+              <i class="fas fa-film me-2"></i> Watch Videos
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
   </main>
 
-  <!-- Footer -->
-  <footer class="footer py-4">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6 text-center text-md-start">
-          <p>&copy; 2025 DinoPrehistoric.com. All rights reserved.</p>
+  <!-- Lightbox Modal -->
+  <div class="modal fade lightbox-modal" id="lightboxModal" tabindex="-1" aria-labelledby="lightboxCaption" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-body">
+          <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 m-3 z-3" data-bs-dismiss="modal" aria-label="Close"></button>
+          <img src="" id="lightboxImage" class="img-fluid" alt="Dinosaur Preview">
+          <div id="lightboxCaption" class="lightbox-caption"></div>
         </div>
-        <div class="col-md-6 text-center text-md-end">
-          <a href="#top" class="text-white me-3"><i class="fas fa-arrow-up"></i> Back to Top</a>
-          <a href="contact.html" class="text-white me-3">Contact Us</a>
-          <a href="sitemap.html" class="text-white">Sitemap</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modern Unified Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row g-4">
+        <!-- Brand Summary -->
+        <div class="col-lg-4 col-md-6">
+          <div class="d-flex align-items-center gap-2 mb-3">
+            <img src="https://www.svgrepo.com/show/305218/dinosaur.svg" alt="DinoPrehistoric" height="40">
+            <span class="footer-brand mb-0">DinoPrehistoric</span>
+          </div>
+          <p class="small text-muted mb-3">
+            Dedicated to documenting the evolutionary history, anatomy, and fascinating discoveries 
+            surrounding dinosaurs and Earth's ancient prehistoric ecosystems.
+          </p>
+          <div class="d-flex gap-3 text-secondary">
+            <a href="about.html" class="text-muted"><i class="fas fa-landmark"></i> Paleontology Archive</a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="col-lg-2 col-md-6 col-6">
+          <h5>Navigate</h5>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="history.html">History & Eras</a></li>
+            <li><a href="about.html">About Discovery</a></li>
+            <li><a href="sitemap.html">Sitemap</a></li>
+          </ul>
+        </div>
+
+        <!-- Galleries & Media -->
+        <div class="col-lg-3 col-md-6 col-6">
+          <h5>Media & Vault</h5>
+          <ul class="footer-links">
+            <li><a href="photo.html">Photo Gallery</a></li>
+            <li><a href="photo2018.html">2018 Archive</a></li>
+            <li><a href="video.html">Video Gallery</a></li>
+            <li><a href="resources.html">Field Guides & Papers</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact & Support -->
+        <div class="col-lg-3 col-md-6">
+          <h5>Connect</h5>
+          <ul class="footer-links">
+            <li><a href="contact.html"><i class="fas fa-envelope me-2 text-warning"></i> Contact Us</a></li>
+            <li><a href="contact.html#map"><i class="fas fa-map-marker-alt me-2 text-warning"></i> Discovery Center Map</a></li>
+            <li><a href="resources.html"><i class="fas fa-file-pdf me-2 text-warning"></i> Downloadable Guides</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center text-center text-md-start gap-2">
+        <p class="small mb-0">&copy; 2026 DinoPrehistoric.com. Built for science & paleontology enthusiasts.</p>
+        <div class="d-flex gap-3 small">
+          <a href="sitemap.html" class="text-muted">Sitemap</a>
+          <span class="text-secondary">•</span>
+          <a href="about.html" class="text-muted">About Us</a>
+          <span class="text-secondary">•</span>
+          <a href="#top" class="text-muted"><i class="fas fa-arrow-up"></i> Top</a>
         </div>
       </div>
     </div>
   </footer>
 
   <!-- Scroll to Top Button -->
-  <a href="#top" class="scroll-top" id="backToTop">
+  <a href="#top" class="scroll-top" id="backToTop" title="Scroll to top" aria-label="Scroll to top">
     <i class="fas fa-chevron-up"></i>
   </a>
 
-  <!-- Bootstrap JS Bundle with Popper -->
+  <!-- Bootstrap 5 JS Bundle -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom Modern JS -->
   <script src="js/main.js"></script>
 </body>
 </html>
