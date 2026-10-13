@@ -3,47 +3,54 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Us - Prehistoric Dinosaurs</title>
-  <!-- Bootstrap CSS -->
+  <title>About Us & The Discovery of Dinosaurs - DinoPrehistoric</title>
+  <meta name="description" content="Learn about the origin and naming of dinosaurs by Sir Richard Owen in 1842, the history of paleontology, and DinoPrehistoric's educational mission.">
+  <link rel="icon" type="image/svg+xml" href="Images/favicon.svg">
+  <!-- Bootstrap 5 CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Font Awesome for icons -->
+  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Custom Modern CSS -->
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body id="top" style="background-image: url('Images/Backgrounds/3.png'); background-size: cover; background-attachment: fixed;">
-  <!-- Header -->
+<body id="top" class="bg-dino-wrap">
+
+  <!-- Header & Navigation -->
   <header class="site-header sticky-top">
     <nav class="navbar navbar-expand-lg navbar-dark">
       <div class="container">
-        <a class="navbar-brand d-flex align-items-center" href="index.html">
-          <img src="https://www.svgrepo.com/show/305218/dinosaur.svg" alt="Prehistoric Dinosaurs Logo" height="60">
-          <span class="logo-text ms-2">DinoPrehistoric</span>
+        <a class="navbar-brand" href="index.html">
+          <img src="https://www.svgrepo.com/show/305218/dinosaur.svg" alt="DinoPrehistoric Logo" height="52">
+          <span class="logo-text">Dino<span class="logo-accent">Prehistoric</span></span>
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
             <li class="nav-item">
               <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="video.html">Video Gallery</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="photo.html">Photo Gallery</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="history.html">History</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="about.html">About Us</a>
+              <a class="nav-link active" aria-current="page" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="photo.html">Photo Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="video.html">Video Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="resources.html">Resources</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="contact.html">Contact Us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="resources.html">Resources</a>
+              <a class="nav-link" href="sitemap.html">Sitemap</a>
             </li>
           </ul>
         </div>
@@ -51,130 +58,205 @@
     </nav>
   </header>
 
-  <!-- Page Title -->
-  <div class="container mt-4">
-    <div class="text-center mb-4">
-      <h2 class="animated-text">About Us</h2>
+  <!-- Hero Section -->
+  <section class="hero-section text-center" style="background-image: url('Images/Backgrounds/3.png');">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <span class="hero-badge"><i class="fas fa-landmark"></i> The Dawn of Discovery</span>
+      <h1 class="hero-title">About DinoPrehistoric</h1>
+      <p class="hero-lead">
+        From the first 19th-century fossil quarries of the English countryside to modern phylogenetic cladistics and molecular paleontology.
+      </p>
     </div>
-  </div>
+  </section>
 
   <!-- Main Content -->
   <main class="py-5">
     <div class="container">
-      <div class="content-card p-4 p-md-5" style="background-color: rgba(255, 255, 255, 0.9);">
-        <h1 class="page-title text-center mb-4">Dinosaurs</h1>
-        
-        <div class="row">
-          <div class="col-md-10 mx-auto">
-            <div class="timeline-item">
-              <h3>The Origin of Dinosaurs</h3>
-              <p class="text-indent">
-                The prehistoric reptiles known as dinosaurs arose during the Middle to Late Triassic Period of
-                the Mesozoic Era, some 230 million years ago. They were members of a subclass
-                of reptiles called the archosaurs ("ruling reptiles"), a group that also
-                includes birds and crocodiles. Scientists first
-                began studying dinosaurs during the 1820s, when they discovered the bones of a
-                large land reptile they dubbed a Megalosaurus ("big lizard") buried in the
-                English countryside.
-              </p>
-              <p class="text-indent">
-                In 1842, Sir Richard Owen, Britain's leading paleontologist,
-                first coined the term "dinosaur." Owen had examined bones from three different
-                creatures–Megalosaurus, Iguanadon ("iguana tooth") and Hylaeosaurus ("woodland
-                lizard"). Each of them lived on land, was larger than any living reptile, walked
-                with their legs directly beneath their bodies instead of out to the sides and
-                had three more vertebrae in their hips than other known reptiles. Using this
-                information, Owen determined that the three formed a special group of reptiles,
-                which he named Dinosauria. The word comes from the ancient Greek word deinos
-                ("terrible") and sauros ("lizard" or "reptile").
-              </p>
+
+      <!-- Section: The Birth of Paleontology -->
+      <div class="row justify-content-center mb-5">
+        <div class="col-lg-10">
+          <div class="text-center mb-4">
+            <h2 class="main-title">Unraveling Deep Time</h2>
+            <p class="section-subtitle">How human curiosity reconstructed creatures unseen for sixty-six million years.</p>
+          </div>
+
+          <!-- Narrative Card 1: 1820s Megalosaurus -->
+          <div class="modern-card p-4 p-md-5 mb-4">
+            <div class="d-flex align-items-center mb-3">
+              <div class="rounded-circle p-3 me-3 text-white" style="background: var(--primary-teal); width: 50px; height: 50px; display: flex; align-items: center; justify-content: center;">
+                <i class="fas fa-search fa-lg"></i>
+              </div>
+              <div>
+                <h3 class="h4 mb-0 fw-bold" style="color: var(--primary-teal);">The Origin of Dinosaur Science</h3>
+                <span class="text-muted small">England, 1824: Reverend William Buckland & The Megalosaurus</span>
+              </div>
             </div>
-            
-            <div class="timeline-item">
-              <h3>Dinosaur Classification</h3>
-              <p class="text-indent">
-                Since then, dinosaur fossils have been found all over the world and studied by paleontologists
-                to find out more about the many different types of these creatures that existed.
-                Scientists have traditionally divided the dinosaur group into two orders: the "bird-hipped"
-                Ornithischia and the "lizard-hipped" Saurischia. From there, dinosaurs have been
-                broken down into numerous genera (e.g. Tyrannosaurus or Triceratops) and each genus
-                into one or more species.
-              </p>
-              <p class="text-indent">
-                Some dinosaurs were bipedal, which means they walked on
-                two legs. Some walked on four legs (quadrupedal), and some were able to switch between
-                these two walking styles. Some dinosaurs were covered with a type of body armor,
-                and some probably had feathers, like their modern bird relatives. Some moved quickly,
-                while others were lumbering and slow. Most dinosaurs were herbivores, or plant-eaters,
-                but some were carnivorous and hunted or scavenged other dinosaurs in order to survive.
-              </p>
+            <p class="text-secondary leading-relaxed">
+              The prehistoric reptiles known as dinosaurs arose during the Middle to Late Triassic Period of the Mesozoic Era, roughly 230 million years ago. They were members of a broader archosaurian lineage—"ruling reptiles"—which also gave rise to crocodilians and pterosaurs.
+            </p>
+            <p class="text-secondary leading-relaxed mb-0">
+              Humanity first formally studied dinosaurs during the 1820s, when naturalist William Buckland described fossilized jaws and limbs discovered in Stonesfield slate quarries in Oxfordshire, dubbing the formidable creature <em>Megalosaurus</em> ("great lizard").
+            </p>
+          </div>
+
+          <!-- Narrative Card 2: 1842 Sir Richard Owen -->
+          <div class="modern-card p-4 p-md-5 mb-4 border-start border-4 border-warning">
+            <div class="d-flex align-items-center mb-3">
+              <div class="rounded-circle p-3 me-3 text-white" style="background: var(--accent-orange); width: 50px; height: 50px; display: flex; align-items: center; justify-content: center;">
+                <i class="fas fa-feather-alt fa-lg"></i>
+              </div>
+              <div>
+                <h3 class="h4 mb-0 fw-bold" style="color: var(--accent-orange-hover);">1842: Coining "Dinosauria"</h3>
+                <span class="text-muted small">Sir Richard Owen defines an entirely new taxonomic superorder</span>
+              </div>
             </div>
-            
-            <div class="timeline-item">
-              <h3>The Earth During Dinosaur Times</h3>
-              <p class="text-indent">
-                At the time the dinosaurs arose, all of the Earth's continents were connected together in one land
-                mass, now known as Pangaea, and surrounded by one enormous ocean. Pangaea began
-                to break apart into separate continents during the Early Jurassic Period
-                (around 200 million years ago), and dinosaurs would have seen great changes in the
-                world in which they lived over the course of their existence.
-              </p>
-              <p class="text-indent">
-                Dinosaurs mysteriously disappeared at the end of the Cretaceous Period, around 65 million
-                years ago. Many other types of animals, as well as many species of plants, died
-                out around the same time, and numerous competing theories exist as to what
-                caused this mass extinction. In addition to the great volcanic or tectonic
-                activity that was occurring around that time, scientists have also discovered
-                that a giant asteroid hit Earth about 65.5 million years ago, landing with the
-                force of 180 trillion tons of TNT and spreading an enormous amount of ash all
-                over the Earth's surface. Deprived of water and sunlight, plants and algae
-                would have died, killing off the planet's herbivores; after a period of
-                surviving on the carcasses of these herbivores, carnivores would have died out
-                as well.
-              </p>
-            </div>
-            
-            <div class="timeline-item">
-              <h3>Dinosaurs Today</h3>
-              <p class="text-indent">
-                Despite the fact that dinosaurs no longer walk the Earth as they did during the Mesozoic Era,
-                unmistakable traces of these enormous reptiles can be identified in their modern-day
-                descendants: birds. Dinosaurs also live on in the study of paleontology, and new
-                information about them is constantly being uncovered. Finally, judging from
-                their frequent appearances in the movies and on television, dinosaurs have a
-                firm hold in the popular imagination, one realm in which they show no danger of
-                becoming extinct.
+            <p class="text-secondary leading-relaxed">
+              In 1842, Sir Richard Owen, Britain's premier comparative anatomist, analyzed fossils from three distinct creatures: <em>Megalosaurus</em>, <em>Iguanodon</em> ("iguana tooth", discovered by Gideon and Mary Ann Mantell), and the armored <em>Hylaeosaurus</em> ("woodland lizard").
+            </p>
+            <p class="text-secondary leading-relaxed">
+              Owen realized that unlike modern lizards whose legs splay laterally, these prehistoric giants bore columnar legs positioned directly beneath their torso, like modern mammals and birds. They possessed fused sacral vertebrae in their pelvic girdles and massive skeletal architecture.
+            </p>
+            <div class="p-3 rounded" style="background-color: rgba(227, 100, 20, 0.08); border-left: 3px solid var(--accent-orange);">
+              <p class="mb-0 small fw-semibold" style="color: var(--accent-orange-hover);">
+                Owen synthesized the ancient Greek terms <em>deinos</em> ("terrible, wondrous, awe-inspiring") and <em>sauros</em> ("lizard or reptile") to create <strong>Dinosauria</strong>.
               </p>
             </div>
           </div>
+
+          <!-- Interactive Highlights: Evolution, Diversity, & Legacy -->
+          <div class="row g-4 mb-4">
+            <div class="col-md-6">
+              <div class="modern-card p-4 h-100">
+                <div class="text-success mb-2"><i class="fas fa-globe-americas fa-2x"></i></div>
+                <h4 class="fw-bold mb-2">Pangaean Supercontinent</h4>
+                <p class="text-secondary small mb-0">
+                  When dinosaurs emerged, Earth's continents formed the singular supercontinent Pangaea surrounded by Panthalassa. The tectonic splitting during the Jurassic created diverse oceanic barriers, driving extraordinary evolutionary endemism.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="modern-card p-4 h-100">
+                <div class="text-danger mb-2"><i class="fas fa-meteor fa-2x"></i></div>
+                <h4 class="fw-bold mb-2">The Chicxulub Impactor</h4>
+                <p class="text-secondary small mb-0">
+                  Sixty-six million years ago, a 10-kilometer asteroid struck the Yucatán Peninsula (Chicxulub crater), unleashing megatsunamis, global wildfires, and an impact winter that terminated non-avian dinosaurs along with 75% of Earth's species.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Modern Dinosaurs Card -->
+          <div class="modern-card p-4 p-md-5 mb-5">
+            <div class="d-flex align-items-center mb-3">
+              <div class="rounded-circle p-3 me-3 text-white" style="background: var(--primary-teal-light); width: 50px; height: 50px; display: flex; align-items: center; justify-content: center;">
+                <i class="fas fa-dove fa-lg"></i>
+              </div>
+              <div>
+                <h3 class="h4 mb-0 fw-bold" style="color: var(--primary-teal);">Dinosaurs Among Us Today</h3>
+                <span class="text-muted small">Phylogenetic connection to modern Aves</span>
+              </div>
+            </div>
+            <p class="text-secondary leading-relaxed">
+              Dinosauria never truly vanished. Rigorous cladistic analysis, feather preservation in Liaoning shales, and wishbone (furcula) homologies demonstrate that <strong>all modern birds are living, feathered theropod dinosaurs</strong>.
+            </p>
+            <p class="text-secondary leading-relaxed mb-0">
+              From peregrine falcons to hummingbirds, over 10,000 avian dinosaur species flourish today—surpassing the species diversity of modern mammals.
+            </p>
+          </div>
+
+          <!-- Mission Box -->
+          <div class="glass-panel p-4 p-md-5 text-center">
+            <h3 class="fw-bold mb-3" style="color: var(--primary-teal);">Our Mission at DinoPrehistoric</h3>
+            <p class="text-secondary max-w-700 mx-auto mb-4">
+              We curate verified paleontological knowledge, taxonomic classifications, high-resolution fossil illustrations, and documentary media to ignite scientific curiosity for students, researchers, and dinosaur enthusiasts across the globe.
+            </p>
+            <div class="d-flex justify-content-center gap-3 flex-wrap">
+              <a href="history.html" class="btn btn-dino-primary">
+                <i class="fas fa-history me-1"></i> Explore Timeline
+              </a>
+              <a href="contact.html" class="btn btn-outline-dino">
+                <i class="fas fa-envelope me-1"></i> Contact Curators
+              </a>
+            </div>
+          </div>
+
         </div>
       </div>
+
     </div>
   </main>
 
-  <!-- Footer -->
-  <footer class="footer py-4 mt-5">
+  <!-- Modern Unified Footer -->
+  <footer class="footer">
     <div class="container">
-      <div class="row">
-        <div class="col-md-6 text-center text-md-start">
-          <p>&copy; 2025 DinoPrehistoric.com. All rights reserved.</p>
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <div class="d-flex align-items-center gap-2 mb-3">
+            <img src="https://www.svgrepo.com/show/305218/dinosaur.svg" alt="DinoPrehistoric" height="40">
+            <span class="footer-brand mb-0">DinoPrehistoric</span>
+          </div>
+          <p class="small text-muted mb-3">
+            Dedicated to documenting the evolutionary history, anatomy, and fascinating discoveries 
+            surrounding dinosaurs and Earth's ancient prehistoric ecosystems.
+          </p>
+          <div class="d-flex gap-3 text-secondary">
+            <a href="about.html" class="text-muted"><i class="fas fa-landmark"></i> Paleontology Archive</a>
+          </div>
         </div>
-        <div class="col-md-6 text-center text-md-end">
-          <a href="#top" class="text-white me-3"><i class="fas fa-arrow-up"></i> Back to Top</a>
-          <a href="contact.html" class="text-white me-3">Contact Us</a>
-          <a href="sitemap.html" class="text-white">Sitemap</a>
+
+        <div class="col-lg-2 col-md-6 col-6">
+          <h5>Navigate</h5>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="history.html">History & Eras</a></li>
+            <li><a href="about.html">About Discovery</a></li>
+            <li><a href="sitemap.html">Sitemap</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-6">
+          <h5>Media & Vault</h5>
+          <ul class="footer-links">
+            <li><a href="photo.html">Photo Gallery</a></li>
+            <li><a href="photo2018.html">2018 Archive</a></li>
+            <li><a href="video.html">Video Gallery</a></li>
+            <li><a href="resources.html">Field Guides & Papers</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <h5>Connect</h5>
+          <ul class="footer-links">
+            <li><a href="contact.html"><i class="fas fa-envelope me-2 text-warning"></i> Contact Us</a></li>
+            <li><a href="contact.html#map"><i class="fas fa-map-marker-alt me-2 text-warning"></i> Discovery Center Map</a></li>
+            <li><a href="resources.html"><i class="fas fa-file-pdf me-2 text-warning"></i> Downloadable Guides</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center text-center text-md-start gap-2">
+        <p class="small mb-0">&copy; 2026 DinoPrehistoric.com. Built for science & paleontology enthusiasts.</p>
+        <div class="d-flex gap-3 small">
+          <a href="sitemap.html" class="text-muted">Sitemap</a>
+          <span class="text-secondary">•</span>
+          <a href="about.html" class="text-muted">About Us</a>
+          <span class="text-secondary">•</span>
+          <a href="#top" class="text-muted"><i class="fas fa-arrow-up"></i> Top</a>
         </div>
       </div>
     </div>
   </footer>
 
   <!-- Scroll to Top Button -->
-  <a href="#top" class="scroll-top" id="backToTop">
+  <a href="#top" class="scroll-top" id="backToTop" title="Scroll to top" aria-label="Scroll to top">
     <i class="fas fa-chevron-up"></i>
   </a>
 
-  <!-- Bootstrap JS Bundle with Popper -->
+  <!-- Bootstrap 5 JS Bundle -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom Modern JS -->
   <script src="js/main.js"></script>
 </body>
 </html>
