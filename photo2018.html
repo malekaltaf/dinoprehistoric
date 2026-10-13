@@ -94,43 +94,507 @@
 
       <!-- 50 Items Grid -->
       <div class="row g-4 mb-5" id="archiveContainer">
-        <!-- Gallery items 1 to 50 -->
-        <script>
-          // Dynamically render clean cards for the 50 items with proper metadata
-          const container = document.getElementById('archiveContainer');
-          const speciesNames = [
-            "Tyrannosaurus Rex", "Triceratops Prorsus", "Brachiosaurus Altithorax", "Velociraptor Mongoliensis",
-            "Stegosaurus Stenops", "Spinosaurus Aegyptiacus", "Allosaurus Fragilis", "Ankylosaurus Magniventris",
-            "Parasaurolophus Walkeri", "Diplodocus Carnegii", "Carnotaurus Sastrei", "Pachycephalosaurus",
-            "Iguanodon Bernissartensis", "Archaeopteryx Lithographica", "Dilophosaurus Wetherilli", "Giganotosaurus Carolinii",
-            "Deinonychus Antirrhopus", "Oviraptor Philoceratops", "Corythosaurus Casuarius", "Gallimimus Bullatus",
-            "Ceratosaurus Nasicornis", "Maiasaura Peeblesorum", "Styracosaurus Albertensis", "Therizinosaurus Cheloniformis",
-            "Pachyrhinosaurus", "Baryonyx Walkeri", "Microraptor Gui", "Acrocanthosaurus Atokensis",
-            "Euoplocephalus Tutus", "Compsognathus Longipes", "Plateosaurus Engelhardti", "Coelophysis Bauri",
-            "Camarasaurus Supremus", "Ouranosaurus Nigeriensis", "Suchomimus Tenerensis", "Utahraptor Ostrommaysi",
-            "Kentrosaurus Aethiopicus", "Carcharodontosaurus Saharicus", "Albertosaurus Sarcophagus", "Monolophosaurus Jiangi",
-            "Protoceratops Andrewsi", "Mamenchisaurus Constructus", "Torosaurus Latus", "Saurophaganax Maximus",
-            "Cryolophosaurus Ellioti", "Sinornithosaurus Millenii", "Troodon Formosus", "Amargasaurus Cazaui",
-            "Megalosaurus Bucklandii", "Argentinosaurus Huinculensis"
-          ];
-
-          for (let i = 1; i <= 50; i++) {
-            const name = speciesNames[i - 1] || `Dinosaur Specimen Plate ${i}`;
-            const col = document.createElement('div');
-            col.className = 'col-6 col-md-4 col-lg-3 searchable-item';
-            col.innerHTML = `
-              <div class="gallery-card lightbox-trigger" title="Click to enlarge ${name}">
-                <img src="Images/Gallery60/${i}.png" alt="${name} (Archive Plate #${i})" class="img-fluid" loading="lazy">
-                <div class="gallery-overlay">
-                  <span class="badge bg-secondary mb-1 align-self-start">Archive #${i}</span>
-                  <span class="gallery-overlay-title searchable-title">${name}</span>
-                  <span class="gallery-overlay-btn"><i class="fas fa-search-plus"></i> Enlarge</span>
-                </div>
-              </div>
-            `;
-            container.appendChild(col);
-          }
-        </script>
+        <!-- 50 Cataloged Archive Plates -->
+        <div class="col-6 col-md-4 col-lg-3 searchable-item">
+          <div class="gallery-card lightbox-trigger" title="Click to enlarge Tyrannosaurus Rex">
+            <img src="Images/Gallery60/1.png" alt="Tyrannosaurus Rex (Archive Plate #1)" class="img-fluid" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="badge bg-secondary mb-1 align-self-start">Archive #1</span>
+              <span class="gallery-overlay-title searchable-title">Tyrannosaurus Rex</span>
+              <span class="gallery-overlay-btn"><i class="fas fa-search-plus"></i> Enlarge</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3 searchable-item">
+          <div class="gallery-card lightbox-trigger" title="Click to enlarge Triceratops Prorsus">
+            <img src="Images/Gallery60/2.png" alt="Triceratops Prorsus (Archive Plate #2)" class="img-fluid" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="badge bg-secondary mb-1 align-self-start">Archive #2</span>
+              <span class="gallery-overlay-title searchable-title">Triceratops Prorsus</span>
+              <span class="gallery-overlay-btn"><i class="fas fa-search-plus"></i> Enlarge</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3 searchable-item">
+          <div class="gallery-card lightbox-trigger" title="Click to enlarge Brachiosaurus Altithorax">
+            <img src="Images/Gallery60/3.png" alt="Brachiosaurus Altithorax (Archive Plate #3)" class="img-fluid" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="badge bg-secondary mb-1 align-self-start">Archive #3</span>
+              <span class="gallery-overlay-title searchable-title">Brachiosaurus Altithorax</span>
+              <span class="gallery-overlay-btn"><i class="fas fa-search-plus"></i> Enlarge</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3 searchable-item">
+          <div class="gallery-card lightbox-trigger" title="Click to enlarge Velociraptor Mongoliensis">
+            <img src="Images/Gallery60/4.png" alt="Velociraptor Mongoliensis (Archive Plate #4)" class="img-fluid" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="badge bg-secondary mb-1 align-self-start">Archive #4</span>
+              <span class="gallery-overlay-title searchable-title">Velociraptor Mongoliensis</span>
+              <span class="gallery-overlay-btn"><i class="fas fa-search-plus"></i> Enlarge</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3 searchable-item">
+          <div class="gallery-card lightbox-trigger" title="Click to enlarge Stegosaurus Stenops">
+            <img src="Images/Gallery60/5.png" alt="Stegosaurus Stenops (Archive Plate #5)" class="img-fluid" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="badge bg-secondary mb-1 align-self-start">Archive #5</span>
+              <span class="gallery-overlay-title searchable-title">Stegosaurus Stenops</span>
+              <span class="gallery-overlay-btn"><i class="fas fa-search-plus"></i> Enlarge</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3 searchable-item">
+          <div class="gallery-card lightbox-trigger" title="Click to enlarge Spinosaurus Aegyptiacus">
+            <img src="Images/Gallery60/6.png" alt="Spinosaurus Aegyptiacus (Archive Plate #6)" class="img-fluid" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="badge bg-secondary mb-1 align-self-start">Archive #6</span>
+              <span class="gallery-overlay-title searchable-title">Spinosaurus Aegyptiacus</span>
+              <span class="gallery-overlay-btn"><i class="fas fa-search-plus"></i> Enlarge</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3 searchable-item">
+          <div class="gallery-card lightbox-trigger" title="Click to enlarge Allosaurus Fragilis">
+            <img src="Images/Gallery60/7.png" alt="Allosaurus Fragilis (Archive Plate #7)" class="img-fluid" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="badge bg-secondary mb-1 align-self-start">Archive #7</span>
+              <span class="gallery-overlay-title searchable-title">Allosaurus Fragilis</span>
+              <span class="gallery-overlay-btn"><i class="fas fa-search-plus"></i> Enlarge</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3 searchable-item">
+          <div class="gallery-card lightbox-trigger" title="Click to enlarge Ankylosaurus Magniventris">
+            <img src="Images/Gallery60/8.png" alt="Ankylosaurus Magniventris (Archive Plate #8)" class="img-fluid" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="badge bg-secondary mb-1 align-self-start">Archive #8</span>
+              <span class="gallery-overlay-title searchable-title">Ankylosaurus Magniventris</span>
+              <span class="gallery-overlay-btn"><i class="fas fa-search-plus"></i> Enlarge</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3 searchable-item">
+          <div class="gallery-card lightbox-trigger" title="Click to enlarge Parasaurolophus Walkeri">
+            <img src="Images/Gallery60/9.png" alt="Parasaurolophus Walkeri (Archive Plate #9)" class="img-fluid" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="badge bg-secondary mb-1 align-self-start">Archive #9</span>
+              <span class="gallery-overlay-title searchable-title">Parasaurolophus Walkeri</span>
+              <span class="gallery-overlay-btn"><i class="fas fa-search-plus"></i> Enlarge</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3 searchable-item">
+          <div class="gallery-card lightbox-trigger" title="Click to enlarge Diplodocus Carnegii">
+            <img src="Images/Gallery60/10.png" alt="Diplodocus Carnegii (Archive Plate #10)" class="img-fluid" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="badge bg-secondary mb-1 align-self-start">Archive #10</span>
+              <span class="gallery-overlay-title searchable-title">Diplodocus Carnegii</span>
+              <span class="gallery-overlay-btn"><i class="fas fa-search-plus"></i> Enlarge</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3 searchable-item">
+          <div class="gallery-card lightbox-trigger" title="Click to enlarge Carnotaurus Sastrei">
+            <img src="Images/Gallery60/11.png" alt="Carnotaurus Sastrei (Archive Plate #11)" class="img-fluid" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="badge bg-secondary mb-1 align-self-start">Archive #11</span>
+              <span class="gallery-overlay-title searchable-title">Carnotaurus Sastrei</span>
+              <span class="gallery-overlay-btn"><i class="fas fa-search-plus"></i> Enlarge</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3 searchable-item">
+          <div class="gallery-card lightbox-trigger" title="Click to enlarge Pachycephalosaurus">
+            <img src="Images/Gallery60/12.png" alt="Pachycephalosaurus (Archive Plate #12)" class="img-fluid" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="badge bg-secondary mb-1 align-self-start">Archive #12</span>
+              <span class="gallery-overlay-title searchable-title">Pachycephalosaurus</span>
+              <span class="gallery-overlay-btn"><i class="fas fa-search-plus"></i> Enlarge</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3 searchable-item">
+          <div class="gallery-card lightbox-trigger" title="Click to enlarge Iguanodon Bernissartensis">
+            <img src="Images/Gallery60/13.png" alt="Iguanodon Bernissartensis (Archive Plate #13)" class="img-fluid" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="badge bg-secondary mb-1 align-self-start">Archive #13</span>
+              <span class="gallery-overlay-title searchable-title">Iguanodon Bernissartensis</span>
+              <span class="gallery-overlay-btn"><i class="fas fa-search-plus"></i> Enlarge</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3 searchable-item">
+          <div class="gallery-card lightbox-trigger" title="Click to enlarge Archaeopteryx Lithographica">
+            <img src="Images/Gallery60/14.png" alt="Archaeopteryx Lithographica (Archive Plate #14)" class="img-fluid" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="badge bg-secondary mb-1 align-self-start">Archive #14</span>
+              <span class="gallery-overlay-title searchable-title">Archaeopteryx Lithographica</span>
+              <span class="gallery-overlay-btn"><i class="fas fa-search-plus"></i> Enlarge</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3 searchable-item">
+          <div class="gallery-card lightbox-trigger" title="Click to enlarge Dilophosaurus Wetherilli">
+            <img src="Images/Gallery60/15.png" alt="Dilophosaurus Wetherilli (Archive Plate #15)" class="img-fluid" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="badge bg-secondary mb-1 align-self-start">Archive #15</span>
+              <span class="gallery-overlay-title searchable-title">Dilophosaurus Wetherilli</span>
+              <span class="gallery-overlay-btn"><i class="fas fa-search-plus"></i> Enlarge</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3 searchable-item">
+          <div class="gallery-card lightbox-trigger" title="Click to enlarge Giganotosaurus Carolinii">
+            <img src="Images/Gallery60/16.png" alt="Giganotosaurus Carolinii (Archive Plate #16)" class="img-fluid" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="badge bg-secondary mb-1 align-self-start">Archive #16</span>
+              <span class="gallery-overlay-title searchable-title">Giganotosaurus Carolinii</span>
+              <span class="gallery-overlay-btn"><i class="fas fa-search-plus"></i> Enlarge</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3 searchable-item">
+          <div class="gallery-card lightbox-trigger" title="Click to enlarge Deinonychus Antirrhopus">
+            <img src="Images/Gallery60/17.png" alt="Deinonychus Antirrhopus (Archive Plate #17)" class="img-fluid" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="badge bg-secondary mb-1 align-self-start">Archive #17</span>
+              <span class="gallery-overlay-title searchable-title">Deinonychus Antirrhopus</span>
+              <span class="gallery-overlay-btn"><i class="fas fa-search-plus"></i> Enlarge</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3 searchable-item">
+          <div class="gallery-card lightbox-trigger" title="Click to enlarge Oviraptor Philoceratops">
+            <img src="Images/Gallery60/18.png" alt="Oviraptor Philoceratops (Archive Plate #18)" class="img-fluid" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="badge bg-secondary mb-1 align-self-start">Archive #18</span>
+              <span class="gallery-overlay-title searchable-title">Oviraptor Philoceratops</span>
+              <span class="gallery-overlay-btn"><i class="fas fa-search-plus"></i> Enlarge</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3 searchable-item">
+          <div class="gallery-card lightbox-trigger" title="Click to enlarge Corythosaurus Casuarius">
+            <img src="Images/Gallery60/19.png" alt="Corythosaurus Casuarius (Archive Plate #19)" class="img-fluid" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="badge bg-secondary mb-1 align-self-start">Archive #19</span>
+              <span class="gallery-overlay-title searchable-title">Corythosaurus Casuarius</span>
+              <span class="gallery-overlay-btn"><i class="fas fa-search-plus"></i> Enlarge</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3 searchable-item">
+          <div class="gallery-card lightbox-trigger" title="Click to enlarge Gallimimus Bullatus">
+            <img src="Images/Gallery60/20.png" alt="Gallimimus Bullatus (Archive Plate #20)" class="img-fluid" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="badge bg-secondary mb-1 align-self-start">Archive #20</span>
+              <span class="gallery-overlay-title searchable-title">Gallimimus Bullatus</span>
+              <span class="gallery-overlay-btn"><i class="fas fa-search-plus"></i> Enlarge</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3 searchable-item">
+          <div class="gallery-card lightbox-trigger" title="Click to enlarge Ceratosaurus Nasicornis">
+            <img src="Images/Gallery60/21.png" alt="Ceratosaurus Nasicornis (Archive Plate #21)" class="img-fluid" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="badge bg-secondary mb-1 align-self-start">Archive #21</span>
+              <span class="gallery-overlay-title searchable-title">Ceratosaurus Nasicornis</span>
+              <span class="gallery-overlay-btn"><i class="fas fa-search-plus"></i> Enlarge</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3 searchable-item">
+          <div class="gallery-card lightbox-trigger" title="Click to enlarge Maiasaura Peeblesorum">
+            <img src="Images/Gallery60/22.png" alt="Maiasaura Peeblesorum (Archive Plate #22)" class="img-fluid" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="badge bg-secondary mb-1 align-self-start">Archive #22</span>
+              <span class="gallery-overlay-title searchable-title">Maiasaura Peeblesorum</span>
+              <span class="gallery-overlay-btn"><i class="fas fa-search-plus"></i> Enlarge</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3 searchable-item">
+          <div class="gallery-card lightbox-trigger" title="Click to enlarge Styracosaurus Albertensis">
+            <img src="Images/Gallery60/23.png" alt="Styracosaurus Albertensis (Archive Plate #23)" class="img-fluid" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="badge bg-secondary mb-1 align-self-start">Archive #23</span>
+              <span class="gallery-overlay-title searchable-title">Styracosaurus Albertensis</span>
+              <span class="gallery-overlay-btn"><i class="fas fa-search-plus"></i> Enlarge</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3 searchable-item">
+          <div class="gallery-card lightbox-trigger" title="Click to enlarge Therizinosaurus Cheloniformis">
+            <img src="Images/Gallery60/24.png" alt="Therizinosaurus Cheloniformis (Archive Plate #24)" class="img-fluid" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="badge bg-secondary mb-1 align-self-start">Archive #24</span>
+              <span class="gallery-overlay-title searchable-title">Therizinosaurus Cheloniformis</span>
+              <span class="gallery-overlay-btn"><i class="fas fa-search-plus"></i> Enlarge</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3 searchable-item">
+          <div class="gallery-card lightbox-trigger" title="Click to enlarge Pachyrhinosaurus">
+            <img src="Images/Gallery60/25.png" alt="Pachyrhinosaurus (Archive Plate #25)" class="img-fluid" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="badge bg-secondary mb-1 align-self-start">Archive #25</span>
+              <span class="gallery-overlay-title searchable-title">Pachyrhinosaurus</span>
+              <span class="gallery-overlay-btn"><i class="fas fa-search-plus"></i> Enlarge</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3 searchable-item">
+          <div class="gallery-card lightbox-trigger" title="Click to enlarge Baryonyx Walkeri">
+            <img src="Images/Gallery60/26.png" alt="Baryonyx Walkeri (Archive Plate #26)" class="img-fluid" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="badge bg-secondary mb-1 align-self-start">Archive #26</span>
+              <span class="gallery-overlay-title searchable-title">Baryonyx Walkeri</span>
+              <span class="gallery-overlay-btn"><i class="fas fa-search-plus"></i> Enlarge</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3 searchable-item">
+          <div class="gallery-card lightbox-trigger" title="Click to enlarge Microraptor Gui">
+            <img src="Images/Gallery60/27.png" alt="Microraptor Gui (Archive Plate #27)" class="img-fluid" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="badge bg-secondary mb-1 align-self-start">Archive #27</span>
+              <span class="gallery-overlay-title searchable-title">Microraptor Gui</span>
+              <span class="gallery-overlay-btn"><i class="fas fa-search-plus"></i> Enlarge</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3 searchable-item">
+          <div class="gallery-card lightbox-trigger" title="Click to enlarge Acrocanthosaurus Atokensis">
+            <img src="Images/Gallery60/28.png" alt="Acrocanthosaurus Atokensis (Archive Plate #28)" class="img-fluid" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="badge bg-secondary mb-1 align-self-start">Archive #28</span>
+              <span class="gallery-overlay-title searchable-title">Acrocanthosaurus Atokensis</span>
+              <span class="gallery-overlay-btn"><i class="fas fa-search-plus"></i> Enlarge</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3 searchable-item">
+          <div class="gallery-card lightbox-trigger" title="Click to enlarge Euoplocephalus Tutus">
+            <img src="Images/Gallery60/29.png" alt="Euoplocephalus Tutus (Archive Plate #29)" class="img-fluid" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="badge bg-secondary mb-1 align-self-start">Archive #29</span>
+              <span class="gallery-overlay-title searchable-title">Euoplocephalus Tutus</span>
+              <span class="gallery-overlay-btn"><i class="fas fa-search-plus"></i> Enlarge</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3 searchable-item">
+          <div class="gallery-card lightbox-trigger" title="Click to enlarge Compsognathus Longipes">
+            <img src="Images/Gallery60/30.png" alt="Compsognathus Longipes (Archive Plate #30)" class="img-fluid" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="badge bg-secondary mb-1 align-self-start">Archive #30</span>
+              <span class="gallery-overlay-title searchable-title">Compsognathus Longipes</span>
+              <span class="gallery-overlay-btn"><i class="fas fa-search-plus"></i> Enlarge</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3 searchable-item">
+          <div class="gallery-card lightbox-trigger" title="Click to enlarge Plateosaurus Engelhardti">
+            <img src="Images/Gallery60/31.png" alt="Plateosaurus Engelhardti (Archive Plate #31)" class="img-fluid" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="badge bg-secondary mb-1 align-self-start">Archive #31</span>
+              <span class="gallery-overlay-title searchable-title">Plateosaurus Engelhardti</span>
+              <span class="gallery-overlay-btn"><i class="fas fa-search-plus"></i> Enlarge</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3 searchable-item">
+          <div class="gallery-card lightbox-trigger" title="Click to enlarge Coelophysis Bauri">
+            <img src="Images/Gallery60/32.png" alt="Coelophysis Bauri (Archive Plate #32)" class="img-fluid" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="badge bg-secondary mb-1 align-self-start">Archive #32</span>
+              <span class="gallery-overlay-title searchable-title">Coelophysis Bauri</span>
+              <span class="gallery-overlay-btn"><i class="fas fa-search-plus"></i> Enlarge</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3 searchable-item">
+          <div class="gallery-card lightbox-trigger" title="Click to enlarge Camarasaurus Supremus">
+            <img src="Images/Gallery60/33.png" alt="Camarasaurus Supremus (Archive Plate #33)" class="img-fluid" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="badge bg-secondary mb-1 align-self-start">Archive #33</span>
+              <span class="gallery-overlay-title searchable-title">Camarasaurus Supremus</span>
+              <span class="gallery-overlay-btn"><i class="fas fa-search-plus"></i> Enlarge</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3 searchable-item">
+          <div class="gallery-card lightbox-trigger" title="Click to enlarge Ouranosaurus Nigeriensis">
+            <img src="Images/Gallery60/34.png" alt="Ouranosaurus Nigeriensis (Archive Plate #34)" class="img-fluid" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="badge bg-secondary mb-1 align-self-start">Archive #34</span>
+              <span class="gallery-overlay-title searchable-title">Ouranosaurus Nigeriensis</span>
+              <span class="gallery-overlay-btn"><i class="fas fa-search-plus"></i> Enlarge</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3 searchable-item">
+          <div class="gallery-card lightbox-trigger" title="Click to enlarge Suchomimus Tenerensis">
+            <img src="Images/Gallery60/35.png" alt="Suchomimus Tenerensis (Archive Plate #35)" class="img-fluid" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="badge bg-secondary mb-1 align-self-start">Archive #35</span>
+              <span class="gallery-overlay-title searchable-title">Suchomimus Tenerensis</span>
+              <span class="gallery-overlay-btn"><i class="fas fa-search-plus"></i> Enlarge</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3 searchable-item">
+          <div class="gallery-card lightbox-trigger" title="Click to enlarge Utahraptor Ostrommaysi">
+            <img src="Images/Gallery60/36.png" alt="Utahraptor Ostrommaysi (Archive Plate #36)" class="img-fluid" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="badge bg-secondary mb-1 align-self-start">Archive #36</span>
+              <span class="gallery-overlay-title searchable-title">Utahraptor Ostrommaysi</span>
+              <span class="gallery-overlay-btn"><i class="fas fa-search-plus"></i> Enlarge</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3 searchable-item">
+          <div class="gallery-card lightbox-trigger" title="Click to enlarge Kentrosaurus Aethiopicus">
+            <img src="Images/Gallery60/37.png" alt="Kentrosaurus Aethiopicus (Archive Plate #37)" class="img-fluid" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="badge bg-secondary mb-1 align-self-start">Archive #37</span>
+              <span class="gallery-overlay-title searchable-title">Kentrosaurus Aethiopicus</span>
+              <span class="gallery-overlay-btn"><i class="fas fa-search-plus"></i> Enlarge</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3 searchable-item">
+          <div class="gallery-card lightbox-trigger" title="Click to enlarge Carcharodontosaurus Saharicus">
+            <img src="Images/Gallery60/38.png" alt="Carcharodontosaurus Saharicus (Archive Plate #38)" class="img-fluid" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="badge bg-secondary mb-1 align-self-start">Archive #38</span>
+              <span class="gallery-overlay-title searchable-title">Carcharodontosaurus Saharicus</span>
+              <span class="gallery-overlay-btn"><i class="fas fa-search-plus"></i> Enlarge</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3 searchable-item">
+          <div class="gallery-card lightbox-trigger" title="Click to enlarge Albertosaurus Sarcophagus">
+            <img src="Images/Gallery60/39.png" alt="Albertosaurus Sarcophagus (Archive Plate #39)" class="img-fluid" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="badge bg-secondary mb-1 align-self-start">Archive #39</span>
+              <span class="gallery-overlay-title searchable-title">Albertosaurus Sarcophagus</span>
+              <span class="gallery-overlay-btn"><i class="fas fa-search-plus"></i> Enlarge</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3 searchable-item">
+          <div class="gallery-card lightbox-trigger" title="Click to enlarge Monolophosaurus Jiangi">
+            <img src="Images/Gallery60/40.png" alt="Monolophosaurus Jiangi (Archive Plate #40)" class="img-fluid" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="badge bg-secondary mb-1 align-self-start">Archive #40</span>
+              <span class="gallery-overlay-title searchable-title">Monolophosaurus Jiangi</span>
+              <span class="gallery-overlay-btn"><i class="fas fa-search-plus"></i> Enlarge</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3 searchable-item">
+          <div class="gallery-card lightbox-trigger" title="Click to enlarge Protoceratops Andrewsi">
+            <img src="Images/Gallery60/41.png" alt="Protoceratops Andrewsi (Archive Plate #41)" class="img-fluid" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="badge bg-secondary mb-1 align-self-start">Archive #41</span>
+              <span class="gallery-overlay-title searchable-title">Protoceratops Andrewsi</span>
+              <span class="gallery-overlay-btn"><i class="fas fa-search-plus"></i> Enlarge</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3 searchable-item">
+          <div class="gallery-card lightbox-trigger" title="Click to enlarge Mamenchisaurus Constructus">
+            <img src="Images/Gallery60/42.png" alt="Mamenchisaurus Constructus (Archive Plate #42)" class="img-fluid" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="badge bg-secondary mb-1 align-self-start">Archive #42</span>
+              <span class="gallery-overlay-title searchable-title">Mamenchisaurus Constructus</span>
+              <span class="gallery-overlay-btn"><i class="fas fa-search-plus"></i> Enlarge</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3 searchable-item">
+          <div class="gallery-card lightbox-trigger" title="Click to enlarge Torosaurus Latus">
+            <img src="Images/Gallery60/43.png" alt="Torosaurus Latus (Archive Plate #43)" class="img-fluid" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="badge bg-secondary mb-1 align-self-start">Archive #43</span>
+              <span class="gallery-overlay-title searchable-title">Torosaurus Latus</span>
+              <span class="gallery-overlay-btn"><i class="fas fa-search-plus"></i> Enlarge</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3 searchable-item">
+          <div class="gallery-card lightbox-trigger" title="Click to enlarge Saurophaganax Maximus">
+            <img src="Images/Gallery60/44.png" alt="Saurophaganax Maximus (Archive Plate #44)" class="img-fluid" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="badge bg-secondary mb-1 align-self-start">Archive #44</span>
+              <span class="gallery-overlay-title searchable-title">Saurophaganax Maximus</span>
+              <span class="gallery-overlay-btn"><i class="fas fa-search-plus"></i> Enlarge</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3 searchable-item">
+          <div class="gallery-card lightbox-trigger" title="Click to enlarge Cryolophosaurus Ellioti">
+            <img src="Images/Gallery60/45.png" alt="Cryolophosaurus Ellioti (Archive Plate #45)" class="img-fluid" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="badge bg-secondary mb-1 align-self-start">Archive #45</span>
+              <span class="gallery-overlay-title searchable-title">Cryolophosaurus Ellioti</span>
+              <span class="gallery-overlay-btn"><i class="fas fa-search-plus"></i> Enlarge</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3 searchable-item">
+          <div class="gallery-card lightbox-trigger" title="Click to enlarge Sinornithosaurus Millenii">
+            <img src="Images/Gallery60/46.png" alt="Sinornithosaurus Millenii (Archive Plate #46)" class="img-fluid" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="badge bg-secondary mb-1 align-self-start">Archive #46</span>
+              <span class="gallery-overlay-title searchable-title">Sinornithosaurus Millenii</span>
+              <span class="gallery-overlay-btn"><i class="fas fa-search-plus"></i> Enlarge</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3 searchable-item">
+          <div class="gallery-card lightbox-trigger" title="Click to enlarge Troodon Formosus">
+            <img src="Images/Gallery60/47.png" alt="Troodon Formosus (Archive Plate #47)" class="img-fluid" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="badge bg-secondary mb-1 align-self-start">Archive #47</span>
+              <span class="gallery-overlay-title searchable-title">Troodon Formosus</span>
+              <span class="gallery-overlay-btn"><i class="fas fa-search-plus"></i> Enlarge</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3 searchable-item">
+          <div class="gallery-card lightbox-trigger" title="Click to enlarge Amargasaurus Cazaui">
+            <img src="Images/Gallery60/48.png" alt="Amargasaurus Cazaui (Archive Plate #48)" class="img-fluid" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="badge bg-secondary mb-1 align-self-start">Archive #48</span>
+              <span class="gallery-overlay-title searchable-title">Amargasaurus Cazaui</span>
+              <span class="gallery-overlay-btn"><i class="fas fa-search-plus"></i> Enlarge</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3 searchable-item">
+          <div class="gallery-card lightbox-trigger" title="Click to enlarge Megalosaurus Bucklandii">
+            <img src="Images/Gallery60/49.png" alt="Megalosaurus Bucklandii (Archive Plate #49)" class="img-fluid" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="badge bg-secondary mb-1 align-self-start">Archive #49</span>
+              <span class="gallery-overlay-title searchable-title">Megalosaurus Bucklandii</span>
+              <span class="gallery-overlay-btn"><i class="fas fa-search-plus"></i> Enlarge</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3 searchable-item">
+          <div class="gallery-card lightbox-trigger" title="Click to enlarge Argentinosaurus Huinculensis">
+            <img src="Images/Gallery60/50.png" alt="Argentinosaurus Huinculensis (Archive Plate #50)" class="img-fluid" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="badge bg-secondary mb-1 align-self-start">Archive #50</span>
+              <span class="gallery-overlay-title searchable-title">Argentinosaurus Huinculensis</span>
+              <span class="gallery-overlay-btn"><i class="fas fa-search-plus"></i> Enlarge</span>
+            </div>
+          </div>
+        </div>
       </div>
 
       <!-- Back to Main Gallery Button -->
