@@ -128,3 +128,37 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 });
+
+// ── Header: scroll-shrink effect ──────────────────────────────────────────────
+(function () {
+  const header = document.querySelector('.site-header');
+  if (!header) return;
+  const onScroll = () => {
+    header.classList.toggle('scrolled', window.scrollY > 60);
+  };
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+})();
+
+// ── Header: search bar toggle ─────────────────────────────────────────────────
+(function () {
+  const btn   = document.getElementById('navSearchBtn');
+  const input = document.getElementById('navSearchInput');
+  if (!btn || !input) return;
+
+  btn.addEventListener('click', () => {
+    const isOpen = input.classList.toggle('open');
+    btn.setAttribute('aria-expanded', isOpen);
+    btn.querySelector('i').className = isOpen ? 'fas fa-times' : 'fas fa-search';
+    if (isOpen) {
+      input.focus();
+    } else {
+      input.value = '';
+    }
+  });
+
+  // Close on Escape
+  input.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') btn.click();
+  });
+})();

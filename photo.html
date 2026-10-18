@@ -19,17 +19,24 @@
 
   <!-- Header & Navigation -->
   <header class="site-header sticky-top">
-    <nav class="navbar navbar-expand-lg navbar-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark" aria-label="Main navigation">
       <div class="container">
+
+        <!-- Brand -->
         <a class="navbar-brand" href="index.html">
-          DinoPreHistoric Web
+          <span class="brand-icon"><i class="fas fa-dragon"></i></span>
           <span class="logo-text">Dino<span class="logo-accent">Prehistoric</span></span>
         </a>
-        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+
+        <!-- Mobile toggler -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
+
+        <!-- Nav items -->
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center gap-lg-1">
             <li class="nav-item">
               <a class="nav-link" href="index.html">Home</a>
             </li>
@@ -37,25 +44,65 @@
               <a class="nav-link" href="history.html">History</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="about.html">About Us</a>
+              <a class="nav-link" href="about.html">About</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="photo.html">Photo Gallery</a>
+
+            <!-- Galleries Dropdown -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle active" href="#" role="button"
+                 data-bs-toggle="dropdown" aria-expanded="false">
+                Galleries
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li>
+                  <a class="dropdown-item active" href="photo.html">
+                    <i class="fas fa-images fa-fw"></i> Photo Gallery
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="photo2018.html">
+                    <i class="fas fa-archive fa-fw"></i> 2018 Archive
+                  </a>
+                </li>
+                <li><hr class="dropdown-divider"></li>
+                <li>
+                  <a class="dropdown-item" href="video.html">
+                    <i class="fas fa-film fa-fw"></i> Video Gallery
+                  </a>
+                </li>
+              </ul>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="video.html">Video Gallery</a>
-            </li>
+
             <li class="nav-item">
               <a class="nav-link" href="resources.html">Resources</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact Us</a>
+              <a class="nav-link" href="contact.html">Contact</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="sitemap.html">Sitemap</a>
             </li>
+
+            <!-- Search -->
+            <li class="nav-item">
+              <div class="nav-search-wrapper ms-lg-2">
+                <input type="search" id="navSearchInput" class="nav-search-input"
+                       placeholder="Search…" aria-label="Search site">
+                <button id="navSearchBtn" class="btn-nav-search" aria-label="Toggle search" aria-expanded="false">
+                  <i class="fas fa-search"></i>
+                </button>
+              </div>
+            </li>
+
+            <!-- CTA -->
+            <li class="nav-item ms-lg-2">
+              <a class="nav-link btn-nav-cta" href="history.html">
+                Explore <i class="fas fa-arrow-right fa-sm ms-1"></i>
+              </a>
+            </li>
           </ul>
         </div>
+
       </div>
     </nav>
   </header>
