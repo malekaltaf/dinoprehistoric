@@ -139,26 +139,3 @@ document.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('scroll', onScroll, { passive: true });
   onScroll();
 })();
-
-// ── Header: search bar toggle ─────────────────────────────────────────────────
-(function () {
-  const btn   = document.getElementById('navSearchBtn');
-  const input = document.getElementById('navSearchInput');
-  if (!btn || !input) return;
-
-  btn.addEventListener('click', () => {
-    const isOpen = input.classList.toggle('open');
-    btn.setAttribute('aria-expanded', isOpen);
-    btn.querySelector('i').className = isOpen ? 'fas fa-times' : 'fas fa-search';
-    if (isOpen) {
-      input.focus();
-    } else {
-      input.value = '';
-    }
-  });
-
-  // Close on Escape
-  input.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape') btn.click();
-  });
-})();
